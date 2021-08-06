@@ -1,0 +1,31 @@
+---
+permalink: unix-administration/task_post_rollback_tasks.html 
+sidebar: sidebar 
+keywords: perform, additional, step, rollback, repository, database, downgrade, snapmanager, host, post, task, smo 
+summary: 回滚存储库数据库并将 SnapManager 主机从 SnapManager 3.2 降级到 SnapManager 3.0 后，您必须执行一些其他步骤，才能查看在早期版本的存储库数据库中创建的计划。 
+---
+= 回滚后任务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+回滚存储库数据库并将 SnapManager 主机从 SnapManager 3.2 降级到 SnapManager 3.0 后，您必须执行一些其他步骤，才能查看在早期版本的存储库数据库中创建的计划。
+
+. 导航到 CD /opt/netapp/smO/storages 。
++
+存储库目录可能包含每个存储库的两个文件。带有数字符号（ # ）的文件名使用 SnapManager 3.1 或更高版本创建，而带有连字符（ - ）的文件名使用 SnapManager 3.0 创建。
+
++
+文件名可能如下：
+
++
+** 存储库 #SMO300A #SMOREPO1#10.72.197.141#151.
+** repository-smo300a-smorepo1-10.72.197.141-151.
+
+
+. 将文件名中的数字符号（ # ）替换为连字符（ - ）。
++
+具有数字符号（ # ）的文件名现在包含连字符（ - ）： repository-SMO300A-SMOREPO1-10.72.197.141-151.
+
+

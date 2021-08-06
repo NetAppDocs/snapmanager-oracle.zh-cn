@@ -1,0 +1,21 @@
+---
+permalink: unix-installation-cmode/concept_understanding_the_differences_between_snapmirror_and_snapvault.html 
+sidebar: sidebar 
+keywords: snapmirror, disaster, recovery, technology, design, failover, primary, storage, secondary, geographically, disk-to-disk, snapshot, copy, replication, governance-related, purpose, compliance, standard 
+summary: SnapMirror 是一种灾难恢复技术，用于从主存储故障转移到地理位置偏远的站点上的二级存储。SnapVault 是一种归档技术，专为实现磁盘到磁盘 Snapshot 副本复制而设计，可满足标准要求并用于其他监管相关目的。 
+---
+= 了解 SnapMirror 与 SnapVault 之间的区别
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 是一种灾难恢复技术，用于从主存储故障转移到地理位置偏远的站点上的二级存储。SnapVault 是一种归档技术，专为实现磁盘到磁盘 Snapshot 副本复制而设计，可满足标准要求并用于其他监管相关目的。
+
+这些目标在备份货币和备份保留的目标之间实现了不同的平衡：
+
+* SnapMirror 会将主存储中的 Snapshot 副本存储在 _ononly 中，因为在发生灾难时，您需要能够故障转移到已知良好的最新主数据版本。例如，您的组织可能会在 10 天内镜像生产数据的每小时副本。如故障转移使用情形所示，二级系统上的设备需要与主系统上的设备等效或接近等效，才能从镜像存储高效地提供数据。
+* 相比之下， SnapVault 会存储 Snapshot 副本，无论它们当前是否位于主存储中，因为在进行审核时，对历史数据的访问可能与对当前数据的访问同等重要。您可能希望在 20 年的时间内保留数据的每月 Snapshot 副本（例如，为了符合政府对您企业的会计规定）。由于无需从二级存储提供数据，因此您可以在存储系统上使用速度较慢，成本较低的磁盘。
+
+
+当然， SnapMirror 和 SnapVault 对备份货币和备份保留的不同权重最终来自每个卷的 255-Snapshot 副本限制。如果 SnapMirror 保留最新的副本，则 SnapVault 会保留最长时间内创建的副本。

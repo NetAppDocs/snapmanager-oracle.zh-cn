@@ -1,0 +1,22 @@
+---
+permalink: unix-installation-cmode/reference_host_requirements.html 
+sidebar: sidebar 
+keywords: install, snapmanager, oracle, host, minimum, requirement, configuration 
+summary: 您必须在托管要备份的 Oracle 数据库的每个主机上安装 SnapManager for Oracle 。您必须确保主机满足 SnapManager 配置的最低要求。 
+---
+= UNIX 主机要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须在托管要备份的 Oracle 数据库的每个主机上安装 SnapManager for Oracle 。您必须确保主机满足 SnapManager 配置的最低要求。
+
+* 在安装 SnapManager 之前，必须在数据库主机上安装 SnapDrive 。
+* 您可以在物理机或虚拟机上安装 SnapManager 。
+* 您必须在共享同一存储库的所有主机上安装相同版本的 SnapManager 。
+* 如果您使用的是 Oracle 数据库 11.2.0.2 或 11.2.0.3 ，则必须安装 Oracle 修补程序 13366202 。
++
+如果您使用的是 DNFS ，则还必须安装 My Oracle Support （ MOS ）报告 1495104.1 中列出的修补程序，以获得最佳性能和稳定性。
+
+

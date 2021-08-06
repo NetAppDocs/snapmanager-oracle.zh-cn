@@ -1,0 +1,23 @@
+---
+permalink: windows/concept_preparing_to_upgrade_snapmanager_for_oracle.html 
+sidebar: sidebar 
+keywords: environment, software, hardware, browser, database, operating, system, preparing 
+summary: 要升级 SnapManager 的环境必须满足特定的软件，硬件，浏览器，数据库和操作系统要求。有关这些要求的最新信息，请参见互操作性表。 
+---
+= 正在准备升级 SnapManager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要升级 SnapManager 的环境必须满足特定的软件，硬件，浏览器，数据库和操作系统要求。有关这些要求的最新信息，请参见互操作性表。
+
+在升级之前，您必须确保执行以下任务：
+
+* 完成所需的安装前任务。
+* 下载最新的 SnapManager for Oracle 安装包。
+* 在所有目标主机上安装和配置适当版本的 SnapDrive for Windows 。
+* 为现有 SnapManager for Oracle 存储库数据库创建备份。
+
+
+http://support.netapp.com/NOW/products/interoperability/["互操作性表： support.netapp.com/NOW/products/interoperability"]

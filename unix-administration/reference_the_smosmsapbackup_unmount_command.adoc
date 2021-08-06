@@ -1,0 +1,97 @@
+---
+permalink: unix-administration/reference_the_smosmsapbackup_unmount_command.html 
+sidebar: sidebar 
+keywords: run, backup, unmount, command, smo 
+summary: 您可以运行 backup unmount 命令卸载备份。 
+---
+= smo backup unmount 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 backup unmount 命令卸载备份。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo backup unmount
+-profile profile_name
+[-label label \[-data \| -archivelogs\] \| \[-id id\]
+\[-force\]
+\[-dump\]
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+* -profile profile_name*
++
+指定要卸载备份的配置文件。配置文件包含数据库的标识符和其他数据库信息。
+
+* * ID ID*
++
+使用指定 GUID 卸载备份。GUID 由 SnapManager 在创建备份时生成。您可以使用 smo backup list 命令显示每个备份的 GUID 。
+
+* * —标签标签 *
++
+卸载具有指定标签的备份。
+
+* * 数据 *
++
+指定数据文件。
+
+* * — archivelogs*
++
+指定归档日志文件。
+
+* * —转储 *
++
+在卸载操作成功或失败后收集转储文件。
+
+* * —强制 *
++
+即使释放与备份关联的资源时出现问题，也会卸载备份。SnapManager 会尝试卸载备份并清理任何关联资源。此日志会将卸载操作显示为成功，但如果日志中存在错误，您可能需要手动清理资源。
+
+* * —静默 *
++
+在控制台中仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+在控制台中显示错误，警告和信息性消息。
+
+
+
+
+
+== 示例
+
+以下是卸载操作的示例：
+
+[listing]
+----
+# smo backup unmount -label test -profile SALES1 -verbose
+----
+[listing]
+----
+SMO-13046 [INFO ]: Operation GUID 8abc013111b909eb0111b90a02f50001 starting on Profile SALES1
+SMO-08028 [INFO ]: Beginning to disconnect connected mount(s)
+[/u/user1/mnt/_mnt_ssys1_logs_SMO_SALES1_hsdb1_F_C_1_8abc013111a450480111a45066210001,
+ /u/user1/mnt/_mnt_ssys1_data_SMO_SALES1_hsdb1_F_C_1_8abc013111a450480111a45066210001].
+SMO-08030 [INFO ]: Done disconnecting connected mount(s)
+[/u/user1/mnt/_mnt_ssys1_logs_SMO_SALES1_hsdb1_F_C_1_8abc013111a450480111a45066210001,
+ /u/user1/mnt/_mnt_ssys1_data_SMO_SALES1_hsdb1_F_C_1_8abc013111a450480111a45066210001].
+SMO-13037 [INFO ]: Successfully completed operation: Backup Unmount
+SMO-13048 [INFO ]: Operation Status: SUCCESS
+SMO-13049 [INFO ]: Elapsed Time: 0:00:33.715
+Operation Id [8abc013111b909eb0111b90a02f50001] succeeded.
+----
+* 相关信息 *
+
+xref:task_unmounting_backups.adoc[卸载备份]

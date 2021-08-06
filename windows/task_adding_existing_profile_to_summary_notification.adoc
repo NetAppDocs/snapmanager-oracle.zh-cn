@@ -1,0 +1,16 @@
+---
+permalink: windows/task_adding_existing_profile_to_summary_notification.html 
+sidebar: sidebar 
+keywords: snapmanager, enable, exist, profile, summary, email, notification, updating 
+summary: 通过 SnapManager ，您可以在更新现有配置文件时将其添加到摘要电子邮件通知中。 
+---
+= 将现有配置文件添加到摘要电子邮件通知中
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 SnapManager ，您可以在更新现有配置文件时将其添加到摘要电子邮件通知中。
+
+. 输入以下命令： smo profile update -profileprofileprofileprofile_name "-profile-passwordprofile_password] -repositor-dbnamerepo_service_name-host-host-portrepo_port-login-usernamerepo_username-database-patternedb_dbname-hostdb_host [-siderman_password]
+

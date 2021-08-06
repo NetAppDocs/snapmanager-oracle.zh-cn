@@ -1,0 +1,27 @@
+---
+permalink: unix-installation-cmode/concept_backing_up_and_verifying_your_databases.html 
+sidebar: sidebar 
+keywords: install, snapmanager, create, basic, backup, database, verify, ensure, contain, corrupt, file 
+summary: 安装 SnapManager 后，您可以为数据库创建一个基本备份，并验证该备份以确保它不包含任何损坏的文件。 
+---
+= 备份和验证数据库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装 SnapManager 后，您可以为数据库创建一个基本备份，并验证该备份以确保它不包含任何损坏的文件。
+
+* 相关信息 *
+
+xref:concept_snapmanager_backup_overview.adoc[SnapManager 备份概述]
+
+xref:concept_defining_a_backup_strategy.adoc[定义备份策略]
+
+xref:task_creating_a_profile_for_your_database.adoc[为数据库创建配置文件]
+
+xref:task_backing_up_your_database.adoc[备份数据库]
+
+xref:task_verifying_database_backups.adoc[验证数据库备份]
+
+xref:task_scheduling_recurring_backups.adoc[计划重复备份]

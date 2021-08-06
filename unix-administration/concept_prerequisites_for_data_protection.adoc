@@ -1,0 +1,32 @@
+---
+permalink: unix-administration/concept_prerequisites_for_data_protection.html 
+sidebar: sidebar 
+keywords: consideration, peform, data, protection, netapp, snapdrive, post-script, support 
+summary: 您必须了解执行数据保护时的某些注意事项。 
+---
+= 执行数据保护的注意事项
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须了解执行数据保护时的某些注意事项。
+
+* 要从二级系统执行克隆或还原操作，必须将目标卷挂载到命名空间中并正确导出。
+* 您必须通过将 SnapDrive 配置参数 check-export-permission-nfs-clone 的值设置为 off 来禁用此参数。
++
+NetApp 支持站点上的 SnapDrive for UNIX 文档包含有关 check-export-permission-nfs-clone 参数的追加信息。
+
+* 您必须为二级存储系统中请求的二级存储卷配置 SnapMirror 关系。
+* 对于 7- 模式 Data ONTAP ，您必须在二级存储系统中为请求的二级存储 qtree 配置 SnapVault 关系。
+* 如果要对集群模式 Data ONTAP 使用 SnapVault 后脚本，则必须为用户定义的 SnapMirror 标签定义策略和规则。
++
+SnapVault 后脚本支持集群模式 Data ONTAP 卷以及 SnapMirror 关系类型 DP 和 XDP 。NetApp 支持站点上的 ONTAP 文档包含有关配置 SnapMirror 和 SnapVault 的信息。
+
+* 在 NAS 环境中，必须使用 SnapDrive config set-mgmtpathmanagement_pathmanagement_pathmanagement_pathmanagement_pathdataath_path 命令配置主 NAS 和二级 NAS 数据路径。
++
+例如， SnapDrive config set -mgmtpath f3050-197-91 f3050-197-91 f3050-197-91 f3050-220-91 ，其中 `f3050-197-91` 是管理路径， `f3050-220-91` 是数据路径。
+
+
+
+http://mysupport.netapp.com/["NetApp 支持站点上的文档： mysupport.netapp.com"]

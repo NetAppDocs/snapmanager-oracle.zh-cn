@@ -1,0 +1,13 @@
+---
+permalink: windows/index.html 
+sidebar: sidebar 
+keywords: install, installation, administer, administration, guide, document 
+summary: 《 SnapManager for Oracle 3.4.2 安装和管理指南》 
+---
+= 《安装和管理指南》
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本指南介绍如何在 Windows 环境中安装和管理适用于 Oracle 的 SnapManager 3.4.2 ，包括如何安装，升级，卸载和配置产品，如何备份，还原和克隆数据库。

@@ -1,0 +1,56 @@
+---
+permalink: unix-administration/reference_the_smosmsap_clone_splitestimate_command.html 
+sidebar: sidebar 
+keywords: command, enable, clone, split, amount, storage, consume, estimate 
+summary: 使用此命令可以查看克隆拆分的已用存储估计量。 
+---
+= smo clone split — estimate 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用此命令可以查看克隆拆分的已用存储估计量。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo clone split-estimate
+-profile profile
+\[-host hostname\]
+\[-label clone-label | -id clone-id\]
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+* * 配置文件配置文件 *
++
+指定克隆的配置文件名称。
+
+* * —主机主机主机名 *
++
+指定克隆所在的主机名。
+
+* -label clone-lab*
++
+指定克隆进程生成的标签名称。
+
+* * — id clone-id*
++
+指定克隆进程生成的唯一 ID 。
+
+* * —静默 *
++
+在控制台上仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+在控制台上显示错误，警告和信息性消息。
+
+

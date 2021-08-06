@@ -1,0 +1,48 @@
+---
+permalink: windows/task_downloading_snapmanager_for_oracle_installation_package.html 
+sidebar: sidebar 
+keywords: download, snapmanager, oracle, installation, package, netapp, support, site 
+summary: 您可以从 NetApp 支持站点下载适用于 Oracle 的 SnapManager 安装包。 
+---
+= 下载适用于 Oracle 的 SnapManager 安装包
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从 NetApp 支持站点下载适用于 Oracle 的 SnapManager 安装包。
+
+. 登录到 NetApp 支持站点。
+. 在 NetApp 支持站点页面上，单击 * 下载 * > * 软件 * 。
+. 在软件下载表中，转至 SnapManager 产品行，然后从选择平台下拉列表中选择 * Oracle （ Windows ） * 。
+. 单击 * 执行 * 。
++
+此时将列出 SnapManager 版本。
+
+. 对于要安装的 SnapManager 版本，请单击 * 查看并下载 * 。
++
+此时将显示问题描述页面。
+
++
+
+NOTE: 您应阅读此页面上提供的信息。
+
+. 在此页面底部，单击 * 继续 * 。
++
+此时将显示许可证协议页面。
+
++
+
+NOTE: 您应阅读此页面上提供的信息。
+
+. 单击 * 接受 * 。
++
+此时将显示下载页面。
+
+. 下载适用于您的主机的安装包。
++
+您可以将安装文件下载到要安装 SnapManager for Oracle 的计算机上的任何位置。
+
+
+
+http://mysupport.netapp.com/["NetApp 支持站点： mysupport.netapp.com"]

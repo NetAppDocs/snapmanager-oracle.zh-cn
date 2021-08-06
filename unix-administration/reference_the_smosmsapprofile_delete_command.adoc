@@ -1,0 +1,57 @@
+---
+permalink: unix-administration/reference_the_smosmsapprofile_delete_command.html 
+sidebar: sidebar 
+keywords: run, profile, delete, command, database, smo 
+summary: 您可以运行 profile delete 命令来删除数据库的配置文件。 
+---
+= smo profile delete 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 profile delete 命令来删除数据库的配置文件。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo profile delete
+-profile profile
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+* * 配置文件配置文件 *
++
+指定要删除的配置文件。
+
+* * —静默 *
++
+在控制台中仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+在控制台中显示错误，警告和信息性消息。
+
+
+
+
+
+== 示例
+
+以下示例将删除此配置文件：
+
+[listing]
+----
+smo profile delete -profile SALES1
+Operation Id [Ncaf00af0242b3e8dba5c68a57a5ae932] succeeded.
+----
+* 相关信息 *
+
+xref:task_deleting_profiles.adoc[正在删除配置文件]

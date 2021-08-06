@@ -1,0 +1,102 @@
+---
+permalink: unix-administration/task_protecting_database_backups_on_secondary_storage.html 
+sidebar: sidebar 
+keywords: snapmanager, protect, backup, copies, secondary, tertiary, storage, system, smo 
+summary: 您可以使用 SnapManager 保护二级或三级存储系统上的备份副本。 
+---
+= 保护二级或三级存储上的数据库备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 SnapManager 保护二级或三级存储系统上的备份副本。
+
+. 输入以下命令： `smo backup create -profile profile_name ｛ -full ｛ -online | -offline | -auto ｝ ｛ -retain ｛ -hourly ； -daily ； -weekly ； -monthly ； -unlimited ｝ ] ｛ -verify] ｝ _ ｛ -data ｛ -filesfiles 【文件文件文件】 ｝ _ ｛ -tablespaces-tablesogs ｛ -tablespaces ） ]] "-snapvaultlabelsnapvault_lab]"-protect | -protectnow] -backup-destpath1 [ ， [path2]]] -exclude-destpath1 （， path2 ） ] （ -prunelog ｛ -all | -untilSCNutildump | -until date SCn-mm-dd ： ] ） -forth-dss-zh_untess_un> -duntsun> -duntsun> -duntsun.-un.-un.-dumpsn.-un.-un.-un.-dun.-un.-dun.-un.-dun.-dun.-dm.-dun.-dun.-dun.-dun.-d`
++
+|===
+| 如果您要 ... | 然后执行此操作 ... 
+
+
+ a| 
+* 为联机或脱机数据库创建备份，而不是让 SnapManager 管理联机还是脱机数据库 *
+ a| 
+指定 -offline 或 -online 选项以创建脱机数据库或联机数据库的备份。如果使用 -offline 或 -online 选项，则不能使用 -auto 选项。
+
+
+
+ a| 
+* 让 SnapManager 管理对数据库的备份，而不管它是联机还是脱机 *
+ a| 
+指定 -auto 选项。如果使用 -auto 选项，则不能使用 -offline 或 -online 选项。
+
+
+
+ a| 
+* 添加有关备份的注释 *
+ a| 
+指定 -comment 选项，后跟问题描述字符串。
+
+
+
+ a| 
+* 强制数据库进入您指定的备份状态，而不管其当前处于何种状态 *
+ a| 
+指定 -force 选项。
+
+
+
+ a| 
+* 创建时验证备份 *
+ a| 
+指定 -verify 选项。
+
+
+
+ a| 
+* 在二级存储上创建备份 *
+ a| 
+指定 -protect 选项。
+
+** 如果您使用的是 ONTAP ，并且希望立即保护二级存储的备份，请指定 -protect 选项。
++
+
+NOTE: protectnow 选项不适用于集群模式 Data ONTAP 。
+
+** 如果您使用的是在 7- 模式下运行的 Data ONTAP ，并且希望立即保护到二级存储的备份覆盖 Protection Manager 保护计划，请指定 -protectnow 选项。
+** 要防止备份到二级存储，请指定 -noprotect 选项。如果您使用的是 ONTAP ，并且在创建配置文件时选择了 _SnapManager_cDOT_Vault_protection 策略，则必须指定 -snapvaultlabel 选项。在将 SnapVault 关系设置为值时，您必须提供在 SnapMirror 策略规则中指定的 SnapMirror 标签。
+
+
+
+
+ a| 
+* 指定保留类值 *
+ a| 
+指定 -retain 选项，并根据以下保留类之一指示是否应保留备份：
+
+** 每小时
+** 每天
+** 每周
+** 每月
+** -unlimited 如果未指定保留类，则 SnapManager 默认使用 -hourly 。
+
+
+|===
+
+
+
+
+== 示例
+
+以下命令可保护数据库备份：
+
+[listing]
+----
+smo backup create -profile PAYDB -protect -retain -daily -full auto -label full_bkup_sales
+----
+以下命令会立即保护数据库备份：
+
+[listing]
+----
+smo backup create -profile PAYDB -protectnow -retain -daily -full auto -label full_bkup_sales
+----

@@ -1,0 +1,54 @@
+---
+permalink: unix-administration/task_restoring_backups_using_fast_restore.html 
+sidebar: sidebar 
+keywords: force, snapmanager, oracle, volume-based, snaprestore, restore, process 
+summary: 如果满足所有强制快速还原资格条件，您可以强制 SnapManager for Oracle 使用基于卷的 SnapRestore 过程，而不是其他还原过程。 
+---
+= 使用快速还原还原备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果满足所有强制快速还原资格条件，您可以强制 SnapManager for Oracle 使用基于卷的 SnapRestore 过程，而不是其他还原过程。
+
+您可以将 backup restore 命令与 -fast 结合使用： `backup restore -fast 【需要我们的支持，覆盖我们的支持，回退和关闭】`
+
+只有在要对完整备份执行完整还原时，才能使用 -fast 选项。ffast 选项包括以下参数：
+
+* Require ：如果满足所有强制还原资格条件且未找到可覆盖检查，则可用于执行卷还原。
++
+如果指定 -fast 选项，但未指定 -fast 的任何参数，则 SnapManager 会默认使用 -require-parameter 。
+
+* Override ：用于覆盖非强制资格检查并执行基于卷的快速还原。
+* 回退：用于使用 SnapManager 确定的任何方法还原数据库。
++
+如果不指定 -fast ，则 SnapManager 会使用 -backfallt 参数作为默认值。
+
+* off ：用于避免执行所有资格检查所需的时间，以便执行基于文件的还原过程，而不是快速还原过程。
+
+
+如果备份未通过强制性资格检查，则无法成功完成快速还原。
+
+SnapManager 仅在基于 UNIX 的环境中执行基于卷的快速恢复； SnapManager 不会在 Windows 环境中执行快速恢复。
+
+在对数据文件备份执行 VBSR 时，如果数据文件和归档日志文件位于同一个卷中，并且归档日志文件不在活动文件系统中，则数据库还原和恢复将成功。但是，未来的归档日志 Snapshot 会作为 VBSR 的一部分被删除，从而导致存储库中归档日志备份的条目过时。
+
+. 输入以下命令： smo backup restore -profileprofile_name-labelLabel-complete-fast require-verbose
++
+[listing]
+----
+smo backup restore -profile targetdb1_prof1
+      -label full_bkup_sales_nov_08  -complete -fast require -verbose
+----
+. 查看快速还原资格检查。
+. 如果资格检查确定没有强制检查失败，如果可以覆盖某些条件，并且您要继续执行还原过程，请输入以下命令： backup restore -fast override
+
+
+* 相关信息 *
+
+xref:task_creating_pretask_post_task_and_policy_scripts.adoc[创建任务前，任务后和策略脚本]
+
+xref:concept_variables_available_in_custom_script_for_restore_operation.adoc[可用于还原操作的任务脚本中的变量]
+
+xref:task_storing_the_task_scripts.adoc[存储任务脚本]

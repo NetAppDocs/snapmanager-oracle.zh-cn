@@ -1,0 +1,18 @@
+---
+permalink: unix-administration/concept_limitations_of_using_scripts_to_support_asm_database_without_asmlib.html 
+sidebar: sidebar 
+keywords: certain, limitation, script, asm, database, asmlib, root, grid, oracle 
+summary: 您必须了解在不使用 ASMLib 的情况下使用脚本支持 ASM 数据库的某些限制。 
+---
+= 使用脚本支持不使用 ASMLib 的 ASM 数据库的限制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须了解在不使用 ASMLib 的情况下使用脚本支持 ASM 数据库的某些限制。
+
+* 这些脚本可为任何内核版本提供备用解决方案，但前提是未安装 ASMLib 。
+* 脚本的权限设置方式必须使 root ， grid ， oracle 或等效用户能够访问这些脚本。
+* 这些脚本不支持从二级位置进行还原。
+

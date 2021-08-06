@@ -1,0 +1,20 @@
+---
+permalink: windows/task_authorizing_user_access_to_profiles.html 
+sidebar: sidebar 
+keywords: snapmanager, enable, password, profile, prevent, unauthorize, access 
+summary: 使用 SnapManager 可以为配置文件设置密码，以防止未经授权的访问。 
+---
+= 授权对配置文件的访问
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 SnapManager 可以为配置文件设置密码，以防止未经授权的访问。
+
+. 输入以下命令： smo credential set -profile -name profile_name [-password password]
+
+
+* 相关信息 *
+
+xref:reference_the_smosmsapcredential_set_command.adoc[smo credential set 命令]

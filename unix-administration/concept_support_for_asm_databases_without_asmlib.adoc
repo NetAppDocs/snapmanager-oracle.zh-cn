@@ -1,0 +1,31 @@
+---
+permalink: unix-administration/concept_support_for_asm_databases_without_asmlib.html 
+sidebar: sidebar 
+keywords: snapmanager, asm, asmlib, requirement, asm, disk, group, primary, storage, vbsr, secondary 
+summary: 默认情况下， SnapManager 支持不使用 ASMLib 的 ASM 。基本要求是，必须对用于 ASM 磁盘组的设备进行分区。 
+---
+= 支持不使用 ASMLib 的 ASM 数据库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+默认情况下， SnapManager 支持不使用 ASMLib 的 ASM 。基本要求是，必须对用于 ASM 磁盘组的设备进行分区。
+
+如果未安装 ASMLib ，则在执行以下操作时，与 ASM 磁盘组相关的设备权限将更改为 root ： disk ： disk ：
+
+* 重新启动主机
+* 使用基于卷的 SnapRestore （ VBSR ）从主存储还原数据库
+* 从二级存储还原数据库
+
+
+您可以通过为 SMO.conf 中的 oracleasma.support.without .asmlib 配置变量分配 true 来设置适当的设备权限。每当在主机中添加或删除新设备时，系统都会在 initasmdisks 文件中添加或删除与 ASM 磁盘组相关的设备。initasmdisks 文件位于 /etc/initasmdisks 。
+
+例如，如果设置 oracleasma.support.without .asmlib=true ，然后执行备份挂载，则会将新设备添加到 initasmdisks 中。重新启动主机后，启动脚本会保留设备权限和所有权。
+
+
+NOTE: oracleasma.support.without 。 asmlib 的默认值为 false 。
+
+* 相关信息 *
+
+xref:reference_supported_partition_devices.adoc[支持的分区设备]

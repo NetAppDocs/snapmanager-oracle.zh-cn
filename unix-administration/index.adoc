@@ -1,0 +1,13 @@
+---
+permalink: unix-administration/index.html 
+sidebar: sidebar 
+keywords: administration, guide, unix, 3.4.2 
+summary: 《适用于 UNIX ® 的 SnapManager for Oracle 3.4.2 管理指南》 
+---
+= 《 UNIX ® 管理指南》
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本指南介绍部署完成后如何在 UNIX 环境中管理适用于 Oracle 的 SnapManager 3.4.2 ，包括如何配置，升级和卸载产品，如何备份，还原和克隆数据库。

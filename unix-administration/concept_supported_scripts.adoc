@@ -1,0 +1,19 @@
+---
+permalink: unix-administration/concept_supported_scripts.html 
+sidebar: sidebar 
+keywords: asmmain.sh, asmquerydisk.sh, script, grid, group, user 
+summary: 使用 asmmain.sh 和 asmquerydisk.sh 脚本可以更改网格用户，组和用户，所有这些脚本都用于查询 ASM 磁盘。必须始终从根执行这些脚本。 
+---
+= 支持的脚本
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 asmmain.sh 和 asmquerydisk.sh 脚本可以更改网格用户，组和用户，所有这些脚本都用于查询 ASM 磁盘。必须始终从根执行这些脚本。
+
+asmmain.sh 是从任何添加或删除设备的操作中调用的主脚本文件。asmmain.sh 脚本会在内部调用另一个脚本，该脚本需要从具有 Oracle 网格凭据的根目录执行。此脚本将查询 ASM 磁盘组的设备，然后在 initasmdisk 文件中添加这些条目，并添加这些设备的权限和所有权。您可以根据您的环境以及仅用于匹配 /dev/mapper/* P1 的正则表达式更改此文件的权限和所有权。
+
+asmquerydisk.sh 脚本用于查询磁盘列表，该列表用于创建 ASM 磁盘组。您必须根据您的配置为 ORACLE_BASE ， ORACLE_HOME 和 ORACLE_SID 分配值。
+
+这些脚本位于 /opt/netapp/smO/plugins/examples/noasmlib 。但是，在主机上启动 SnapManager for Oracle 服务器之前，必须将这些脚本移至 /opt/netapp/smO/plugins/noasmlib 。

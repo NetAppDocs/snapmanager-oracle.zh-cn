@@ -1,0 +1,15 @@
+---
+permalink: unix-administration/concept_support_for_oracle_10g_asm_databases.html 
+sidebar: sidebar 
+keywords: oracle, 10g, asmcmd, sql, query, disk, list, support 
+summary: 如果使用的是 Oracle 10g ，则 asmcmd 命令不可用于列出磁盘。您可以使用 SQL 查询获取磁盘列表。 
+---
+= 支持不使用 ASMLib 的 Oracle 10g ASM 数据库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果使用的是 Oracle 10g ，则 asmcmd 命令不可用于列出磁盘。您可以使用 SQL 查询获取磁盘列表。
+
+disk_list.sql 脚本包含在示例目录中提供的现有脚本中，用于支持 SQL 查询。执行 theasmquerydisk.sh 脚本时，必须手动执行 disk_list.sql 脚本。在 asmquerydisk.sh 文件中添加了示例脚本行以及注释。此文件可以放置在 /home/grid 位置或您选择的其他位置。

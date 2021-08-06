@@ -1,0 +1,48 @@
+---
+permalink: windows/reference_the_smosmsap_server_stop_command.html 
+sidebar: sidebar 
+keywords: command, stop, host, server, root, smo 
+summary: 此命令将停止 SnapManager 主机服务器，并在根目录输入。 
+---
+= smo_server stop 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此命令将停止 SnapManager 主机服务器，并在根目录输入。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo_server stop
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+* * —静默 *
++
+指定控制台上仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+指定控制台上显示错误，警告和信息性消息。
+
+
+
+
+
+== 命令示例
+
+以下示例使用 smo_server stop 命令。
+
+[listing]
+----
+smo_server stop
+----

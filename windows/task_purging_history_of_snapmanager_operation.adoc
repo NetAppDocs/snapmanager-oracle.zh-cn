@@ -1,0 +1,16 @@
+---
+permalink: windows/task_purging_history_of_snapmanager_operation.html 
+sidebar: sidebar 
+keywords: delete, history, snapmanager, operation, detail, deleting 
+summary: 如果不再需要 SnapManager 操作的历史记录详细信息，则可以删除该历史记录。 
+---
+= 正在删除 SnapManager 操作历史记录
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果不再需要 SnapManager 操作的历史记录详细信息，则可以删除该历史记录。
+
+. 要删除 SnapManager 操作的历史记录，请输入以下命令： smo history purge -profile ｛ -name ， profile_nameprofile_name1 ， profile_name2] | all-repository-login （ -passwordrepo_password ） -usernamerepo_username-verbose namerepo_dbname-host-portrepo_port ｝ -operation ｛ -operation ｝ _name
+

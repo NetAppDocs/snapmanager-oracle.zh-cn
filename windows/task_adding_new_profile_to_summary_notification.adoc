@@ -1,0 +1,22 @@
+---
+permalink: windows/task_adding_new_profile_to_summary_notification.html 
+sidebar: sidebar 
+keywords: configure, summary, email, notification, database, profile 
+summary: 为存储库数据库配置摘要电子邮件通知后，您可以使用 summary notification 命令将新配置文件添加到摘要通知中。 
+---
+= 将新配置文件添加到摘要电子邮件通知中
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+为存储库数据库配置摘要电子邮件通知后，您可以使用 summary notification 命令将新配置文件添加到摘要通知中。
+
+. 输入以下命令： smo profile create -profileprofileprofileprofile_name "-profile-passwordprofile_password] -repositor-dbnamerepo_service_name-host-host-portrepo_port-login-usernamerepo_username-database-patternedb_dbname-hostdb_host [-siderman_password]
++
+此命令的其他选项如下：
+
++
+【强制】
+
+

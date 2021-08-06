@@ -1,0 +1,22 @@
+---
+permalink: windows/task_uninstalling_the_software_from_a_windows_host.html 
+sidebar: sidebar 
+keywords: uninstall, snapmanager, host, server 
+summary: 您可以从主机服务器卸载 SnapManager 。 
+---
+= 卸载 SnapManager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从主机服务器卸载 SnapManager 。
+
+* 卸载 SnapManager 之前，请停止主机服务器。
++
+.. 单击 * 开始 * > * 控制面板 * > * 添加或删除程序 * 。
+.. 选择 * SnapManager for Oracle* 。
+.. 单击 * 卸载 * 。
+
+
+

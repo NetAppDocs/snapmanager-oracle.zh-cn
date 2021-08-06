@@ -1,0 +1,16 @@
+---
+permalink: windows/task_viewing_a_list_of_scheduled_operations.html 
+sidebar: sidebar 
+keywords: view, list, schedule, operation, profile 
+summary: 您可以查看配置文件的计划操作列表。 
+---
+= 查看已计划操作的列表
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看配置文件的计划操作列表。
+
+. 要显示有关计划操作的信息，请输入以下命令： smo schedule list -profile profile_name[-quiet | -verbos]
+

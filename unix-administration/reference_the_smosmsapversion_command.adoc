@@ -1,0 +1,49 @@
+---
+permalink: unix-administration/reference_the_smosmsapversion_command.html 
+sidebar: sidebar 
+keywords: run, version, command, determine, snapmanager, local, host, smo 
+summary: 您可以运行 version 命令来确定本地主机上运行的 SnapManager 版本。 
+---
+= smo version 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 version 命令来确定本地主机上运行的 SnapManager 版本。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo version
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+* * —静默 *
++
+在控制台中仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+显示每个配置文件的构建日期和内容。此外，还会在控制台中显示错误，警告和信息性消息。
+
+
+
+
+
+== version 命令示例
+
+以下示例显示了 SnapManager 的版本：
+
+[listing]
+----
+smo version
+SnapManager for Oracle Version: 3.3.1
+----

@@ -1,0 +1,72 @@
+---
+permalink: unix-administration/task_using_snapmanager_for_oracle_to_create_the_database_profile_for_a_local_backup.html 
+sidebar: sidebar 
+keywords: database, administrator, snapmanager, create, profile, backup, local, oracle 
+summary: 数据库管理员使用 SnapManager 创建数据库配置文件，该配置文件将用于启动到主存储系统上本地存储的备份。整个配置文件创建和备份创建过程都是在 SnapManager 中执行的，不涉及 Protection Manager 。 
+---
+= 使用 SnapManager for Oracle 为本地备份创建数据库配置文件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+数据库管理员使用 SnapManager 创建数据库配置文件，该配置文件将用于启动到主存储系统上本地存储的备份。整个配置文件创建和备份创建过程都是在 SnapManager 中执行的，不涉及 Protection Manager 。
+
+配置文件包含有关所管理数据库的信息，包括其凭据，备份设置和备份保护设置。通过创建配置文件，您无需在每次对该数据库执行操作时指定数据库详细信息，而是只需提供配置文件名称即可。一个配置文件只能引用一个数据库。同一数据库可以由多个配置文件引用。
+
+. 转到 SnapManager for Oracle 客户端。
+. 从 SnapManager 存储库树中，右键单击要与此配置文件关联的主机，然后选择 * 创建配置文件 * 。
+. 在配置文件配置信息页面中，输入以下信息并单击 * 下一步 * 。
++
+** 配置文件名称： paying_prod.
+** 配置文件密码： payroll123
+** 注释：生产薪资数据库
+
+
+. 在 Database Configuration Information 页面中，输入以下信息并单击 * 下一步 * 。
++
+** 数据库名称： PAYDB
+** 数据库 SID ： payrolldb
+** Database host ：接受默认值
++
+由于您要从存储库树中的主机创建配置文件，因此 SnapManager 会显示主机名。
+
+
+
+. 在第二个数据库配置信息页面中，接受以下数据库信息，然后单击 * 下一步 * ：
++
+** 主机帐户，表示 Oracle 用户帐户： oracle
+** 主机组，表示 Oracle 组： DBA
+
+
+. 在数据库连接信息页面中，选择 * 使用数据库身份验证 * 以允许用户使用数据库信息进行身份验证。
++
+在此示例中，输入以下信息并单击 * 下一步 * 。
+
++
+** sysdba 特权用户名，表示具有管理权限的系统数据库管理员： sys
+** 密码（ SYSDBA 密码）： Oracle
+** 用于连接到数据库主机的端口： 1521.
+
+
+. 在 RMAN 配置信息页面中，选择 * 不使用 RMAN* ，然后单击 * 下一步 * 。
++
+Oracle Recovery Manager （ RMAN ）是一款 Oracle 工具，可帮助您使用块级检测来备份和恢复 Oracle 数据库。
+
+. 在 Snapshot Naming Information 页面中，通过选择变量为与此配置文件关联的 Snapshot 指定命名约定。唯一需要的变量是 * SMID* 变量，该变量可创建唯一的快照标识符。
++
+对于本示例，请执行以下操作：
+
++
+.. 在 Variable Token 列表中，选择 * ｛ usertext ｝ * 变量，然后单击 * 添加 * 。
+.. 输入 payroll.techco.com_" 作为主机名，然后单击 * 确定 * 。
+.. 单击 * 左 * ，直到主机名显示在格式框的 "SMO" 后面。
+.. 单击 * 下一步 * 。
+
+
++
+SMO_hostname_smoprofile_dbsid_scope_mode_smID 的 Snapshot 命名约定为 smo_payroll.techco.com_payroll_prod2_payrolldb_f_a_x" （其中 "f" 表示完整备份， "A" 表示自动模式， "x" 表示唯一的 SMID ）。
+
+. 在 Perform Operation 页面上，验证信息并单击 * 创建 * 。
+. 单击 * 操作详细信息 * 可查看有关配置文件创建操作和基于卷的还原资格信息。
+

@@ -1,0 +1,89 @@
+---
+permalink: unix-administration/reference_troubleshooting_snapdrive_issues.html 
+sidebar: sidebar 
+keywords: common, issue, snapmanager, snapdrive, product, troubleshoot 
+summary: 在将 SnapManager 与 SnapDrive 产品结合使用时，可能会遇到一些常见问题。 
+---
+= 对 SnapDrive 问题进行故障排除
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在将 SnapManager 与 SnapDrive 产品结合使用时，可能会遇到一些常见问题。
+
+首先，您必须确定问题描述是与适用于 Oracle 的 SnapManager 还是与 SnapDrive 相关。如果问题描述出现 SnapDrive 错误，则 SnapManager for Oracle 将显示类似以下内容的错误消息：
+
+[listing]
+----
+SMO-12111: Error executing snapdrive command "<snapdrive command>": <snapdrive error>
+----
+以下是 SnapDrive 错误消息的示例，其中 SMO-12111 是 SnapManager 错误编号。0001-770 编号方案表示 SnapDrive for UNIX 错误。
+
+[listing]
+----
+SMO-12111: Error executing snapdrive command
+"/usr/sbin/snapdrive snap restore -file
+/mnt/pathname/ar_anzio_name_10gR2_arrac1/data/undotbs02.dbf
+-snapname pathname.company.com:
+/vol/ar_anzio_name_10gR2_arrac1:
+TEST_ARRAC1_YORKTOW_arrac12_F_C_0_8abc01b20f9ec03d010f9ec06bee0001_0": 0001-770
+Admin error: Inconsistent number of files returned when listing contents of
+/vol/ar_anzio_name_10gR2_arrac1/.snapshot/
+TEST_ARRAC1_YORKTOW_arrac12_F_C_0_8abc01b20f9ec03d010f9ec06bee0001_0/data
+on filer pathname.
+----
+以下是与 LUN 发现，配置问题和空间相关的最常见 SnapDrive for UNIX 错误消息。如果您收到任何此类错误，请参见 _SnapDrive 安装和管理指南 _ 中的故障排除一章。
+
+|===
+| 现象 | 说明 
+
+
+ a| 
+0001-136 管理员错误：无法登录到存储器： <filer> 请为 <filer> 设置用户名和 / 或密码
+ a| 
+初始 SnapDrive 配置
+
+
+
+ a| 
+0001-382 管理员错误：多路径重新扫描失败
+ a| 
+LUN 发现错误
+
+
+
+ a| 
+0001-462 管理员错误：无法取消配置 <LUN> 的多路径： spd5 ：无法停止设备。设备繁忙。
+ a| 
+LUN 发现错误
+
+
+
+ a| 
+0001-476 管理员错误：无法发现与 ... 关联的设备 0001-710 管理员错误：操作系统刷新 LUN 失败 ...
+ a| 
+LUN 发现错误
+
+
+
+ a| 
+0001-680 管理员错误：主机操作系统需要更新内部数据，才能创建或连接 LUN 。使用 SnapDrive 配置准备 LUN' 或手动更新此信息 ...
+ a| 
+LUN 发现错误
+
+
+
+ a| 
+0001-817 管理员错误：无法创建卷克隆 ... ：未获得 FlexClone 许可
+ a| 
+初始 SnapDrive 配置
+
+
+
+ a| 
+0001-878 管理错误：未找到 HBA 助手。涉及 LUN 的命令应失败。
+ a| 
+LUN 发现错误
+
+|===

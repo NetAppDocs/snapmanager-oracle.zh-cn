@@ -1,0 +1,21 @@
+---
+permalink: unix-administration/concept_restoring_protected_backups_from_secondary_storage.html 
+sidebar: sidebar 
+keywords: restore, protect, backup, secondary, storage 
+summary: 您可以从二级存储还原受保护的备份。但是，如果备份也位于主存储上，则无法从二级存储还原备份。 
+---
+= 从二级存储还原受保护的备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从二级存储还原受保护的备份。但是，如果备份也位于主存储上，则无法从二级存储还原备份。
+
+* 相关信息 *
+
+xref:reference_the_smosmsapbackup_restore_command.adoc[smo backup restore 命令]
+
+xref:task_restoring_backups_from_an_alternate_location.adoc[从备用位置还原备份]
+
+xref:task_creating_restore_specifications.adoc[正在创建还原规范]

@@ -1,0 +1,23 @@
+---
+permalink: unix-administration/concept_volume_management_restrictions.html 
+sidebar: sidebar 
+keywords: snapmanager, volume, management, restriction, environment, asm, disk, group, linux 
+summary: SnapManager 具有某些卷管理限制，这些限制可能会影响您的环境。 
+---
+= 卷管理限制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager 具有某些卷管理限制，这些限制可能会影响您的环境。
+
+一个数据库可以有多个磁盘组；但是，以下限制适用于给定数据库的所有磁盘组：
+
+* 数据库的磁盘组只能由一个卷管理器管理。
+* 不支持使用逻辑卷管理器支持的原始设备来保护 Oracle 数据。
++
+原始设备存储和自动存储管理（ Automatic Storage Management ， ASM ）磁盘组必须直接在物理设备上配置。在某些情况下，需要进行分区。
+
+* 没有逻辑卷管理的 Linux 环境需要一个分区。
+

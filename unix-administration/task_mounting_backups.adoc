@@ -1,0 +1,36 @@
+---
+permalink: unix-administration/task_mounting_backups.html 
+sidebar: sidebar 
+keywords: snapmanager, automatic, handle, mount, backup, available, host, scenario, rman, 7-mode 
+summary: SnapManager 会自动处理备份的挂载，以使其可供主机使用。在使用 Oracle Recovery Manager （ RMAN\ ）等外部工具访问备份中的文件时，您也可以挂载备份。 
+---
+= 挂载备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager 会自动处理备份的挂载，以使其可供主机使用。如果您使用 Oracle Recovery Manager （ RMAN ）等外部工具访问备份中的文件，则也可以挂载备份。
+
+如果您使用的是 RMAN ，则必须使用挂载操作更改备份的状态（允许访问），并使用卸载操作更改备份的状态（从而删除访问）。
+
+smo backup mount 命令可显示包含备份的 Snapshot 副本已挂载的路径列表。
+
+您可以使用 -from-secondary 选项从二级存储挂载备份。如果不使用此选项， SnapManager 将从主存储挂载备份。
+
+每当指定 -from-secondary 选项时，都必须指定 -copy-id 选项。如果二级存储系统上有多个备份，则使用 -copy-id 选项指定二级存储上应使用哪个备份副本挂载备份。 6.
+
+
+NOTE: 如果您使用的是在 7- 模式下运行的 Data ONTAP ，则必须为 -copy-id 选项指定有效值。但是，如果使用的是集群模式 Data ONTAP ，则不需要 -copy-id 选项。
+
+如果要将数据库备份挂载到远程主机，则必须确保两个主机上的自动存储管理（ Automatic Storage Management ， ASM ）凭据相同。
+
+
+NOTE: 您可以选择在备份挂载操作成功或失败后收集转储文件。
+
+. 要挂载备份，请输入以下命令： `smo backup mount -profile profile_name ｛ labelLabel [data | -archivelogs] | -idd ｝ （ -host-host ）（ -from-secondary （ -copy-id id） ） ] （ -dump] （ -quiet | -verbose ）`
+
+
+* 相关信息 *
+
+xref:reference_the_smosmsapbackup_mount_command.adoc[smo backup mount 命令]

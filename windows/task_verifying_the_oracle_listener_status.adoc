@@ -1,0 +1,21 @@
+---
+permalink: windows/task_verifying_the_oracle_listener_status.html 
+sidebar: sidebar 
+keywords: verify, oracle, listener, status, lsnrctl, command 
+summary: 您可以使用 lsnrctl status 命令验证 Oracle 侦听器状态。 
+---
+= 验证 Oracle 侦听器状态
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 lsnrctl status 命令验证 Oracle 侦听器状态。
+
+* 您必须连接到数据库。
+
+
+标准 Oracle 安装会将数据库上的侦听器端口设置为 1521 。
+
+. 在命令提示符处，输入命令： lsnrctl status
+

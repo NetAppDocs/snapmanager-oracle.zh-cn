@@ -1,0 +1,69 @@
+---
+permalink: unix-administration/reference_the_smosmsapprofile_verify_command.html 
+sidebar: sidebar 
+keywords: run, profile, verify, command, verify, set, up, database, smo 
+summary: 您可以运行 profile verify 命令来验证配置文件设置。在运行此命令之前，必须挂载数据库。 
+---
+= smo profile verify 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 profile verify 命令来验证配置文件设置。在运行此命令之前，必须挂载数据库。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo profile verify
+-profile profile_name
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+* * 配置文件 *
++
+指定要验证的配置文件。配置文件包含数据库的标识符和其他数据库信息。
+
+* * —静默 *
++
+在控制台中仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+在控制台中显示错误，警告和信息性消息。
+
+
+
+
+
+== 示例
+
+以下示例将验证配置文件：
+
+[listing]
+----
+smo profile verify -profile test_profile  -verbose
+[ INFO] SMO-07431: Saving starting state of the database: racb1(OPEN).
+[ INFO] SMO-07431: Saving starting state of the database: racb2(SHUTDOWN), racb1(OPEN).
+[ INFO] SD-00019: Discovering storage resources for all system devices.
+[ INFO] SD-00020: Finished storage discovery for all system devices.
+[ INFO] SD-00019: Discovering storage resources for all system devices.
+[ INFO] SD-00020: Finished storage discovery for all system devices.
+[ INFO] SD-00019: Discovering storage resources for all system devices.
+[ INFO] SD-00020: Finished storage discovery for all system devices.
+[ INFO] SMO-05070: Database profile test_profile is eligible for fast restore.
+[ INFO] SMO-07433: Returning the database to its initial state: racb2(SHUTDOWN), racb1(OPEN).
+[ INFO] SMO-13048: Profile Verify Operation Status: SUCCESS
+[ INFO] SMO-13049: Elapsed Time: 0:04:14.919
+Operation Id [Nfffde14ac88cd1a21597c37e8d21fe90] succeeded.
+----
+* 相关信息 *
+
+xref:task_verifying_profiles.adoc[正在验证配置文件]

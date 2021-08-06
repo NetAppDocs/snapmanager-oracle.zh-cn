@@ -1,0 +1,13 @@
+---
+permalink: windows/concept_snapdrive_on_snapmanager_server.html 
+sidebar: sidebar 
+keywords: snapdrive, server, snapshot, copies, copy 
+summary: SnapManager 使用 SnapDrive for Windows 创建存储系统的 Snapshot 副本。SnapDrive 与 SnapManager 位于同一服务器上。 
+---
+= SnapDrive 服务器上的 SnapManager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager 使用 SnapDrive for Windows 创建存储系统的 Snapshot 副本。SnapDrive 与 SnapManager 位于同一服务器上。

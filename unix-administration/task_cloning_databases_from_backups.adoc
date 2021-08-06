@@ -1,0 +1,61 @@
+---
+permalink: unix-administration/task_cloning_databases_from_backups.html 
+sidebar: sidebar 
+keywords: clone, database, backup, using, clone, create, command, sid, snapmanager 
+summary: 您可以使用 clone create 命令从备份克隆数据库。 
+---
+= 从备份克隆数据库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 clone create 命令从备份克隆数据库。
+
+您必须先为数据库创建克隆规范文件。SnapManager 将根据此规范文件中的信息创建克隆。
+
+您必须为克隆提供一个新的 Oracle 系统标识符（ SID ）。不能在同一主机上同时运行具有相同 SID 的两个数据库。您可以在使用相同 SID 的其他主机上创建克隆。要为克隆指定唯一名称，请使用 -label 。如果不使用此选项， SnapManager 将为克隆创建一个唯一名称，其中包括 SID ，日期和时间。
+
+克隆数据库后，您可能需要使用新克隆的数据库连接信息更新客户端计算机上的 tnsnames.ora 文件。tnsnames.ora 文件用于连接到 Oracle 实例，而无需指定完整的数据库信息。SnapManager 不会更新 tnsnames.ora 文件。
+
+如果您使用的是使用 -include-with -online backup 创建的配置文件，则 SnapManager 始终会创建备份，其中包括归档日志文件。使用 SnapManager ，您只能克隆完整的数据库备份。
+
+通过 SnapManager （ 3.2 或更高版本），您可以克隆包含数据文件和归档日志文件的备份。
+
+如果可以从外部位置访问归档日志，则可以在克隆期间指定外部位置，以便将克隆的数据库恢复到一致的状态。您必须确保 Oracle 可访问外部位置。不支持克隆仅归档日志备份。
+
+虽然归档日志备份是与联机部分备份一起创建的，但您不能使用此备份创建数据库克隆。
+
+您只能从独立数据库的外部归档日志文件位置克隆数据库备份。
+
+由于恢复失败，使用外部归档日志文件位置克隆 Real Application Clusters （ RAC ）数据库的联机数据库备份失败。这是因为在克隆数据库备份时， Oracle 数据库无法找到并应用归档日志文件，无法从外部归档日志位置进行恢复。
+
+您可以将 -dump 选项指定为可选参数，以便在成功或失败的克隆创建操作后收集转储文件。
+
+* 克隆数据文件备份而不使用归档日志备份 *
+
+如果数据文件备份不包括归档日志备份，则 SnapManager for Oracle 将根据备份期间记录的系统更改编号（ SCN ）克隆数据库。如果无法恢复克隆的数据库，则会显示 "Thade <number> and change <SCN> required to complete recovery " 错误消息，即使 SnapManager for Oracle 继续克隆数据库，并最终成功创建克隆。
+
+使用数据文件备份而不包括归档日志备份进行克隆时， SnapManager 会恢复克隆的数据库，直到备份期间记录的最后一个归档日志 SCN 为止。
+
+. 创建克隆规范文件。
+. 要创建克隆，请输入以下命令： smo clone create -backup-labelbackup_name-newsidnew_sid-labelclone_label-profileprofile_name-clonetfull_path_to_clonspecfile [-spectaskspec] [-recovery-from-location] path1 [ ， <path2>...]-dump
+
+
+* 相关信息 *
+
+xref:task_cloning_databases_in_the_current_state.adoc[在当前状态下克隆数据库]
+
+xref:concept_considerations_for_cloning_a_database_to_an_alternate_host.adoc[将数据库克隆到备用主机的注意事项]
+
+xref:task_creating_clone_specifications.adoc[正在创建克隆规范]
+
+xref:reference_the_smosmsapclone_create_command.adoc[smo clone create 命令]
+
+xref:task_creating_pretask_post_task_and_policy_scripts.adoc[创建任务前，任务后和策略脚本]
+
+xref:concept_variables_available_in_the_task_scripts_for_clone_operation.adoc[克隆操作的任务脚本中可用的变量]
+
+xref:task_creating_task_scripts.adoc[正在创建任务脚本]
+
+xref:task_storing_the_task_scripts.adoc[存储任务脚本]

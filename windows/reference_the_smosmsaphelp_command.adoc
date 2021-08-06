@@ -1,0 +1,49 @@
+---
+permalink: windows/reference_the_smosmsaphelp_command.html 
+sidebar: sidebar 
+keywords: run, help, command, display, information, snapmanager, smo, valid 
+summary: 您可以运行 help 命令来显示有关 SnapManager 命令及其选项的信息。如果不提供命令名称，则会显示有效命令的列表。如果提供命令名称，则会显示该命令的语法。 
+---
+= smo help 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 help 命令来显示有关 SnapManager 命令及其选项的信息。如果不提供命令名称，则会显示有效命令的列表。如果提供命令名称，则会显示该命令的语法。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo help
+\[\]\[backup\|cmdfile\|clone\|credential\|help\|operation\|profile\|repository\|system\|version\|plugin\|diag\|history\|schedule\|notification\|storage\|get\]
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+以下是可与此命令结合使用的一些命令名称：
+
+* backup
+* clone
+* cmdfile
+* 凭据
+* 诊断
+* 获取
+* 通知
+* 帮助
+* 历史记录
+* 操作
+* 插件
+* 配置文件
+* 存储库
+* schedule
+* storage
+* 系统
+* version
+

@@ -1,0 +1,30 @@
+---
+permalink: unix-administration/concept_details_of_the_target_database.html 
+sidebar: sidebar 
+keywords: integrated, database, protection, payroll, techco, dba, 3000-person, atlanta 
+summary: 此集成数据库保护示例介绍了对薪资数据库的保护。此示例使用以下数据。 
+---
+= 目标数据库的详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此集成数据库保护示例介绍了对薪资数据库的保护。此示例使用以下数据。
+
+TechCo 是一家总部位于亚特兰大的 3000 人公司，其数据库管理员（ DBA ）必须为生产薪资数据库 PAYDB 创建一致的备份。备份到主存储和二级存储的保护策略要求 DBA 和存储管理员协同工作，在主存储上本地以及远程将 Oracle 数据库备份到远程位置的二级存储。
+
+* * 配置文件信息 *
++
+在 SnapManager 中创建配置文件时，需要以下数据：
+
++
+** 数据库名称： PAYDB
+** 主机名： payroll.techco.com
+** 数据库 ID ： payrolldb
+** 配置文件名称： paying_prod.
+** 连接模式：数据库身份验证
+** Snapshot 命名方案： smo_hostname_dbsid_smoprofile_scope_mode_smID （转换为 smo_payroll.xyz.com_payrolldb_payroll_prod_f_h_x" ）
+
+
+

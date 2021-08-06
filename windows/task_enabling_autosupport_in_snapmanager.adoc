@@ -1,0 +1,28 @@
+---
+permalink: windows/task_enabling_autosupport_in_snapmanager.html 
+sidebar: sidebar 
+keywords: autosupport, storage, system, receive, message, snapmanager, succesful, backup, operation, enabling 
+summary: 您必须启用 AutoSupport ，以便存储系统在每次成功执行备份操作时都能从 SnapManager 服务器接收消息。 
+---
+= 在 SnapManager 中启用 AutoSupport
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须启用 AutoSupport ，以便存储系统在每次成功执行备份操作时都能从 SnapManager 服务器接收消息。
+
+可以通过两种方式启用 AutoSupport ：
+
+* 默认情况下，新安装的 SnapManager 不会在 SMO.config 配置文件中包含 auto_support.on 参数。这意味着已启用 AutoSupport 。
+* 您可以手动配置 auto_support.on 参数。
++
+.. 停止 SnapManager 服务器。
+.. 在 SMO.config 配置文件中，将 auto_support.on 参数的值设置为 true 。
++
+auto_support.on=true
+
+.. 重新启动 SnapManager 服务器。
+
+
+

@@ -1,0 +1,21 @@
+---
+permalink: unix-installation-7mode/task_verifying_the_oracle_listener_configuration.html 
+sidebar: sidebar 
+keywords: listener, process, client, connection, request, receive, traffic, status 
+summary: 侦听器是一个侦听客户端连接请求的过程。它接收传入的客户端连接请求，并管理这些请求到数据库的流量。在连接到目标数据库或存储库数据库实例之前，您可以使用 status 命令验证侦听器配置。 
+---
+= 验证 Oracle 侦听器配置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+侦听器是一个侦听客户端连接请求的过程。它接收传入的客户端连接请求，并管理这些请求到数据库的流量。在连接到目标数据库或存储库数据库实例之前，您可以使用 status 命令验证侦听器配置。
+
+status 命令可显示有关特定侦听器的基本状态信息，包括侦听器配置设置，侦听协议地址的摘要以及向该侦听器注册的服务的摘要。
+
+. 在命令提示符处输入以下命令： "lsnrctl status"
++
+分配给侦听器端口的默认值为 1521 。
+
+

@@ -1,0 +1,16 @@
+---
+permalink: unix-administration/task_deleting_backup_schedules.html 
+sidebar: sidebar 
+keywords: delete, backup, schedule, necessary, deleting, smo 
+summary: 您可以删除不再需要的备份计划。 
+---
+= 删除备份计划
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除不再需要的备份计划。
+
+. 要删除备份计划，请输入以下命令： smo schedule delete -profile profile_name-schedule-nameschedulename （ -quiet | -verbose ）
+

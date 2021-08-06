@@ -1,0 +1,15 @@
+---
+permalink: unix-installation-cmode/reference_deployment_workflow.html 
+sidebar: sidebar 
+keywords: Before, backup, snapmanager, install, oracle 
+summary: 在使用 SnapManager 创建备份之前，您需要先安装 SnapDrive for UNIX ，然后再安装 SnapManager for Oracle 。 
+---
+= 部署工作流
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在使用 SnapManager 创建备份之前，您需要先安装 SnapDrive for UNIX ，然后再安装 SnapManager for Oracle 。
+
+image::../media/deployment_workflow_smo.gif[此图显示了 SnapManager for Oracle 的部署工作流。]

@@ -1,0 +1,32 @@
+---
+permalink: unix-administration/task_protecting_archive_log_backups.html 
+sidebar: sidebar 
+keywords: creating, profile, enable, protection, archive, log, backup, base, policy 
+summary: 创建配置文件时，您可以根据归档日志保护策略为归档日志备份启用保护。 
+---
+= 保护归档日志备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+创建配置文件时，您可以根据归档日志保护策略为归档日志备份启用保护。
+
+. 输入以下命令： `smo profile create -profileprofile "-profile-passwordprofile_password] -repositor-dbnamerepo_dbname-host-portrepo_port-login-usernamerepo_username-database-dbnamedb_dbname-hostdb_host "-siderman_db] -login-namese-userworedb_username-snap-snap-snap-snap-snap-name-snap-snap-snap-snap-edit-snap-snap-snap-snap-snap-snap-snap-snap-snap-snap-snap-editings1_duration_durations1s1]-snap-snap-snap-snap-snap-snap-snap-snap-snap-snap-edusername [-snap-snap-snap-snap-snap-snap-snap-snap-snap-man_edusername`
++
+|===
+| 条件 | 那么 ... 
+
+
+ a| 
+* 您希望单独备份归档日志备份并保护归档日志文件 *
+ a| 
+指定以下选项：
+
+** 使用 -separate archivelog-backups 可以将归档日志文件与数据文件分开。
+** -protect 为归档日志归档日志备份分配一个单独的保护策略。
+** -protection-policy 为归档日志备份分配保护策略。
+
+
+|===
+

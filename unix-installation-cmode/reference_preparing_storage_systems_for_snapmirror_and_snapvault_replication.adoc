@@ -1,0 +1,24 @@
+---
+permalink: unix-installation-cmode/reference_preparing_storage_systems_for_snapmirror_and_snapvault_replication.html 
+sidebar: sidebar 
+keywords: snapmanager, data, ontap, snapmirror, technology, mirror, copies, create, bakup, volume, initialize, relationship 
+summary: 您可以使用采用 Data ONTAP SnapMirror 技术的 SnapManager 在另一个卷上创建备份集的镜像副本，并使用 Data ONTAP SnapVault 技术将备份高效归档到磁盘。在 SnapManager 中执行这些任务之前，您必须在源卷和目标卷之间配置数据保护关系并初始化此关系。 
+---
+= 准备用于 SnapMirror 和 SnapVault 复制的存储系统
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用采用 Data ONTAP SnapMirror 技术的 SnapManager 在另一个卷上创建备份集的镜像副本，并使用 Data ONTAP SnapVault 技术将备份高效归档到磁盘。在 SnapManager 中执行这些任务之前，您必须在源卷和目标卷之间配置数据保护关系并初始化此关系。
+
+
+NOTE: 您不能在同一集群模式 Data ONTAP 源卷上同时配置 SnapMirror 关系和 SnapVault 关系。您必须在不同的源卷上配置这些关系。
+
+* 相关信息 *
+
+xref:concept_understanding_the_differences_between_snapmirror_and_snapvault.adoc[了解 SnapMirror 与 SnapVault 之间的区别]
+
+xref:task_preparing_storage_systems_for_snapmirror_replication.adoc[准备用于 SnapMirror 复制的存储系统]
+
+xref:task_preparing_storage_systems_for_snapvault_replication.adoc[准备存储系统以进行 SnapVault 复制]

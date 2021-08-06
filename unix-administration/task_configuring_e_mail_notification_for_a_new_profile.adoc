@@ -1,0 +1,59 @@
+---
+permalink: unix-administration/task_configuring_e_mail_notification_for_a_new_profile.html 
+sidebar: sidebar 
+keywords: creating, new, profile, configure, receive, email, notification, completeion, database, operation, comma-seperated, list, multiple, address 
+summary: 在创建新配置文件时，您可以将配置为在数据库操作完成时接收电子邮件通知。 
+---
+= 为新配置文件配置电子邮件通知
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在创建新配置文件时，您可以将配置为在数据库操作完成时接收电子邮件通知。
+
+* 您必须配置用于发送警报的电子邮件地址。
+* 您必须对多个电子邮件地址使用逗号分隔列表。
++
+您必须确保逗号和下一个电子邮件地址之间没有空格。
+
++
+.. 输入以下命令： smo profile create -profileprofile "-profile-passwordprofile_password] -repositor-dbnamerepo_service_name-host-portrepo_port-login-usernamerepo_username-database-dbnamedb_dbname-hosterdb_host "-sidb_service_username-snap-snap-snap-snap-snap-edusername
++
+此命令的其他选项如下：
+
++
+【强制】
+
++
+
+NOTE: SnapManager 支持电子邮件地址最多包含 1000 个字符。
+
++
+如果您使用配置文件同时创建数据文件和归档日志文件的备份（用于创建单独的归档日志备份），并且数据文件备份创建失败，则会发送电子邮件通知，并将数据备份作为操作名称，而不是数据备份和归档日志备份。成功执行数据文件和归档日志文件备份操作后，您将看到如下输出：
+
++
+[listing]
+----
+
+Profile Name    : PROF_31
+Operation Name 	: Data Backup and Archive Logs Backup
+Database SID   	: TENDB1
+Database Host 	 : repo1.rtp.org.com
+Start Date 	    : Fri Sep 23 13:37:21 EDT 2011
+End Date 	      : Fri Sep 23 13:45:24 EDT 2011
+Status 	        : SUCCESS
+Error messages 	:
+----
+
+
+
+
+以下示例显示了在创建新配置文件时配置的电子邮件通知：
+
+[listing]
+----
+
+smo profile create -profile sales1 -profile-password sales1 -repository -dbname repo2 -host 10.72.197.133 -port 1521 -login -username oba5 -database -dbname DB1 -host 10.72.197.142 -sid DB1 -osaccount oracle
+-osgroup dba -notification -success -email admin1@org.com -subject {profile}_{operation-name}_{db-sid}_{db-host}_{start-date}_{end-date}_{status}
+----

@@ -1,0 +1,190 @@
+---
+permalink: windows/reference_troubleshooting_known_issues.html 
+sidebar: sidebar 
+keywords: known, issues, snapmanager, troubleshooting 
+summary: 您应了解使用 SnapManager 时可能发生的一些已知问题，以及如何解决这些问题。 
+---
+= 对已知问题进行故障排除
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应了解使用 SnapManager 时可能发生的一些已知问题，以及如何解决这些问题。
+
+
+
+== SnapManager for Oracle 无法识别集群模式配置文件
+
+如果 SnapManager for Oracle 安装目录的 cmode_profiles.config 文件中不存在集群模式配置文件名称，则可能会触发以下错误消息：
+
+请使用 SnapDrive 配置集 -dfm user_name appliage_name 配置 DFM 服务器。
+
+此外，在升级适用于 Oracle 的 SnapManager 时，如果删除 /opt/netapp/smO/* 文件夹，则具有集群模式配置文件名称的 cmode_profiles.config 文件也会被删除。此问题描述还会触发相同的错误消息。
+
+* 临时解决策 *
+
+更新配置文件： smo profile update-profile <profile_name>
+
+
+NOTE: 如果 SnapManager for Oracle 安装在 /opt/netapp/smo/ 路径中，则文件位置为 /opt/netapp/smO/cmode_profile/cmode_profiles.config 。
+
+
+
+== 服务器无法启动
+
+启动服务器时，您可能会看到类似以下内容的错误消息：
+
+SMO-01104 ：调用命令 SMO-17107 时出错： SnapManager 服务器无法在端口 8074 上启动，因为以下错误： java.net.BindException: 地址已在使用中
+
+这可能是因为 SnapManager 侦听端口（默认为 272.14 和 27215 ）当前正在由其他应用程序使用。
+
+如果 SMO_server 命令已在运行，但 SnapManager 未检测到现有进程，则也可能发生此错误。
+
+* 临时解决策 *
+
+您可以重新配置 SnapManager 或其他应用程序以使用不同的端口。
+
+要重新配置 SnapManager ，请编辑以下文件： C ： \Program Files\NetApp\SnapManager for Oracle\properties\SMO.config
+
+您可以分配以下值：
+
+* SMO Server.port=27214
+* SMO Server.rmiRegistry.port=27215
+* remote.registry.ocijdbc.port= 27215
++
+remote.registry.ocijdbc.port 必须与 Server.rmiRegistry.port 相同。
+
+
+
+要启动 SnapManager 服务器，请执行以下步骤：
+
+. 单击 * 开始 * > * 控制面板 * > * 管理工具 * > * 服务 * 。
+. 您可以通过以下三种方式之一启动服务器：
++
+** 在左侧面板中，单击 * 启动 * 。
+** 右键单击 NetApp SnapManager 3.3 for Oracle ，然后从下拉菜单中选择 * 启动 * 。
+** 双击适用于 Oracle 的 NetApp SnapManager 3.3 ，然后在打开的属性窗口中，单击 * 启动 * 。
+
+
+
+
+
+
+== 如果目标名称属于其他目标名称，则无法管理归档日志文件目标名称
+
+创建归档日志备份时，如果用户排除了属于其他目标名称的目标，则其他目标名称也会被排除。
+
+例如，假设有三个可供排除的目标： E ： \\arch ， G ： \\arch 和 H ： \\arch 。创建归档日志文件备份时，如果使用命令排除 E ： \\arch
+
+[listing]
+----
+smo backup create -profile almsamp1 -data -online -archivelogs  -exclude-dest E:\\arch
+----
+， SnapManager for Oracle 将排除以 E ： \\arch 开头的所有目标。
+
+* 临时解决策 *
+
+* 在 v$archive_dest 中配置目标后，添加路径分隔符。例如，将 E ： \\arch 更改为 E ： \\arch\ 。
+* 创建备份时，请包括目标，而不是排除任何目标。
+
+
+
+
+== 存储库数据库大小会随着时间而增加，而不会随着备份数量而增加
+
+由于 SnapManager 操作会在存储库数据库表的架构中插入或删除数据，从而导致索引空间使用量较高，因此存储库数据库大小会随着时间的推移而增加。
+
+* 临时解决策 *
+
+您必须根据 Oracle 准则监控和重建索引，以控制存储库架构占用的空间。
+
+
+
+== 存储库数据库关闭时，无法访问 SnapManager 图形用户界面， SnapManager 操作失败
+
+SnapManager 操作失败，在存储库数据库关闭时，您无法访问图形用户界面。
+
+下表列出了您可能要执行的不同操作及其例外情况：
+
+|===
+
+
+| 操作 | 例外情况 
+
+
+ a| 
+打开已关闭的存储库
+ a| 
+sm_gux.log 中记录了以下错误消息： [WARN ] ： SMO-01106 ：查询存储库时出错： closed Connection java.sql.SQLException ： closed Connection 。
+
+
+
+ a| 
+按 F5 刷新已打开的存储库
+ a| 
+GUI 中会显示存储库异常，同时 sm_gui.log 文件中会记录 NullPointerException 。
+
+
+
+ a| 
+正在刷新主机服务器
+ a| 
+sumo_gui.log 文件中记录了 NullPointerException 。
+
+
+
+ a| 
+创建新配置文件
+ a| 
+配置文件配置窗口中显示 NullPointerException 。
+
+
+
+ a| 
+刷新配置文件
+ a| 
+sm_gux.log 中记录了以下 SQL 异常： [ 警告 ] ： SMO-01106 ：查询存储库时出错：已关闭连接。
+
+
+
+ a| 
+访问备份
+ a| 
+sm_gux.log 中记录了以下错误消息：无法延迟初始化收集。
+
+
+
+ a| 
+查看克隆属性
+ a| 
+sm_gui.log 和 sumo_gui/log 中记录了以下错误消息：无法延迟初始化收集。
+
+|===
+* 临时解决策 *
+
+要访问 GUI 或执行任何 SnapManager 操作，必须确保存储库数据库正在运行。
+
+
+
+== 无法为克隆的数据库创建临时文件
+
+如果目标数据库的临时表空间文件放置在与数据文件的挂载点不同的挂载点中，则克隆创建操作会成功，但 SnapManager 无法为克隆的数据库创建临时文件。
+
+* 临时解决策 *
+
+您必须执行以下任一操作：
+
+* 确保目标数据库的布局，以便将临时文件放置在与数据文件相同的挂载点。
+* 在克隆的数据库中手动创建或添加临时文件。
+
+
+
+
+== 备份 Data Guard 备用数据库失败
+
+如果使用主数据库的服务名称配置了任何归档日志位置，则 Data Guard 备用数据库的备份将失败。
+
+* 临时解决策 *
+
+在图形用户界面中，必须清除与主数据库的服务名称对应的 * 指定外部归档日志位置 * 。

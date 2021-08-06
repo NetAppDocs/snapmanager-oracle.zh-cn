@@ -1,0 +1,29 @@
+---
+permalink: unix-administration/task_configuring_history_for_backup_operation.html 
+sidebar: sidebar 
+keywords: snapmanager, oracle, enable, maintain, history, snapmanager, operation, cli, gui, view, history, smo, set 
+summary: 通过适用于 Oracle 的 SnapManager ，您可以从 SnapManager 命令行界面或图形用户界面维护 SnapManager 操作历史记录。您可以报告形式查看 SnapManager 操作的历史记录。 
+---
+= 配置 SnapManager 操作历史记录
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过适用于 Oracle 的 SnapManager ，您可以从 SnapManager 命令行界面或图形用户界面维护 SnapManager 操作历史记录。您可以报告形式查看 SnapManager 操作的历史记录。
+
+. 要配置 SnapManager 操作的历史记录，请输入以下命令： smo history set -profile ｛ -name ， profile_name [profile_name1 ， profile_name2] ； -all-repository-login （ -passwordrepo_password ） -usernamerepo_username-verbnamerepo_dbname-host-portrepo_port-revite_uny_ 操作 _ 操作数 _ ｛ -retain_name1 ｝ _
+
+
+[listing]
+----
+
+        smo
+history set -profile -name PROFILE1 -operation -operations backup -retain -daily 6 -verbose
+----
+[listing]
+----
+
+        smo
+history set -profile -name PROFILE1 -operation -all -retain -weekly 3 -verbose
+----

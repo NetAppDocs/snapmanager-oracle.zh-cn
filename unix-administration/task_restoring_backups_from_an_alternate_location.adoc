@@ -1,0 +1,25 @@
+---
+permalink: unix-administration/task_restoring_backups_from_an_alternate_location.html 
+sidebar: sidebar 
+keywords: restore, backup, alternate, location, data, file, intermediate, system, active, smo, xml 
+summary: 您可以从备用位置还原备份，以便将数据文件从中间文件系统还原到活动文件系统，或者将中间原始设备中的数据块还原到活动原始设备。 
+---
+= 从备用位置还原备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从备用位置还原备份，以便将数据文件从中间文件系统还原到活动文件系统，或者将中间原始设备中的数据块还原到活动原始设备。
+
+* 创建还原规范 XML 文件并指定要使用的还原方法类型。
+
+
+您可以使用 smo backup restore 命令并指定为从备用位置还原备份而创建的还原规范 XML 文件。
+
+. 输入以下命令： smo backup restore -profileprofile-labelLabel-complete-alllogs-restoreestorSpec
+
+
+* 相关信息 *
+
+xref:reference_the_smosmsapbackup_restore_command.adoc[smo backup restore 命令]

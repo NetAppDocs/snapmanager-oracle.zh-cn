@@ -1,0 +1,22 @@
+---
+permalink: windows/task_identifying_an_existing_database_to_backup.html 
+sidebar: sidebar 
+keywords: identify, system, identifier, sid, snapmanager, database, creating, profile, backup 
+summary: 您可以确定用于创建配置文件的 SnapManager 数据库的系统标识符（ SID ）。 
+---
+= 确定要备份的现有数据库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以确定用于创建配置文件的 SnapManager 数据库的系统标识符（ SID ）。
+
+非 SAP 系统的标准 Oracle 用户 ID 为 Oracle 。
+
+. 单击 * 开始 * > * 控制面板 * > * 管理工具 * > * 服务 * 。
+. 验证 Oracle 服务 OracleServiceSID 。
++
+如果此服务称为 OracleServiceFASDB ，则数据库 SID 为 FASDB 。
+
+

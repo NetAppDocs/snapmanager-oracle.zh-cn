@@ -1,0 +1,24 @@
+---
+permalink: unix-administration/task_deleting_profile.html 
+sidebar: sidebar 
+keywords: delete, profile, contain, succesful, backup, operation, deleting, smo 
+summary: 只要配置文件不包含当前用于其他操作的成功备份，您就可以将其删除。您可以删除包含已释放或已删除备份的配置文件。 
+---
+= 删除配置文件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+只要配置文件不包含当前用于其他操作的成功备份，您就可以将其删除。您可以删除包含已释放或已删除备份的配置文件。
+
+. 输入以下命令： `smo profile delete -profileprofile （ -quiet | -verbose ）`
++
+您可以删除为克隆拆分创建的新配置文件。删除时， SnapManager 命令行界面会显示 If you delete the profile ， you cannot destroy the profile later 警告消息。
+
+
+
+[listing]
+----
+smo profile delete -profile AUTO-REVEN
+----

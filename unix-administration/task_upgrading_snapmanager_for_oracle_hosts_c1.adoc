@@ -1,0 +1,76 @@
+---
+permalink: unix-administration/task_upgrading_snapmanager_for_oracle_hosts_c1.html 
+sidebar: sidebar 
+keywords: upgrade, all, exist, host, latest, version, snapmanager, simultaneously, downtime, upgrading, command-line, interface, cli, smo, chmod 
+summary: 您可以升级所有现有主机以使用最新版本的 SnapManager 。所有主机都会同时升级。但是，这可能会导致所有 SnapManager 主机停机，并在此期间执行计划的操作。 
+---
+= 升级 SnapManager 主机
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以升级所有现有主机以使用最新版本的 SnapManager 。所有主机都会同时升级。但是，这可能会导致所有 SnapManager 主机停机，并在此期间执行计划的操作。
+
+. 以 root 用户身份登录到主机系统。
+. 在命令行界面（ CLI ）中，导航到下载安装文件的位置。
+. 如果此文件不可执行，请更改权限： `chmod 544 netapp.smo*`
+. 停止 SnapManager 服务器： `smo_server stop`
+. 根据 UNIX 主机，安装 SnapManager ：
++
+|===
+| 操作系统 | 然后运行 ... 
+
+
+ a| 
+* Solaris （ SPARC 64 ） *
+ a| 
+
+
+
+ a| 
+* Solaris （ x86_64 ） *
+ a| 
+
+
+
+ a| 
+* AIX （ PPC64 ） *
+ a| 
+
+
+
+ a| 
+* Linux x86_64
+ a| 
+
+
+
+ a| 
+* Linux x64*
+ a| 
+
+|===
+. 在简介页面上，按 * 输入 * 继续。
++
+此时将显示以下消息： Existing SnapManager for Oracle Detected 。
+
+. 按 * 输入 * 。
+. 在命令提示符处，执行以下操作：
++
+.. 按 * 输入 * 接受操作系统用户的默认值。
+.. 为操作系统组输入正确的值或按 * 输入 * 接受默认值。
+.. 输入正确的服务器启动类型值或按 * 输入 * 接受默认值。
+
+
++
+此时将显示配置摘要。
+
+. 按 * 输入 * 继续。
++
+此时将显示以下消息： uninstall of existing SnapManager for Oracle has started" 。
+
++
+卸载完成，并安装了最新版本的 SnapManager 。
+
+

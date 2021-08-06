@@ -1,0 +1,87 @@
+---
+permalink: unix-administration/task_deploying_and_running_the_scripts.html 
+sidebar: sidebar 
+keywords: deploy, run, asmmain.sh, asmquerydisk.sh, script, support, asm, database, asmlib, disk, group, oracleasm 
+summary: 您可以部署和运行 asmmain.sh 和 asmquerydisk.sh 脚本，以支持 ASM 数据库，而无需 ASMLib 。 
+---
+= 部署和运行脚本
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以部署和运行 asmmain.sh 和 asmquerydisk.sh 脚本，以支持 ASM 数据库，而无需 ASMLib 。
+
+这些脚本不遵循预脚本或后脚本语法，启用 intitasmdisks 时会调用工作流。您可以在脚本中更改与配置设置相关的任何内容。建议通过执行快速试运行来验证脚本中的所有内容是否均按预期工作。
+
+
+NOTE: 这些脚本不会因故障而对系统造成损害，也不会影响系统。执行这些脚本可更新与 ASM 相关的磁盘以获得适当的权限和所有权，从而使这些磁盘始终处于 ASM 实例控制之下。
+
+. 使用已分区的磁盘创建 ASM 磁盘组。
+. 在磁盘组上创建 Oracle 数据库。
+. 停止适用于 Oracle 服务器的 SnapManager 。
++
+
+NOTE: 在 RAC 环境中，您需要对所有 RAC 节点执行此步骤。
+
+. 修改 smo.conf 以包含以下参数：
++
+.. oracleasma.support.without .asmlib = true
+.. oracleasma.support.without .asmlib.ownership = true
+.. oracleasm.support.without.asmlib.username = ASM 实例环境的用户名
+.. oracleasm.support.without.asmlib.groupname = ASM 实例环境的组名称
+
+
++
+这些修改仅为绝对路径设置权限，这意味着，将仅为 dm-* 设备设置权限，而不是分区设备。
+
+. 修改 /opt/netapp/smO/plugins/examples/noasmlib 中提供的插件脚本，以便在这些脚本中包含您的配置设置。
+. 在主机上启动 SnapManager for Oracle 服务器之前，请将脚本复制到 /opt/netapp/smO/plugins/noasmlib 。
+. 导航到 /opt/netapp/smo 目录，然后运行以下脚本执行试运行： sh plugins/noasmlib/asmmain.sh
++
+此时将创建 etc/initasmdisks 文件，该文件是所使用的主文件。
+
++
+您可以确认 etc/initasmdisks 文件包含与已配置的 ASM 数据库相关的所有设备，例如：
+
++
+[listing]
+----
+chown -R grid:oinstall /dev/mapper/360a98000316b61396c3f394645776863p1
+	     chmod 777 /dev/mapper/360a98000316b61396c3f394645776863p1
+	     chown -R grid:oinstall /dev/mapper/360a980003754322f7a2b433469714239p1
+	     chmod 777 /dev/mapper/360a980003754322f7a2b433469714239p1
+	     chown -R grid:oinstall /dev/mapper/360a980003754322f7a2b433469714241p1
+	     chmod 777 /dev/mapper/360a980003754322f7a2b433469714241p1
+	     chown -R grid:oinstall /dev/mapper/360a980003754322f7a2b433469714243p1
+	     chmod 777 /dev/mapper/360a980003754322f7a2b433469714243p1
+----
+. 启动适用于 Oracle 服务器的 SnapManager 。
+. 通过将以下内容添加到 SnapDrive.conf file.disconnect -luns-before-vbsr=on 来配置 SnapDrive for UNIX
+. 重新启动适用于 UNIX 的 SnapDrive 服务器。
++
+
+NOTE: 在 RAC 环境中，您需要对所有 RAC 节点执行步骤 3 到步骤 10 。
+
+
+
+创建的 /etc/initasmdisks 文件必须从其中一个启动脚本或 rc3.d 中新定义的脚本执行在 oracleha 服务启动之前，应始终执行 /etc/initasmdisks 文件。
+
+示例
+
+[listing]
+----
+# ls -ltr *ohasd*
+	      lrwxrwxrwx 1 root root 17 Aug  7 02:34 S96ohasd -> /etc/init.d/ohasd
+    	  lrwxrwxrwx 1 root root 17 Aug  7 02:34 K15ohasd -> /etc/init.d/ohasd
+----
+在以下示例中，默认情况下， sh -x/etc/initasmdisks 不可用，您需要将其附加为 ohasd 脚本中函数 `stt_stack （）` 的第一行：
+
+[listing]
+----
+start_stack()
+{
+sh -x /etc/initasmdisks
+# see init.ohasd.sbs for a full rationale case $PLATFORM in Linux
+}
+----

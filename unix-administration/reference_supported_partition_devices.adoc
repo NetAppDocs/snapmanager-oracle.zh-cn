@@ -1,0 +1,121 @@
+---
+permalink: unix-administration/reference_supported_partition_devices.html 
+sidebar: sidebar 
+keywords: partition, snapmanager, support, device, red, hat, enterprise, linux, 5x, oracle 
+summary: 您必须了解 SnapManager 中支持的不同分区设备。 
+---
+= 支持的分区设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须了解 SnapManager 中支持的不同分区设备。
+
+下表提供了分区信息以及如何为不同的操作系统启用分区信息：
+
+|===
+| 操作系统 | 单个分区 | 多个分区 | 非分区设备 | 文件系统或原始设备 
+
+
+ a| 
+Red Hat Enterprise Linux 5 倍或
+
+Oracle Enterprise Linux 5 倍
+ a| 
+是的。
+ a| 
+否
+ a| 
+否
+ a| 
+ext3*
+
+
+
+ a| 
+Red Hat Enterprise Linux 6 个或
+
+Oracle Enterprise Linux 6 倍
+ a| 
+是的。
+ a| 
+否
+ a| 
+否
+ a| 
+ext3 或 ext4*
+
+
+
+ a| 
+SUSE Linux Enterprise Server 11
+ a| 
+是的。
+ a| 
+否
+ a| 
+否
+ a| 
+ext3*
+
+
+
+ a| 
+SUSE Linux Enterprise Server 10
+ a| 
+否
+ a| 
+否
+ a| 
+是的。
+ a| 
+ext3***
+
+
+
+ a| 
+Red Hat Enterprise Linux 5x 或 Lateror
+
+Oracle Enterprise Linux 5x 或更高版本
+ a| 
+是的。
+ a| 
+否
+ a| 
+是的。
+ a| 
+使用 ASMlib* 的 ASM
+
+
+
+ a| 
+SUSE Linux Enterprise Server 10 SP4or
+
+SUSE Linux Enterprise Server 11
+ a| 
+是的。
+ a| 
+否
+ a| 
+是的。
+ a| 
+使用 ASMlib* 的 ASM
+
+
+
+ a| 
+SUSE Linux Enterprise Server 10 SP4 或 Lateror
+
+SUSE Linux Enterprise Server 11
+ a| 
+是的。
+ a| 
+否
+ a| 
+否
+ a| 
+不使用 ASMlib'%'* 的 ASM
+
+|===
+有关支持的操作系统版本的详细信息，请参阅互操作性表。

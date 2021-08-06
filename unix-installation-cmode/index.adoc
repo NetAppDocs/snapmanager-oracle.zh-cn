@@ -1,0 +1,13 @@
+---
+permalink: unix-installation-cmode/index.html 
+sidebar: sidebar 
+keywords: installation, setup, guide, unix, 3.4.2 
+summary: 《适用于 UNIX ® 的 SnapManager for Oracle 3.4.2 安装和设置指南》 
+---
+= 《 UNIX ® 安装和设置指南》
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本指南介绍在 UNIX 环境中使用集群模式 Data ONTAP 部署 SnapManager 3.4.2 for Oracle 时需要执行的初始任务。主题包括如何安装和配置产品以及如何备份数据库。

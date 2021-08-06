@@ -1,0 +1,38 @@
+---
+permalink: unix-administration/task_configuring_snapdrive_when_rbac_is_enabled.html 
+sidebar: sidebar 
+keywords: role-based, access, control, rbac, enable, configure, datafabric, manager, capabilities, manager, server, snapdrive 
+summary: 启用基于角色的访问控制 \ （ RBAC ）后，您必须配置 DataFabric Manager 服务器以包括 RBAC 功能。此外，还必须注册在 DataFabric Manager 服务器中创建的 SnapDrive 用户以及 SnapDrive 中存储系统的 root 用户。 
+---
+= 在启用 RBAC 时配置 DataFabric Manager 服务器和 SnapDrive
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+启用基于角色的访问控制（ Role-Based Access Control ， RBAC ）后，您必须配置 DataFabric Manager 服务器以包含 RBAC 功能。此外，还必须注册在 DataFabric Manager 服务器中创建的 SnapDrive 用户以及 SnapDrive 中存储系统的 root 用户。
+
+. 配置 DataFabric Manager 服务器。
++
+.. 要刷新 DataFabric Manager 服务器以更新目标数据库直接在存储系统上所做的更改，请输入以下命令： dfm host discover storage_system
+.. 在 DataFabric Manager 服务器中创建新用户并设置密码。
+.. 要将操作系统用户添加到 DataFabric Manager 服务器管理列表中，请输入以下命令： dfm user add sd-admin
+.. 要在 DataFabric Manager 服务器中创建新角色，请输入以下命令： dfm role create sd-admin-role
+.. 要将 dfm.Core.AccessCheck 全局功能添加到角色，请输入以下命令： dfm role add sd-admin-role dfm.Core.AccessCheck Global
+.. 要向操作系统用户添加 SD-admin-role ，请输入以下命令： dfm user role set sd-admin-role
+.. 要在 DataFabric Manager 服务器中为 SnapDrive root 用户创建另一个角色，请输入以下命令： dfm role create sd-protect
+.. 要将 RBAC 功能添加到为 SnapDrive root 用户或管理员创建的角色中，请输入以下命令： dfm role add sd-protect sd.Config.Read Globaldfm role add sd-protect sd.Config.Write Globaldfm role add sd-protect sd.Config.Delete Globaldfm role add sd-protect sd.Storage.Read Globaldfm role add.sd-protect.sd-fm
+.. 要将目标数据库 Oracle 用户添加到 DataFabric Manager 服务器的管理员列表中并分配 SD-Protect 角色，请输入以下命令： dfm user add -r sd-protectardb_host1\oracle
+.. 要在 DataFabric Manager 服务器中添加目标数据库使用的存储系统，请输入以下命令： dfm host set storage_system hostLogin=Oracle hostPassword=password
+.. 要在 DataFabric Manager 服务器中的目标数据库所使用的存储系统中创建新角色，请输入以下命令： dfm host role create -h storage_system-c "api-* ， login-*" storage-rbac role
+.. 要在存储系统中创建新组并分配在 DataFabric Manager 服务器中创建的新角色，请输入以下命令： dfm host usergroup create -h storage_system-r storage-rbac — rolestorage-rbac 组
+.. 要在存储系统中创建新用户并分配新角色以及在 DataFabric Manager 服务器中创建的组，请输入以下命令： dfm host user create -h storage_system-r storage-rbac 角色 -p password -g storage-rbac grouptardb_host1
+
+
+. 配置 SnapDrive 。
++
+.. 要向 SnapDrive 注册 SD-admin 用户的凭据，请输入以下命令： snapdrive config set -dfm sd-admindfm_host
+.. 要向 SnapDrive 注册存储系统的 root 用户或管理员，请输入以下命令： snapdrive config set tard1b_host sktorage_system
+
+
+

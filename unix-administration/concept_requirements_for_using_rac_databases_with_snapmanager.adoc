@@ -1,0 +1,21 @@
+---
+permalink: unix-administration/concept_requirements_for_using_rac_databases_with_snapmanager.html 
+sidebar: sidebar 
+keywords: recommendation, real, application, cluster, rac, database, snapmanager, primary 
+summary: 您必须了解将 Real Application Clusters （ RAC ）数据库与 SnapManager 结合使用的建议。建议包括端口号，密码和身份验证模式。 
+---
+= 将 RAC 数据库与 SnapManager 结合使用的要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须了解将 Real Application Clusters （ RAC ）数据库与 SnapManager 结合使用的建议。建议包括端口号，密码和身份验证模式。
+
+* 在数据库身份验证模式下，必须将与 RAC 数据库实例交互的每个节点上的侦听器配置为使用相同的端口号。
++
+在启动备份之前，必须启动与主数据库实例交互的侦听器。
+
+* 在操作系统身份验证模式或自动存储管理（ ASM ）环境中，必须在 RAC 环境中的每个节点上安装并运行 SnapManager 服务器。
+* RAC 环境中所有 Oracle 数据库实例的数据库用户密码（例如，系统管理员或具有 sysdba 权限的用户密码）必须相同。
+

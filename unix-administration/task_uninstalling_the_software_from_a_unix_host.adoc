@@ -1,0 +1,26 @@
+---
+permalink: unix-administration/task_uninstalling_the_software_from_a_unix_host.html 
+sidebar: sidebar 
+keywords: snapmanager, software, uninstall, host, server, unix, smo 
+summary: 如果您不再需要 SnapManager 软件，则可以从主机服务器中将其卸载。 
+---
+= 从 UNIX 主机卸载软件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您不再需要 SnapManager 软件，则可以从主机服务器中将其卸载。
+
+. 以 root 用户身份登录。
+. 要停止服务器，请输入以下命令： `smo_server stop`
+. 要删除 SnapManager 软件，请输入以下命令： `UninstallSmo`
+. 出现简介文本后，按 * Enter * 继续。
++
+卸载完成。
+
+
+
+* 相关信息 *
+
+xref:reference_the_smosmsap_server_stop_command.adoc[smo_server stop 命令]

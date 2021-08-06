@@ -1,0 +1,13 @@
+---
+permalink: unix-administration/task_protected_backup_configuration_and_execution.html 
+sidebar: sidebar 
+keywords: configure, snapmanager, protection, manager, support, database, backup, seconday, storage, administrator, execution 
+summary: 您必须将 SnapManager 和 Protection Manager 配置为支持将数据库备份到二级存储。数据库管理员和存储管理员必须协调其操作。 
+---
+= 受保护的备份配置和执行
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须将 SnapManager 和 Protection Manager 配置为支持将数据库备份到二级存储。数据库管理员和存储管理员必须协调其操作。

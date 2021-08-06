@@ -1,0 +1,16 @@
+---
+permalink: unix-administration/task_viewing_the_detailed_history_of_a_specific_operation_associated_with_a_profile.html 
+sidebar: sidebar 
+keywords: view, detail, history, specific, snapmanager, operation, associate, profile, smo 
+summary: 您可以查看与配置文件关联的特定 SnapManager 操作的详细历史记录。 
+---
+= 查看与配置文件关联的特定操作的详细历史记录
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看与配置文件关联的特定 SnapManager 操作的详细历史记录。
+
+. 要显示与配置文件关联的特定 SnapManager 操作的详细历史记录信息，请输入以下命令： `smo history operation-show -profileprofileprofile_name ｛ -labelLabel _ -idd ｝ （ -quiet _ -verbose ）`
+

@@ -1,0 +1,16 @@
+---
+permalink: windows/task_customizing_the_email_subject_for_an_existing_profile.html 
+sidebar: sidebar 
+keywords: snapmanager, enable, customize, email, subject, pattern, existing, profile, customize, update, customizing 
+summary: 通过 SnapManager ，您可以通过更新现有配置文件来自定义该配置文件的电子邮件主题模式。此自定义主题模式仅适用于更新后的配置文件。 
+---
+= 自定义现有配置文件的电子邮件主题
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 SnapManager ，您可以通过更新现有配置文件来自定义该配置文件的电子邮件主题模式。此自定义主题模式仅适用于更新后的配置文件。
+
+. 输入以下命令： smo profile update -profileprofile "-profile-passwordprofile_password]] ｛ -database-dbnamedb_dbname-host db_host "-siddb_sid] ｛ -login -usernamedb_username-password db_password-port db_port]] ｛ -rmAN ｛ -controlfile _ ｛ -address1_dureminations1_durm_mail_mail-try_try_trusername
+

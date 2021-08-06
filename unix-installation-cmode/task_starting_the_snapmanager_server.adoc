@@ -1,0 +1,27 @@
+---
+permalink: unix-installation-cmode/task_starting_the_snapmanager_server.html 
+sidebar: sidebar 
+keywords: start, snapmanager, server, target, database, host, smo 
+summary: 您必须从目标数据库主机启动 SnapManager 服务器。 
+---
+= 启动 SnapManager 服务器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须从目标数据库主机启动 SnapManager 服务器。
+
+. 登录到目标数据库主机并启动 SnapManager 服务器： `smo_server start`
++
+此时将显示以下消息： SnapManager Server started on secure port port_number with PID PID_number 。
+
++
+
+NOTE: 默认端口为 272.14 。
+
+
+
+您可以验证 SnapManager 是否正常运行： smo system verify
+
+此时将显示以下消息： operation ID operation_ID_number succeeded 。

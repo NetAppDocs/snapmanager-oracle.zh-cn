@@ -1,0 +1,15 @@
+---
+permalink: windows/concept_installing_snapmanager_for_oracle.html 
+sidebar: sidebar 
+keywords: download, oracle, install, operation, database, backup, restore, cloning, clone 
+summary: 您可以在环境中下载和安装 SnapManager for Oracle ，并执行数据库备份，还原，恢复和克隆等操作。 
+---
+= 安装适用于 Oracle 的 SnapManager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在环境中下载和安装 SnapManager for Oracle ，并执行数据库备份，还原，恢复和克隆等操作。
+
+SnapManager for Oracle 安装包包括主机服务器软件和图形用户界面（ GUI ）客户端软件。

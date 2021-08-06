@@ -1,0 +1,19 @@
+---
+permalink: windows/task_starting_snapmanager_for_oraclefor_sap.html 
+sidebar: sidebar 
+keywords: snapmanager, startup, section, list, task, oracle, learn 
+summary: SnapManager 启动部分列出了启动 SnapManager 时执行的任务。如果您只是了解 SnapManager ，也可以使用本节。 
+---
+= 启动 SnapManagerfor Oracle
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager 启动部分列出了启动 SnapManager 时执行的任务。如果您只是了解 SnapManager ，也可以使用本节。
+
+在使用 SnapManager 之前，您应已执行以下操作：
+
+* 已下载并安装 SnapManager 软件。
+* 已确定使用图形用户界面还是命令行界面。
+

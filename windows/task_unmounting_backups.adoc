@@ -1,0 +1,22 @@
+---
+permalink: windows/task_unmounting_backups.html 
+sidebar: sidebar 
+keywords: snapmanager, automatic, unmount, backup, unavailable, host, server, remove, access 
+summary: SnapManager 会自动卸载备份，使其不可供主机服务器使用。如果您使用 Oracle 恢复管理器（ RMAN ）等外部工具访问备份中的文件，则还可以通过 SnapManager 卸载，并更改备份状态以删除访问权限。 
+---
+= 卸载备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager 会自动卸载备份，使其不可供主机服务器使用。如果您使用 Oracle 恢复管理器（ RMAN ）等外部工具访问备份中的文件，则还可以通过 SnapManager 卸载，并更改备份状态以删除访问权限。
+
+您可以选择在卸载备份操作成功或失败后收集转储文件。
+
+. 输入以下命令： smo backup unmount -profile profile_name ｛ labelLabel [data | -archivelogs] | -iddid ｝ （ -quiet | -verbose ） -dump-force-verbose
+
+
+* 相关信息 *
+
+xref:reference_the_smosmsapbackup_unmount_command.adoc[smo backup unmount 命令]

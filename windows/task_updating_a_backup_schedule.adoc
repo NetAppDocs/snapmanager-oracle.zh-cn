@@ -1,0 +1,16 @@
+---
+permalink: windows/task_updating_a_backup_schedule.html 
+sidebar: sidebar 
+keywords: view, list, schedule, operation, update, scheduling, backup, updating 
+summary: 您可以查看计划的操作列表，并在必要时对其进行更新。您可以更新计划频率，计划开始时间， cronstring 表达式以及计划备份的用户。 
+---
+= 更新备份计划
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看计划的操作列表，并在必要时对其进行更新。您可以更新计划频率，计划开始时间， cronstring 表达式以及计划备份的用户。
+
+. 要更新备份的计划，请输入以下命令： smo schedule update -profile profile_name-schedule-nameschedulename （ -schedule-commentschedule comment] -interval ｛ -hourly | -daily | -weekly | -monthly | -onetimeonly ｝ -start-timestarttime-cronstringcronstrictrunstringstrict-runasusunasuser （ -quiet ）
+

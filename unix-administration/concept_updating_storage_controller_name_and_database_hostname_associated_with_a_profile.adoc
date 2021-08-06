@@ -1,0 +1,13 @@
+---
+permalink: unix-administration/concept_updating_storage_controller_name_and_database_hostname_associated_with_a_profile.html 
+sidebar: sidebar 
+keywords: snapmanager, storage, system, host, name, address, target, database 
+summary: 使用 SnapManager 3.3 或更高版本，您可以更新存储系统主机名或存储系统地址以及与 SnapManager 配置文件关联的目标数据库主机名。 
+---
+= 更新与配置文件关联的存储系统名称和目标数据库主机名
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 SnapManager 3.3 或更高版本，您可以更新存储系统主机名或存储系统地址以及与 SnapManager 配置文件关联的目标数据库主机名。

@@ -1,0 +1,27 @@
+---
+permalink: windows/concept_what_the_snapmanager_architecture_is.html 
+sidebar: sidebar 
+keywords: oracle, architecture, component, host, client, repository, netapp, architecture 
+summary: 适用于 Oracle 的 SnapManager 架构包含许多组件，例如适用于 Oracle 主机，客户端和存储库的 SnapManager 。其他组件包括主存储系统和二级存储系统以及其他 NetApp 产品。 
+---
+= 什么是适用于 Oracle 的 SnapManager 架构
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+适用于 Oracle 的 SnapManager 架构包含许多组件，例如适用于 Oracle 主机，客户端和存储库的 SnapManager 。其他组件包括主存储系统和二级存储系统以及其他 NetApp 产品。
+
+SnapManager for Oracle 架构包括以下架构组件：
+
+* SnapManager 主机
+* SnapManager 图形用户界面或命令行界面
+* SnapManager 存储库
+* 主存储系统
+* 二级存储系统
+* 适用于 Windows 的 SnapDrive
+
+
+下图显示了适用于 Oracle 的 SnapManager 架构以及相关组件：
+
+image::../media/scrn_en_drw_smo_architecture.gif[适用于 SAP 的 SnapManager 架构]

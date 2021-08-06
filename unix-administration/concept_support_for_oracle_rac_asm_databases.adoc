@@ -1,0 +1,17 @@
+---
+permalink: unix-administration/concept_support_for_oracle_rac_asm_databases.html 
+sidebar: sidebar 
+keywords: oracle, rac, database, node, initasmdisk, file 
+summary: 如果使用的是 Oracle RAC 数据库，则每当在主 RAC 节点中执行操作时，都必须使用 initasmdisks 文件更新 RAC 节点。 
+---
+= 支持不使用 ASMLib 的 Oracle RAC ASM 数据库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果使用的是 Oracle RAC 数据库，则每当在主 RAC 节点中执行操作时，都必须使用 initasmdisks 文件更新 RAC 节点。
+
+如果从主节点登录到 RAC 节点不需要身份验证，则 asmmain.sh 会对所有 RAC 节点执行 initasmdisks 的安全复制（ SCP ）。每当进行还原时，都会调用主节点的 initasmdisks 文件，并且可以更新 asmmain.sh 脚本，以便在所有 RAC 节点中调用相同的脚本。
+
+创建的 /etc/initasmdisks 文件必须从其中一个启动脚本或 rc3.d 中新定义的脚本执行在 oracleha 服务启动之前，应始终执行 /etc/initasmdisks 文件。

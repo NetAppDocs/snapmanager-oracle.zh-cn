@@ -1,0 +1,9 @@
+---
+permalink: index.html 
+sidebar: sidebar 
+---
+= 适用于 Oracle 的 SnapManager 3.4.2
+
+
+[role="lead"]
+欢迎使用 SnapManager for Oracle 信息库。您可以在此处找到适用于 Oracle 的 SnapManager 3.4.2 的信息，其中包括如何为集群模式 Data ONTAP 和 7- 模式 Data ONTAP 设置，管理和配置软件。

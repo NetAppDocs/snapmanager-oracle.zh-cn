@@ -1,0 +1,13 @@
+---
+permalink: windows/concept_configuring_snapmanager_for_oraclesap.html 
+sidebar: sidebar 
+keywords: configuring, configure, install 
+summary: 安装 SnapManager 后，您必须根据所使用的环境执行一些其他配置任务。 
+---
+= 正在配置 SnapManager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装 SnapManager 后，您必须根据所使用的环境执行一些其他配置任务。

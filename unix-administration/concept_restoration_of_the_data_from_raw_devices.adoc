@@ -1,0 +1,19 @@
+---
+permalink: unix-administration/concept_restoration_of_the_data_from_raw_devices.html 
+sidebar: sidebar 
+keywords: restore, alternate, location, connect, necessary, raw, device, local, host 
+summary: 在从备用位置还原之前，您需要连接到本地主机上所需的原始设备。 
+---
+= 从原始设备还原数据
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在从备用位置还原之前，您需要连接到本地主机上所需的原始设备。
+
+您可以从备用位置操作调用还原，将数据块从备用原始设备复制到活动原始设备。要执行此操作，您需要通过创建还原规范来指定用于还原原始原始原始原始原始设备的备用原始设备。
+
+* 相关信息 *
+
+xref:task_creating_restore_specifications.adoc[正在创建还原规范]

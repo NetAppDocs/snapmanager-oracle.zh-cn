@@ -1,0 +1,30 @@
+---
+permalink: unix-administration/concept_support_for_asmlib.html 
+sidebar: sidebar 
+keywords: snapmanager, asmlib, support 
+summary: SnapManager 支持不同版本的 ASMLib ，但在将 SnapManager 与 ASMLib 结合使用时，您必须考虑几个因素。 
+---
+= 支持 ASMLib
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager 支持不同版本的 ASMLib ，但在将 SnapManager 与 ASMLib 结合使用时，您必须考虑几个因素。
+
+SnapManager 支持 ASMLib 2.1.4 ， 2.1.7 和 2.1.8 。所有 SnapManager 操作均可使用 ASMLib 2.1.4 ， 2.1.7 和 2.1.8 执行。
+
+如果已从 ASMLib 2.1.4 升级到 ASM 2.1.7 ，则可以使用与使用 ASMLib 2.1.4 创建的相同配置文件和备份来还原备份并创建克隆。
+
+将 SnapManager 与 ASMLib 结合使用时，必须考虑以下事项：
+
+* SnapManager 3.1 不支持 ASMLib 2.1.7 。
++
+SnapManager 3.1p4 或更高版本支持 ASMLib 2.1.4 ， 2.1.7 和 2.1.8 。
+
+* 从 SnapManager 3.1 滚动升级到 3.2 后，只有在存储库回滚到 SnapManager 3.1 且 ASMLib 2.1.7 降级到 ASMLib 2.1.4 时，使用 ASMLib 2.1.7 创建的备份才起作用。
+* 从 SnapManager 3.1 滚动升级到 3.2 后，如果使用 ASMLib 2.1.7 将存储库回滚到使用 ASMLib 2.1.7 的 SnapManager 3.1 ，则使用 ASMLib 2.1.7 创建的备份将不起作用。
++
+回滚成功，但无法使用配置文件和备份。
+
+

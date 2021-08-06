@@ -1,0 +1,37 @@
+---
+permalink: windows/task_viewing_a_list_of_storage_controllers_associated_with_a_profile.html 
+sidebar: sidebar 
+keywords: view, list, storage, system, associate, particular, profile 
+summary: 您可以查看与特定配置文件关联的存储系统列表。 
+---
+= 查看与配置文件关联的存储系统的列表
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看与特定配置文件关联的存储系统列表。
+
+此列表将显示与特定配置文件关联的存储系统名称。
+
+
+NOTE: 如果没有可用于此配置文件的备份，则无法查看与此配置文件关联的存储系统名称。
+
+. 要显示与特定配置文件关联的存储系统的信息，请输入以下命令： smo storage list -profileprofile "-quiet | -verbos]
+
+
+
+
+== 示例
+
+[listing]
+----
+smo storage list -profile mjubllian
+----
+[listing]
+----
+Sample Output:
+Storage Controllers
+--------------------
+STCO1110-RTP07OLD
+----

@@ -1,0 +1,15 @@
+---
+permalink: unix-administration/concept_performing_management_operations.html 
+sidebar: sidebar 
+keywords: management, task, snapmanager, configure, perform, operation, administrator 
+summary: 您可以在设置和配置 SnapManager 后执行管理任务。通过这些任务，您可以管理备份，还原和克隆以外的正常操作。 
+---
+= 执行管理操作
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在设置和配置 SnapManager 后执行管理任务。通过这些任务，您可以管理备份，还原和克隆以外的正常操作。
+
+管理员可以使用图形用户界面或命令行界面执行操作。

@@ -1,0 +1,95 @@
+---
+permalink: unix-administration/task_customizing_e_mail_subject_for_a_new_profile.html 
+sidebar: sidebar 
+keywords: customize, email, subject, new, profile, create 
+summary: 您可以在创建新配置文件时为其自定义电子邮件主题。 
+---
+= 自定义新配置文件的电子邮件主题
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在创建新配置文件时为其自定义电子邮件主题。
+
+您可以使用 ｛ profile ｝ _ ｛ operation-name ｝ _ ｛ db-SID ｝ _ ｛ db-host ｝ _ ｛ start-date ｝ _ ｛ end-date ｝ _ ｛ status ｝ 模式自定义电子邮件主题，也可以输入您自己的文本。
+
+|===
+| 变量名称 | Description | 示例值 
+
+
+ a| 
+配置文件
+ a| 
+用于数据库操作的配置文件名称
+ a| 
+程序 1
+
+
+
+ a| 
+操作名称
+ a| 
+数据库操作名称
+ a| 
+备份，数据备份，数据和归档日志备份
+
+
+
+ a| 
+DB-SID
+ a| 
+数据库的 SID
+ a| 
+数据库 1
+
+
+
+ a| 
+数据库主机
+ a| 
+主机服务器的名称
+ a| 
+主机 A
+
+
+
+ a| 
+开始日期
+ a| 
+数据库操作的开始时间，格式为 mmdd ： hh ： ss yyyy
+ a| 
+2012 年 4 月 27 日 21 ： 00 ： 45 PST
+
+
+
+ a| 
+结束日期
+ a| 
+数据库操作的结束时间，格式为 mmdd ： hh ： ss yyyy
+ a| 
+2012 年 4 月 27 日 21 ： 10 ： 45 PST
+
+
+
+ a| 
+status
+ a| 
+数据库操作状态
+ a| 
+success
+
+|===
+如果未为变量提供任何值，则 SnapManager 将显示以下错误消息： missing value （ s ） -Subject 。
+
+. 输入以下命令： smo profile create -profileprofile "-profile-passwordprofile_password] -repositor-dbnamerepo_service_name-host-portrepo_port-login-usernamerepo_username-database-dbnamedb_dbname-hosterdb_host "-sidb_service_username-snap-snap-snap-snap-edusername-sd-zhunyour-[-mail-snap-snap-snap-name]-snap-snap-snap-snap-snap-snap-snap-snap-snap-name-snap-snap-snap-snap-snap-snap-snap-snap-edusername
+
+
+以下示例显示了电子邮件主题模式：
+
+[listing]
+----
+
+smo profile create -profile sales1 -profile-password admin1 -repository -dbname repo2 -host 10.72.197.133 -port 1521 -login -username admin2 -database -dbname DB1 -host 10.72.197.142 -sid DB1
+-osaccount oracle -osgroup dba -profile-notification -success -email admin@org.com -subject {profile}_{operation-name}_{db-sid}_{db-host}_{start-date}_{end-date}_{status}
+----

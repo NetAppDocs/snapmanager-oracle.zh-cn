@@ -1,0 +1,19 @@
+---
+permalink: unix-administration/task_cloning_with_rac_databases.html 
+sidebar: sidebar 
+keywords: clone, rac, database, non-rac, srvctl 
+summary: 您可以将 RAC 数据库克隆到非 RAC 数据库，也可以将其克隆到非 RAC 数据库，然后将其更改为 RAC 数据库。 
+---
+= 使用 RAC 数据库克隆
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将 RAC 数据库克隆到非 RAC 数据库，也可以将其克隆到非 RAC 数据库，然后将其更改为 RAC 数据库。
+
+. 要克隆 RAC 数据库，请输入以下命令： smo clone create -backup-label backup_label-profile profile_name-newsid new_sid-clonSpec full_path_to_clonsecure_file-verbose
+. 要将克隆的非 RAC 数据库更改为 RAC 数据库，请将文件从 initclone_sid.ora 重命名为 initclone_local_instance_sid.ora 。
+. 编辑重命名的文件，将参数 cluster.database 设置为 true 。RAC 数据库信息。
+. 向 srvctl 注册克隆的 RAC 数据库。
+

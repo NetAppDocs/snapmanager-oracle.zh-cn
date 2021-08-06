@@ -1,0 +1,108 @@
+---
+permalink: unix-installation-cmode/task_preparing_storage_systems_for_snapvault_replication.html 
+sidebar: sidebar 
+keywords: snapmanager, integrated, snapvault, technology, archive, snapshot, copies, disk, configure, data-portection, source, volume, relationship, initialization, snapshot 
+summary: 在使用 SnapManager 的集成 SnapVault 技术将 Snapshot 副本归档到磁盘之前，您需要在源卷和目标卷之间配置数据保护关系，然后初始化此关系。初始化时， SnapVault 会创建源卷的 Snapshot 副本，然后将该副本及其引用的所有数据块传输到目标卷。 
+---
+= 准备存储系统以进行 SnapVault 复制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在使用 SnapManager 的集成 SnapVault 技术将 Snapshot 副本归档到磁盘之前，您需要在源卷和目标卷之间配置数据保护关系，然后初始化此关系。初始化时， SnapVault 会创建源卷的 Snapshot 副本，然后将该副本及其引用的所有数据块传输到目标卷。
+
+* 您必须在具有对等 Storage Virtual Machine （ SVM ）的对等集群中创建源卷和目标卷。有关详细信息，请参见 _Clustered Data ONTAP 集群对等快速指南 _ 。
+* 您必须是集群管理员。
+
+
+您可以使用 Data ONTAP 命令行界面（ CLI ）或 OnCommand 系统管理器创建 SnapVault 关系。以下操作步骤假定您使用的是命令行界面。有关如何使用 OnCommand 系统管理器创建 SnapVault 关系的信息，请参见 _Clustered Data ONTAP Volume Backup using SnapVault 快速指南 _ 。
+
+下图显示了用于初始化 SnapVault 关系的操作步骤：
+
+image::../media/snapvault_steps_clustered.gif[此图显示了用于初始化 SnapVault 关系的操作步骤：标识目标集群,creating a destination volume,creating a policy]
+
+. 确定目标集群。
+. 在目标集群上，使用带有 -typeDP 选项的 volume create 命令创建大小等于或大于源卷的 SnapVault 目标卷。
++
+
+IMPORTANT: 目标卷的语言设置必须与源卷的语言设置匹配。
+
++
+以下命令会在 SVM2 中的聚合 node01_aggr 上创建一个名为 dstvolB 的 2 GB 目标卷：
+
++
+[listing]
+----
+cluster2::> volume create -vserver SVM2 -volume dstvolB -aggregate node01_aggr -type DP
+-size 2GB
+----
+. 在目标 SVM 上，使用 snapmirror policy create 命令创建 SnapVault 策略。
++
+以下命令将创建 SVM 范围的策略 SVM1-vault ：
+
++
+[listing]
+----
+SVM2::> snapmirror policy create -vserver SVM2 -policy SVM1-vault
+----
++
+
+NOTE: 请勿为 SnapVault 关系定义 cron 计划或 Snapshot 副本策略。SnapManager 会在您创建备份计划时为您执行此操作。
+
+. 使用 snapmirror policy add-rule 命令向策略中添加一条规则，用于定义以下 Snapshot 副本标签以及每个标签的保留策略：
++
+** 每天
+** 每周
+** 每月
+** 每小时
+** 无限制 * 重要： * 标签区分大小写。
+
+
++
+这些是 SnapManager 使用的固定标签。在对备份进行归档时，您可以选择以下选项之一。您必须对要添加的每个规则执行一次此命令。
+
++
++ 以下命令会向 SVM1-vault 策略中添加一条规则，用于定义 " `daily` " 标签，并指定应在存储中保留 30 个与此标签匹配的 Snapshot 副本：
+
++
++
+
++
+[listing]
+----
+SVM2::> snapmirror policy add-rule -vserver SVM2 -policy SVM1-vault
+-snapmirror-label Daily -keep 30
+----
+. 使用带有 -type XDP 参数和 -policy 参数的 snapmirror create 命令创建 SnapVault 关系并分配存储策略。
++
+XDP 类型将此关系定义为 SnapVault 关系。
+
++
+以下命令将在 SVM1 上的源卷 srcvolA 和 SVM2 上的目标卷 dstvolB 之间创建 SnapVault 关系。它会分配名为 SVM1-vault 的策略：
+
++
+[listing]
+----
+SVM2::> snapmirror create -source-path SVM1:srcvolA -destination-path SVM2:dstvolB
+-type XDP -policy SVM1-vault
+----
+. 使用 snapmirror initialize 命令初始化此关系。
++
+初始化过程会向目标卷执行基线传输。SnapMirror 为源卷创建 Snapshot 副本，然后将该副本及其引用的所有数据块传输到目标卷。
+
++
+以下命令将初始化 SVM1 上的源卷 srcvolA 与 SVM2 上的目标卷 dstvolB 之间的关系：
+
++
+[listing]
+----
+SVM2::> snapmirror initialize -destination-path SVM2:dstvolB
+----
+
+
+* 相关信息 *
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1547469["《集群模式 Data ONTAP 8.3 集群对等快速指南》"]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1653496["《使用 SnapVault 备份集群模式 Data ONTAP 8.3 卷快速指南》"]

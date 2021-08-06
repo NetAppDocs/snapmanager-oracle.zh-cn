@@ -1,0 +1,34 @@
+---
+permalink: unix-administration/task_adding_storage_systems_to_the_snapmanager_server_host.html 
+sidebar: sidebar 
+keywords: add, storage, system, operating, clustered, data, ontap, snapmanager, server, host, enable, autosupport 
+summary: 要启用 AutoSupport ，必须将在集群模式 Data ONTAP 中运行的存储系统添加到 SnapManager 服务器主机。在 SnapManager 3.3 及更早版本中，只有在 7- 模式存储系统上才支持 AutoSupport 。 
+---
+= 将在集群模式 Data ONTAP 中运行的存储系统添加到 SnapManager 服务器主机
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要启用 AutoSupport ，必须将在集群模式 Data ONTAP 中运行的存储系统添加到 SnapManager 服务器主机。在 SnapManager 3.3 及更早版本中，只有在 7- 模式存储系统上才支持 AutoSupport 。
+
+. 将在集群模式 Data ONTAP 中运行的存储系统添加到 SnapManager 服务器主机。
++
+|===
+| 条件 | 然后运行以下命令 ... 
+
+
+ a| 
+管理 Storage Virtual Machine （ SVM ，以前称为 Vserver ）正在集群模式 Data ONTAP 中运行
+ a| 
+SnapDrive 配置集 -cserver user_namestorage_name
+
+
+
+ a| 
+SVM 在集群模式 Data ONTAP 中运行
+ a| 
+SnapDrive 配置集 -vserver user_namestorage_name
+
+|===
+

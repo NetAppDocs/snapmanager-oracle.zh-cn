@@ -1,0 +1,73 @@
+---
+permalink: unix-administration/task_ensuring_that_asm_discovers_imported_disks.html 
+sidebar: sidebar 
+keywords: automatic, storage, management, asm, nfs, environment, install, snapmanager, discover, import, disk, snapmanager 
+summary: 如果在 NFS 环境中使用自动存储管理 \ （ ASM\ ），则在安装 SnapManager 后，必须确保 ASM 能够发现 SnapManager 导入的磁盘。为此，您可以将 ASM 目录的路径添加到 asm_DISKSTRING 参数中。 
+---
+= 确保 ASM 发现导入的磁盘
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果在 NFS 环境中使用自动存储管理（ Automatic Storage Management ， ASM ），则在安装 SnapManager 后，必须确保 ASM 能够发现 SnapManager 导入的磁盘。为此，您可以将 ASM 目录的路径添加到 asm_DISKSTRING 参数中。
+
+您可以使用 Oracle 工具编辑 ASM_DISKSTRING 参数。有关编辑 ASM_DISKSTRING 的信息，请参见 Oracle 文档。
+
+必须将 ASM 磁盘路径 /opt/netapp/smO/mnt/*/*/disk* 添加到 ASM_DISKSTRING 参数中定义的现有路径中。例如，如果在 ASM_DISKSTRING 中定义的路径为 /mnt/my-asm-disks/dir1/disk* ，则在添加 ASM 磁盘路径之后，更新后的路径将为 "/mnt/my-asm-disks/dir1/disk* ， /opt/netapp/smO/mnt/*/*/disk* 。
+
+
+NOTE: ASM_DISKSTRING 参数只能与 ASM 磁盘文件匹配，而不能与任何其他文件匹配。
+
+* 第一个星号（ * ）表示 SnapManager 为根挂载点生成的名称。
+* 第二个 * 表示挂载点内的目录。
+* 第三个 * 表示 NFS 文件的名称。
+
+
+如果磁盘挂载在 /opt/netapp/smO/mnt/<smo-generated -name>/ 下的目录中，则必须确保 * 与 NFS 文件系统的拓扑匹配。
+
+. 如果在网络连接存储（ NAS ）环境中将 ASM 磁盘与 NFS 结合使用，请编辑 ASM_DISKSTRING 参数，使其指向当前 ASM 目录路径。
++
+如果 ASM 磁盘挂载点为 /mnt/my-asf-disks/*/disk* ，则在编辑 ASM_DISKSTRING 后，更新后的路径为 /opt/netapp/smO/mnt/my-as-disks-20081012/disk1.nfs 。ASM_DISKSTRING 参数的格式为 /opt/netapp/smO/mnt/*/disk* 。
+
++
+** 第一个 * 与 my-as-disks-20081012 匹配。
+** 该磁盘 * 与 disk1.nfs 匹配。编辑 ASM_DISKSTRING 参数后， ASM 发现 SnapManager 导入的磁盘的结果如下：
+** NFS 磁盘 1 上的 ASM 克隆为 /opt/netapp/smO/mnt/-mnt-my-as-disks-20081012/dir1/disk1.nfs 。
+** NFS 磁盘 2 上的 ASM 克隆为 /opt/netapp/smO/mnt/-mnt-my-as-disks-20081012/dir1/disk2.nfs 。ASM_DISKSTRING 参数的格式为 /opt/netapp/smO/mnt/*/*/disk* 。
+** 第一个 * 与 -mnt-my-as-disks-20081012 匹配。
+** 第二个 * 与 dir1 匹配。
+** 第三个 * 与 disk1.nfs 和 disk2.nfs 匹配。
+
+
+. 如果在存储区域网络（ SAN ）环境中使用 ASM 磁盘，则根据环境执行以下操作之一：
++
+|===
+| 如果使用的 ASM 磁盘具有 ... | 那么 ... 
+
+
+ a| 
+基于 FCP 的 ASMLib 以及 Linux 上的 iSCSI
+ a| 
+仅使用字符设备更改 Oracle 软件所有者和用户主组的权限。ASM_DISKSTRING 路径必须为 ASM DISKSTRING = ORCL ： * 。
+
+
+
+ a| 
+AIX 上的 FCP 和 iSCSI
+ a| 
+添加 ASM_DISKSTRING 参数的路径名称，直到 ASM 目录路径为止。ASM_DISKSTRING 路径必须为 ASM DISKSTRING = /dev/hdsk/* ，其中 * 表示 ASM 磁盘名称。
+
+
+
+ a| 
+Solaris 上的 FCP 和 iSCSI
+ a| 
+添加 ASM_DISKSTRING 参数的路径名称，直到 ASM 目录路径为止。ASM_DISKSTRING 路径必须为 ASM DISKSTRING = /dev/rdsk/* ，其中 * 表示 ASM 磁盘名称。
+
++
+
+|===
+
+
+http://www.oracle.com/technetwork/indexes/documentation/index.html["Oracle 文档： www.oracle.com/technetwork/indexes/documentation/index.html"]

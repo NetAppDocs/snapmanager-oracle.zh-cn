@@ -1,0 +1,52 @@
+---
+permalink: windows/reference_the_smo_smsap_history_show_command.html 
+sidebar: sidebar 
+keywords: command, enable, detail, history, information, specific, profile, smo, show 
+summary: 使用此命令可以查看特定配置文件的详细历史记录信息。 
+---
+= smo history show 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用此命令可以查看特定配置文件的详细历史记录信息。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo history show
+-profile profile
+----
+
+
+== Parameters
+
+* * 配置文件配置文件 *
++
+指定配置文件的名称。此名称最长为 30 个字符，并且在主机中必须是唯一的。
+
+* * —静默 *
++
+在控制台上仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+在控制台上显示错误，警告和信息性消息。
+
+
+
+
+
+== 命令示例
+
+[listing]
+----
+
+          smo  history show -profile -name PROFILE1
+ -verbose
+----

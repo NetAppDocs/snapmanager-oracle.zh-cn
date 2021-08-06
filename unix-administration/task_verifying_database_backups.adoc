@@ -1,0 +1,25 @@
+---
+permalink: unix-administration/task_verifying_database_backups.html 
+sidebar: sidebar 
+keywords: backup, verify, command, block, database, corrupt, operation, invoke, oracle, smo 
+summary: 您可以使用 backup verify 命令验证数据库备份中的块是否未损坏。验证操作将为备份中的每个数据文件调用 Oracle Database Verify 实用程序。 
+---
+= 验证数据库备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 backup verify 命令验证数据库备份中的块是否未损坏。验证操作将为备份中的每个数据文件调用 Oracle Database Verify 实用程序。
+
+使用 SnapManager ，您可以在方便您和系统上的用户的任何时间执行验证操作。创建备份后，您可以立即执行验证。您必须指定包含备份的配置文件以及您创建的备份的标签或 ID 。
+
+
+NOTE: 您可以指定 -dump 以在执行备份验证操作后收集转储文件。
+
+. 输入以下命令： `smo backup verify -profile profile_name （ -label label | -idididd ）【 -force] （ -dump] ）【 -quiet （ - 静默） | -verbose （ -verbose ）】`
+
+
+* 相关信息 *
+
+xref:reference_the_smosmsapbackup_verify_command.adoc[smo backup verify 命令]

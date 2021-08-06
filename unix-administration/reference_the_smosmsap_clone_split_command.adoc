@@ -1,0 +1,268 @@
+---
+permalink: unix-administration/reference_the_smosmsap_clone_split_command.html 
+sidebar: sidebar 
+keywords: clone, split, command, independent, original, snapmanager 
+summary: 您可以运行 clone split 命令来拆分克隆。拆分的克隆将独立于原始克隆。SnapManager 会在克隆拆分操作后生成一个新的配置文件，您可以使用此配置文件管理拆分的克隆。 
+---
+= smo clone split 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 clone split 命令来拆分克隆。拆分的克隆将独立于原始克隆。SnapManager 会在克隆拆分操作后生成一个新的配置文件，您可以使用此配置文件管理拆分的克隆。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo clone split
+-profile clone-profile
+\[-host hostname\]
+\{-label clone-label | -id clone-id\} \[-split-label split-operation_label\]
+\[-comment comment\]
+-new-profile new-profile-name \[-profile-password new-profile_password\]
+-repository -dbname repo_service_name
+-host repo_host
+-port repo_port
+-login -username repo_username
+-database -dbname db_dbname
+-host db_host \[-sid db_sid\] \[-login -username db_username -password db_password
+-port db_port\]
+\[-rman \{\{-controlfile \| \{-login -username rman_username
+-password rman_password\} -tnsname rman_tnsname\}\}\]
+-osaccount osaccount
+-osgroup osgroup
+\[-retain
+\[-hourly \[-count n\] \[-duration  m\]\]
+\[-daily \[-count n\] \[-duration m\]\]
+\[-weekly  \[-count n\] \[-duration m\]\]
+\[-monthly \[-count n\] \[-duration m\]\] \]
+\[-profile-comment profile-comment\]
+\[-snapname-pattern pattern\]
+\[-protect \[-protection-policy policy_name\]\] \| \[-noprotect\]\]
+\[-summary-notification
+\[-notification
+\[-success -email email_address1,email_address2
+-subject subject-pattern\]
+\[failure -email email_address1,email_address2
+-subject subject-pattern\] \]
+[-separate-archivelog-backups
+-retain-archivelog-backups
+ -hours  hours |
+-days days |
+-weeks weeks |
+-months months
+[-protect \[-protection-policy policy_name \| -noprotect]
+[-include-with-online-backups \| -no-include-with-online-backups]]
+[-dump]
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+* * 配置文件 clone-profile*
++
+指定用于创建克隆的配置文件名称。
+
+* * —主机主机主机名 *
++
+指定克隆所在的主机名。
+
+* -label clone-lab*
++
+指定克隆操作生成的标签名称。
+
+* * — id clone-id*
++
+指定克隆操作生成的唯一 ID 。
+
+* * —拆分标签拆分操作标签 *
++
+指定克隆操作生成的标签名称。
+
+* -new-profile new-profile_name*
++
+指定成功执行拆分操作后 SnapManager 将生成的新配置文件名称。
+
+* -profile-password new-profile_password*
++
+指定配置文件的密码。
+
+* * 存储库 *
++
+指定存储库的数据库详细信息。
+
+* * — dbname repo_service_name*
++
+指定存储库的数据库的名称。您可以使用全局名称或系统标识符。
+
+* * — host repo_host*
++
+指定存储库数据库所在主机计算机的名称或 IP 地址。
+
+* * 端口 repo_port*
++
+指定用于访问存储库数据库所在主机的传输控制协议（ Transmission Control Protocol ， TCP ）端口号。
+
+* * —登录 *
++
+指定存储库登录详细信息。这是可选的。如果未指定，则 SnapManager 默认为操作系统身份验证连接模式。
+
+* * 用户名 repo_username*
++
+指定访问存储库数据库所在主机所需的用户名。
+
+* * —数据库 *
++
+指定要备份，还原或克隆的数据库的详细信息。
+
+* * — dbname db_dbname*
++
+指定配置文件所描述的数据库的名称。您可以使用全局名称或系统标识符。
+
+* * —主机 db_host*
++
+指定数据库所在主机计算机的名称或 IP 地址。
+
+* * — SID db_sid*
++
+指定配置文件所描述的数据库的系统标识符。默认情况下， SnapManager 使用数据库名称作为系统标识符。如果系统标识符与数据库名称不同，则必须使用 -SID 选项指定它。
+
++
+例如，如果您使用的是 Oracle Real Application Clusters （ RAC ），则必须在从中执行 SnapManager 的 RAC 节点上指定 RAC 实例的系统标识符。
+
+* * —登录 *
++
+指定数据库登录详细信息。
+
+* * 用户名 db_username*
++
+指定访问配置文件所述数据库所需的用户名。
+
+* * 密码 db_password*
++
+指定访问配置文件所述数据库所需的密码。
+
+* * — RMAN*
++
+指定 SnapManager 使用 Oracle Recovery Manager （ RMAN ）对备份进行目录编制时使用的详细信息。
+
+* * —控制文件 *
++
+将目标数据库控制文件指定为 RMAN 存储库，而不是目录。
+
+* * —登录 *
++
+指定 RMAN 登录详细信息。
+
+* * 密码 RMAN_password*
++
+指定用于登录到 RMAN 目录的密码。
+
+* * 用户名 RMAN_USERS*
++
+指定用于登录到 RMAN 目录的用户名。
+
+* * — tnsname tnsname*
++
+指定 tnsnamname 连接名称（在 tsname.ora 文件中定义）。
+
+* * — osaccount osaccount*
++
+指定 Oracle 数据库用户帐户的名称。SnapManager 使用此帐户执行 Oracle 操作，例如启动和关闭。通常由用户在主机上拥有 Oracle 软件，例如 Oracle 。
+
+* * — osgroup osgroup*
++
+指定与 Oracle 帐户关联的 Oracle 数据库组名称。
+
++
+
+NOTE: UNIX 需要使用 -osaccount 和 -osgroup 变量，但在 Windows 上运行的数据库不允许使用这些变量。
+
+* * —保留时间为：每小时（ -hourly ， -count n ），（ -duration m ），（ -daily ， -count n ），（ -duration m ），（ -weekly ， -count n ），（ -monthly ， -count n ），（ -duration m ）， *
++
+指定备份的保留策略。
+
++
+对于每个保留类，可以指定保留计数或保留持续时间，也可以同时指定这两者。持续时间以类的单位为单位（例如，小时表示每小时，天表示每天）。例如，如果为每日备份指定的保留期限仅为 7 ，则 SnapManager 不会限制配置文件的每日备份数（因为保留数量为 0 ），但 SnapManager 会自动删除 7 天前创建的每日备份。
+
+* -profile-comment profile-comment *
++
+指定用于描述配置文件域的配置文件的注释。
+
+* * — snapname-pattern 模式 *
++
+指定 Snapshot 副本的命名模式。您还可以在所有 Snapshot 副本名称中包括自定义文本，例如，用于高可用性操作的 HAOPS 。您可以在创建配置文件时或创建配置文件后更改 Snapshot 副本命名模式。更新后的模式仅适用于尚未创建的 Snapshot 副本。已存在的 Snapshot 副本会保留先前的 Snapname 模式。您可以在模式文本中使用多个变量。
+
+* *-protect -protection-policy policy_name*
++
+指定是否应将备份保护到二级存储。
+
++
+
+NOTE: 如果指定 -protect 时未指定 -protection-policy ，则数据集将没有保护策略。如果在创建配置文件时指定了 -protect 且未设置 -protection-policy ，则稍后可以使用 SMO profile update 命令设置该配置文件，也可以使用 Protection Manager 的控制台由存储管理员设置。
+
+* * —摘要通知 *
++
+指定在存储库数据库下为多个配置文件配置摘要电子邮件通知的详细信息。SnapManager 将生成此电子邮件。
+
+* * —通知 *
++
+指定为新配置文件配置电子邮件通知的详细信息。SnapManager 将生成此电子邮件。通过电子邮件通知，数据库管理员可以接收有关使用此配置文件执行的数据库操作的成功或失败状态的电子邮件。
+
+* * —成功 *
++
+指定在 SnapManager 操作成功时为配置文件启用电子邮件通知。
+
+* 电子邮件地址 1 电子邮件地址 2 *
++
+指定收件人的电子邮件地址。
+
+* * 主题主题模式 *
++
+指定电子邮件主题。
+
+* * - 故障 *
++
+指定在 SnapManager 操作失败时为配置文件启用电子邮件通知。
+
+* *-separate archivelog-backups*
++
+指定归档日志备份与数据文件备份分开。这是一个可选参数，您可以在创建配置文件时提供此参数。使用此选项分隔备份后，您可以创建仅数据文件备份或仅归档日志备份。
+
+* -retain-archivelog-backups -hours | -daysdays | -weeksweeksweeks| -monthsmonths*
++
+指定根据归档日志保留期限（每小时，每天，每周或每月）保留归档日志备份。
+
+* * 保护 "-protection-policypolicy_name] | -noprotect*
++
+指定根据归档日志保护策略保护归档日志文件。
+
++
+指定不使用 -noprotect 选项保护归档日志文件。
+
+* *-include-with 联机备份 | -no-include-with -online backup*
++
+指定归档日志备份与联机数据库备份一起包含。
+
++
+指定归档日志备份不会与联机数据库备份一起包含。
+
+* * —转储 *
++
+指定在成功执行配置文件创建操作后不收集转储文件。
+
+* * —静默 *
++
+在控制台中仅显示错误消息。默认设置显示错误和警告消息。
+
+* * —详细 *
++
+在控制台中显示错误，警告和信息性消息。
+
+

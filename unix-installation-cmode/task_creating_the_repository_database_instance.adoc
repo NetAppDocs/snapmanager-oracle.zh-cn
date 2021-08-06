@@ -1,0 +1,30 @@
+---
+permalink: unix-installation-cmode/task_creating_the_repository_database_instance.html 
+sidebar: sidebar 
+keywords: repository, database, instance, oracle, snapmanager, stand-alone 
+summary: 存储库数据库实例是一个 Oracle 数据库，您可以在其中创建 SnapManager 存储库。存储库数据库实例必须是独立数据库，不能是目标数据库。 
+---
+= 创建存储库数据库实例
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+存储库数据库实例是一个 Oracle 数据库，您可以在其中创建 SnapManager 存储库。存储库数据库实例必须是独立数据库，不能是目标数据库。
+
+要访问此数据库，您必须具有 Oracle 数据库和用户帐户。
+
+. 登录到 SQL * 加号： sqlplus "/" as sysdba"
+. 为 SnapManager 存储库创建新的表空间： create tablespacetablespace_name datafile ′ /u01/app/oracle/oradata/datafile/tablespace_name.dbf′ size 100m autodelete on ；
++
+tableespace_name 是表空间的名称。
+
+. 验证表空间的块大小：从 dba_tablespaces 中选择 tablespace_name ， block_size ；
++
+SnapManager 要求表空间的块大小至少为 4-K 。
+
+
+
+* 相关信息 *
+
+http://www.netapp.com/us/media/tr-3761.pdf["NetApp 技术报告 3761 ：《 SnapManager for Oracle ：最佳实践》"]

@@ -1,0 +1,27 @@
+---
+permalink: windows/task_mounting_backups.html 
+sidebar: sidebar 
+keywords: snapmanager, automatic, handle, mount, backup, available, host, scenario, oracle, recovery, manager, rman 
+summary: SnapManager 会自动处理备份的挂载，以使其可供主机使用。如果您使用 Oracle Recovery Manager （ RMAN ）等外部工具访问备份中的文件，则也可以挂载备份。 
+---
+= 挂载备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager 会自动处理备份的挂载，以使其可供主机使用。如果您使用 Oracle Recovery Manager （ RMAN ）等外部工具访问备份中的文件，则也可以挂载备份。
+
+如果您使用的是 RMAN ，则必须使用挂载操作更改备份的状态（允许访问），并使用卸载操作更改备份的状态（从而删除访问）。
+
+smo backup mount 命令可显示包含备份的 Snapshot 副本已挂载的路径列表。
+
+
+NOTE: 您可以选择在备份挂载操作成功或失败后收集转储文件。
+
+. 要挂载备份，请输入以下命令： smo backup mount -profile profile_name ｛ labelLabel [data | -archivelogs] | -iddid ｝ （ -host-host] ）（ -dump ）（ -quiet | -verbose ）
+
+
+* 相关信息 *
+
+xref:reference_the_smosmsapbackup_mount_command.adoc[smo backup mount 命令]

@@ -1,0 +1,45 @@
+---
+permalink: unix-administration/task_restoring_backup_using_single_file_snaprestore.html 
+sidebar: sidebar 
+keywords: restore, backup, single, file, snaprestore, sfsr, method, restoring, gui, snapmanager, network, system, nfs, secure, shell, ssh, cluster, service, log 
+summary: 您可以使用 Single File SnapRestore \ （ SFSR\ ）方法还原备份。 
+---
+= 使用单个文件 SnapRestore 还原备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用单文件备份（ Single File SnapRestore ， SFSR ）方法还原备份。
+
+. 从 SnapManager 图形用户界面（ GUI ）创建配置文件。
+. 使用 GUI 备份数据库。
+. 从集群服务组取消 Oracle 和网络文件系统（ NFS ）服务组的链接并将其冻结。
+. 通过在 SnapDrive.conf 文件中将 #secure communication-amongst cluster-nodes 设置为 on ，确保在主机和适用于 UNIX 的 SnapDrive 之间配置了安全 Shell （ SSH ）。
+. 在 SnapManager 图形用户界面中，使用 -alllogs 执行完整备份还原和恢复。
+. 取消冻结服务组并将其链接回集群服务组。
++
+
+NOTE: 只有在使用适用于 UNIX 的 SnapDrive 4.1.1 D2 和适用于 UNIX 的 SnapDrive 4.2 时，此配置才适用。
+
++
+如果在执行一个还原操作后执行另一个还原操作，则创建备份 Snapshot 副本可能会失败。如果您在 SFSR 可以完成的指定时间内运行连续还原操作，则 SnapManager for Oracle 将遇到 Snapshot 副本创建错误。
+
++
+要防止 Snapshot 副本创建错误，请确保在 SFSR 进行期间之后执行还原操作。
+
++
+为此，请在存储系统命令行界面（ CLI ）中输入以下命令，以检查 LUN 克隆拆分进程状态： rshfilernnamelun clone split statuslun-name
+
++
+[listing]
+----
+
+Sample Output:
+/vol/delaware_760gb/lun700gb (64% complete)..
+----
++
+
+NOTE: 运行 Veritas 堆栈且具有 SFRAC 和 VCS 环境的 Solaris 主机不支持基于卷的 SnapRestore （ VBSR ）。
+
+

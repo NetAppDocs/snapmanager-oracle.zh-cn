@@ -1,0 +1,71 @@
+---
+permalink: unix-administration/reference_the_smosmsapprotection_policy_command.html 
+sidebar: sidebar 
+keywords: run, protection-policy, command, list, protection, policies, applied, smo 
+summary: 您可以运行 protection-policy 命令列出可应用于配置文件的保护策略。创建新配置文件或更新现有配置文件时，可以应用保护策略。您也可以使用 Protection Manager 控制台为配置文件设置保护策略。 
+---
+= smo protection-policy 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 protection-policy 命令列出可应用于配置文件的保护策略。创建新配置文件或更新现有配置文件时，可以应用保护策略。您也可以使用 Protection Manager 控制台为配置文件设置保护策略。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo protection-policy list
+----
+
+NOTE: 要使用此命令，必须在服务器上安装 Protection Manager 和 SnapDrive 。
+
+
+
+== Parameters
+
+* * 列表 *
++
+显示可在配置文件上设置的保护策略列表。
+
+
+
+
+
+== 示例
+
+以下示例列出了可设置为配置文件的保护策略：
+
+[listing]
+----
+ smo protection-policy list
+----
+[listing]
+----
+
+Back up
+Back up, then mirror
+Chain of two mirrors
+DR Back up
+DR Back up, then mirror
+DR Mirror
+DR Mirror and back up
+DR Mirror and mirror
+DR Mirror, then back up
+DR Mirror, then mirror
+Local backups only
+Mirror
+Mirror and back up
+Mirror to two destinations
+Mirror, then back up
+No protection
+Partial-volume Mirror
+Remote backups only
+----
+* 相关信息 *
+
+xref:concept_managing_profiles_for_efficient_backups.adoc[管理配置文件以实现高效备份]

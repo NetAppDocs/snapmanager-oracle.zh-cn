@@ -1,0 +1,48 @@
+---
+permalink: windows/reference_the_smosmsap_server_restart_command.html 
+sidebar: sidebar 
+keywords: command, restart, host, server, enter, root, smo 
+summary: 此命令将重新启动 SnapManager 主机服务器，并以 root 身份输入。 
+---
+= smo_server restart 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此命令将重新启动 SnapManager 主机服务器，并以 root 身份输入。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo_server restart
+[-quiet | -verbose]
+----
+
+
+== Parameters
+
+* * —静默 *
++
+指定控制台上仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+指定控制台上显示错误，警告和信息性消息。
+
+
+
+
+
+== 命令示例
+
+以下示例将重新启动主机服务器。
+
+[listing]
+----
+smo_server restart
+----

@@ -1,0 +1,16 @@
+---
+permalink: windows/task_viewing_a_list_of_snapmanager_history_operation_as_a_report.html 
+sidebar: sidebar 
+keywords: view, history, specific, snapmanager, operation, report, base, retention, setting 
+summary: 您可以根据保留设置以报告形式查看特定或所有 SnapManager 操作的历史记录。 
+---
+= 查看 SnapManager 操作历史记录列表
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根据保留设置以报告形式查看特定或所有 SnapManager 操作的历史记录。
+
+. 要查看 SnapManager 历史记录操作的列表，请输入以下命令： smo history list -profile ｛ -name ， profile_name [profile_name1 ， profile_name2] | -all-repository-login （ -passwordrepo_password ） -usernamerepo_username-dberepo_dbname-hoespo_host-portrepo_operation2 ， -quiet 操作数组名称
+

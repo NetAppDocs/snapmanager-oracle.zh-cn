@@ -1,0 +1,20 @@
+---
+permalink: unix-administration/task_checking_the_snapmanager_software_version.html 
+sidebar: sidebar 
+keywords: determine, version, product, run, local, host, command, snapmanager, software, smo, check 
+summary: 您可以通过运行 version 命令来确定本地主机上运行的产品版本。 
+---
+= 正在检查 SnapManager 软件版本
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过运行 version 命令来确定本地主机上运行的产品版本。
+
+. 要检查 SnapManager 版本，请输入以下命令： smo version
+
+
+* 相关信息 *
+
+xref:reference_the_smosmsapversion_command.adoc[smo version 命令]

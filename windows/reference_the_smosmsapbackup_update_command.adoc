@@ -1,0 +1,88 @@
+---
+permalink: windows/reference_the_smosmsapbackup_update_command.html 
+sidebar: sidebar 
+keywords: run, backup, update, command, retention, policy, smo 
+summary: 您可以运行 backup update 命令来更新备份保留策略。 
+---
+= smo backup update 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 backup update 命令来更新备份保留策略。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo backup update
+-profile profile_name
+[-label label \[-data \| -archivelogs\] \| \[-id guid\]
+\[-retain \{-hourly \| -daily \| -weekly \| -monthly \| -unlimited\}\]
+\[-comment comment_text\]
+[-quiet | -verbose]
+----
+
+
+== Parameters
+
+* -profile profile_name*
++
+指定要更新备份的配置文件。配置文件包含数据库的标识符和其他数据库信息。
+
+* * — id guid*
++
+使用指定 GUID 验证备份。GUID 由 SnapManager 在创建备份时生成。您可以使用 smo backup list 命令显示每个备份的 GUID 。
+
+* * —标签标签 *
++
+将备份标签和备份范围指定为数据文件或归档日志。
+
+* * 数据 *
++
+指定数据文件。
+
+* * — archivelogs*
++
+指定归档日志文件。
+
+* * — comment comtion_text*
++
+输入有关备份更新的文本（最多 200 个字符）。您可以包含空格。
+
+* * —静默 *
++
+在控制台中仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+在控制台中显示错误，警告和信息性消息。
+
+* * —保留 ｛ -hourly ； -daily ； -weekly ； -monthly ； -unlimited ｝ *
++
+指定备份应保留在每小时，每天，每周，每月还是无限制的基础上。如果未指定 -retain ，则保留类默认为 -hourly 。要永久保留备份，请使用 -unlimited 选项。unlimited 选项使备份不符合删除条件。
+
+
+
+
+
+== 示例
+
+以下示例将更新备份，将保留策略设置为无限制：
+
+[listing]
+----
+smo backup update -profile SALES1 -label full_backup_sales_May
+-retain -unlimited -comment save_forever_monthly_backup
+----
+* 相关信息 *
+
+xref:task_changing_the_backup_retention_policy.adoc[更改备份保留策略]
+
+xref:task_retaining_backups_forever.adoc[永久保留备份]
+
+xref:task_freeing_or_deleting_retention_policy_exempt_backups.adoc[释放或删除保留策略免除备份]

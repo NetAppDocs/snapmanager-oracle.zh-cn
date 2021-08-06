@@ -1,0 +1,36 @@
+---
+permalink: unix-administration/concept_limitations_related_to_oracle_database.html 
+sidebar: sidebar 
+keywords: snapmanager, limitations, oracle, database, 10gr2, 11gr1, 11gr2, 12_c_, ocds, dnfs 
+summary: 开始使用 SnapManager 之前，您必须了解与 Oracle 数据库相关的限制。 
+---
+= 与 Oracle 数据库相关的限制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+开始使用 SnapManager 之前，您必须了解与 Oracle 数据库相关的限制。
+
+限制如下：
+
+* SnapManager 支持 Oracle 10gR2 ， 11gR1 ， 11gR2 和 12_c_ ，但不支持将 Oracle 10gR1 用作存储库或目标数据库。
+* SnapManager 不支持使用扫描 IP 地址代替主机名。
++
+扫描 IP 是 Oracle 11gR2 中的一项新功能。
+
+* SnapManager 不支持 Oracle 集群文件系统（ OCFS ）。
+* 直接 NFS （ DNFS ）环境中的 Oracle 11g 允许在 oranfstab 文件中进行额外的挂载点配置，例如多个路径用于负载平衡。
++
+SnapManager 不会修改 oranfstab 文件。您必须在 oranfstab 文件中手动添加希望克隆的数据库使用的任何其他属性。
+
+* SnapManager 3.2 已弃用对 Oracle Database 9i 的支持。
+* SnapManager 3.3.1 已弃用对 Oracle 数据库 10gR2 （ 10.2.0.5 之前的版本）的支持。
+
+
+
+NOTE: 参考互操作性表确定支持的不同 Oracle 数据库版本。
+
+* 相关信息 *
+
+http://support.netapp.com/NOW/products/interoperability/["互操作性表： support.netapp.com/NOW/products/interoperability"]

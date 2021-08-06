@@ -1,0 +1,18 @@
+---
+permalink: windows/concept_why_you_should_prune_archive_log_files.html 
+sidebar: sidebar 
+keywords: oracle, enable, delete, archive, log, file, back, up, prune 
+summary: 通过 SnapManager for Oracle ，您可以从已备份的活动文件系统中删除归档日志文件。 
+---
+= 为什么应修剪归档日志文件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 SnapManager for Oracle ，您可以从已备份的活动文件系统中删除归档日志文件。
+
+通过修剪， SnapManager 可以为不同的归档日志文件创建备份。删除以及备份保留策略会在清除备份后释放归档日志空间。
+
+
+NOTE: 如果为归档日志文件启用了 Flash Recovery Area （ FRA ），则无法对归档日志文件进行修剪。如果在 Flash Recovery 区域中指定归档日志位置，则必须确保同时在 archive_log_dest 参数中指定归档日志位置。

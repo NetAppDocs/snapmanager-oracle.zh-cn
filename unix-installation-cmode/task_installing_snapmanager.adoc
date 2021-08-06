@@ -1,0 +1,56 @@
+---
+permalink: unix-installation-cmode/task_installing_snapmanager.html 
+sidebar: sidebar 
+keywords: install, snapmanager, host, database, backup, running 
+summary: 您必须在运行要备份的数据库的每个主机上安装 SnapManager 。 
+---
+= 安装 SnapManager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须在运行要备份的数据库的每个主机上安装 SnapManager 。
+
+您必须已在数据库主机上安装 SnapDrive for UNIX 并与存储系统建立连接。
+
+有关如何安装 SnapDrive 并与存储系统建立连接的信息，请参见 SnapDrive for UNIX 文档。
+
+每个数据库主机必须安装一个 SnapManager 实例。如果您使用的是 Real Application Cluster （ RAC ）数据库，并且要备份 RAC 数据库，则必须在 RAC 数据库的所有主机上安装 SnapManager 。
+
+. 从 NetApp 支持站点下载适用于 UNIX 的 SnapManager for Oracle 安装包，并将其复制到主机系统。
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["NetApp 下载：软件"]
+
+. 以 root 用户身份登录到数据库主机。
+. 在命令提示符处，导航到复制安装包的目录。
+. 使安装包可执行： chmod 755install_package.bin
+. 安装 SnapManager ： ./install_package.bin
+. 按 Enter 继续。
+. 执行以下步骤：
++
+.. 按 Enter 接受操作系统用户的默认值。
++
+用户的默认值为 oracle 。
+
+.. 按 Enter 接受操作系统组的默认值。
++
+组的默认值为 dba 。
+
+.. 按 Enter 接受启动类型的默认值。
+
+
++
+此时将显示配置摘要。
+
+. 查看配置摘要，然后按 Enter 继续。
++
+对于所有其他 UNIX 主机， SnapManager 安装在 /opt/NTAPsmo for Solaris 和 /opt/netapp/ 上。
+
+
+
+* 相关信息 *
+
+xref:task_setting_up_snapmanager.adoc[设置 SnapManager]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30050["NetApp 文档： SnapDrive for UNIX"]

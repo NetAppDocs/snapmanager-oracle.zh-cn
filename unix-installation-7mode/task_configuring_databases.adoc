@@ -1,0 +1,13 @@
+---
+permalink: unix-installation-7mode/task_configuring_databases.html 
+sidebar: sidebar 
+keywords: configure, oracle, database, snapmanager, online 
+summary: 您必须至少配置两个 Oracle 数据库，一个是要使用 SnapManager 备份的目标数据库，另一个是用于存储目标数据库元数据的存储库数据库。在执行 SnapManager 操作之前，必须配置目标数据库和 SnapManager 存储库数据库并使其联机。 
+---
+= 配置数据库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须至少配置两个 Oracle 数据库：一个要使用 SnapManager 备份的目标数据库；一个用于存储目标数据库元数据的存储库数据库。在执行 SnapManager 操作之前，必须配置目标数据库和 SnapManager 存储库数据库并使其联机。

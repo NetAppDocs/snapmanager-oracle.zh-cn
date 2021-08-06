@@ -1,0 +1,12 @@
+---
+permalink: unix-installation-cmode/delete_reference_trademark.html 
+sidebar: sidebar 
+keywords: trademark, information 
+summary: Trademark information 
+---
+= Trademark information
+:icons: font
+:imagesdir: ../media/
+
+
+NetApp ， NetApp 标识， Go further ， faster ， AltaVault ， ASUP ， AutoSupport ， Campaign Express ， Cloud ONTAP ，集群模式 Data ONTAP ， 客户健康， Data ONTAP ， DataMotion ， Fitness ， Flash Accel ， Flash Cache ， Flash Pool ， FlashRay ， FlexArray ， FlexCache ， FlexClone ， FlexPod ， FlexScale ， FlexShare ， FlexVol ， FPolicy ， GetSuccessful ， LockVault ， Manage ONTAP ， Mars ， MetroCluster ， MultiStore ， NetApp Insight ， OnCommand ， ONTAP ， ONTAPI ， RAID DP ， RAID-TEC ， SANtricity ， SecureShare ， 精简性，模拟 ONTAP ， Snap Creator ， SnapCenter ， SnapCopy ， SnapDrive ， SnapIntegrator ， SnapLock ， SnapManager ， SnapMirror ， SnapMover ， SnapProtect ， SnapRestore ， Snapshot ， SnapValidator ， SnapVault ， StorageGRID ， Tech OnTap ， Unbound Cloud 和 WAFL 以及其他名称是 NetApp ， Inc. 在美国和 / 或其他国家或地区的商标或注册商标。所有其他品牌或产品均为其各自所有者的商标或注册商标，应予同样对待。有关最新的 NetApp 商标列表，请参见网站 http://www.netapp.com/us/legal/netapptmlist.aspx[]。

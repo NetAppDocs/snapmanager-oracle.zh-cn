@@ -1,0 +1,50 @@
+---
+permalink: windows/reference_the_smosmsap_server_status_command.html 
+sidebar: sidebar 
+keywords: smo, server, status, command, host 
+summary: 您可以运行 smo_server status 命令来查看 SnapManager 主机服务器的状态。 
+---
+= smo_server status 命令
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以运行 smo_server status 命令来查看 SnapManager 主机服务器的状态。
+
+
+
+== 语法
+
+[listing]
+----
+
+        smo_server status
+\[-quiet \| -verbose\]
+----
+
+
+== Parameters
+
+* * —静默 *
++
+指定控制台中仅显示错误消息。默认情况下会显示错误和警告消息。
+
+* * —详细 *
++
+指定控制台中显示错误，警告和信息性消息。
+
+
+
+
+
+== 示例
+
+以下示例显示了主机服务器的状态：
+
+[listing]
+----
+smo_server status
+SMO-17104: SnapManager Server version 3.3.1 is running on secure port 25204 with PID 11250
+  and has 0 operations in progress.
+----

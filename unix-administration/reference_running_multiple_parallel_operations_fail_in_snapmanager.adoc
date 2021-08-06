@@ -1,0 +1,27 @@
+---
+permalink: unix-administration/reference_running_multiple_parallel_operations_fail_in_snapmanager.html 
+sidebar: sidebar 
+keywords: multiple, parallel, operation, seperate, database, storage, system, lun, igroup, command, delete, create 
+summary: 如果在同一存储系统上的不同数据库上运行多个并行操作，则与这两个数据库关联的 LUN 的 igroup 可能会因其中一个操作而被删除。稍后，如果另一个操作尝试使用已删除的 igroup ，则 SnapManager 将显示一条错误消息。 
+---
+= 在 SnapManager 中运行多个并行操作失败
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果在同一存储系统上的不同数据库上运行多个并行操作，则与这两个数据库关联的 LUN 的 igroup 可能会因其中一个操作而被删除。稍后，如果另一个操作尝试使用已删除的 igroup ，则 SnapManager 将显示一条错误消息。
+
+例如，如果几乎同时对不同数据库运行备份删除和备份创建操作，则备份创建操作将失败。以下顺序步骤显示了几乎同时对不同数据库运行备份删除和备份创建操作时会发生的情况。
+
+. 运行 backup delete 命令。
+. 运行 backup create 命令。
+. backup create 命令可识别已存在的 igroup ，并使用相同的 igroup 来映射 LUN 。
+. backup delete 命令会删除映射到同一 igroup 的备份 LUN 。
+. 然后， backup delete 命令将删除 igroup ，因为没有与该 igroup 关联的 LUN 。
+. backup create 命令将创建备份并尝试映射到不存在的 igroup ，因此操作失败。
+
+
+* 操作 *
+
+您必须为数据库使用的每个存储系统创建 igroup ，并使用以下命令使用 igroup 信息更新 SnapDrive ： igroup add

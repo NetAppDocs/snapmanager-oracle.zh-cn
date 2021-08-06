@@ -1,0 +1,27 @@
+---
+permalink: unix-administration/task_configuring_snapdrive_when_rbac_is_not_enabled.html 
+sidebar: sidebar 
+keywords: register, root, user, administrator, datafabric, manager, server, root, user, storage, system, snapdrive, rbac 
+summary: 要启用数据保护，您必须将 DataFabric Manager 服务器的 root 用户或管理员以及存储系统的 root 用户注册到 SnapDrive 。 
+---
+= 未启用 RBAC 时配置 SnapDrive
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要启用数据保护，您必须将 DataFabric Manager 服务器的 root 用户或管理员以及存储系统的 root 用户注册到 SnapDrive 。
+
+. 要刷新 DataFabric Manager 服务器以更新目标数据库直接在存储系统上所做的更改，请输入以下命令：
++
+dfm 主机发现 storage_system
+
+. 要向 SnapDrive 注册 DataFabric Manager 服务器的 root 用户或管理员，请输入以下命令：
++
+SnapDrive 配置集 -dfm 管理 fm_host
+
+. 要向 SnapDrive 注册存储系统的 root 用户或管理员，请输入以下命令：
++
+SnapDrive 配置集 root storage_system
+
+
