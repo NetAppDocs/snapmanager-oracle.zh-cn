@@ -2,7 +2,7 @@
 permalink: unix-administration/task_freeing_or_deleting_retention_policy_exempt_backups.html 
 sidebar: sidebar 
 keywords: backup, retention, class, unlimited, delete, free, directly, policy, exempt, smo 
-summary: 保留类为 " 无限制 " 的备份不能直接删除或释放。要删除或释放这些备份，必须先分配另一个保留类，例如每小时，每天，每周或每月。要删除或释放不受保留策略限制的备份，必须先更新此备份，使其符合删除或释放条件。 
+summary: '保留类为 " 无限制 " 的备份不能直接删除或释放。要删除或释放这些备份，必须先分配另一个保留类，例如每小时，每天，每周或每月。要删除或释放不受保留策略限制的备份，必须先更新此备份，使其符合删除或释放条件。' 
 ---
 = 释放或删除保留策略免除备份
 :icons: font
