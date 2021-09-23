@@ -148,9 +148,7 @@ SnapManager 还支持从闪存恢复区域目标备份归档日志文件。
  a| 
 * 指定是否要对特定文件执行部分备份 *
  a| 
-....
-Specify the -data-files option and then list the files, separated by commas. For example, list the file names f1, f2, and f3 after the option.
-....
+ Specify the -data-files option and then list the files, separated by commas. For example, list the file names f1, f2, and f3 after the option.
 + 在 Windows 上创建部分数据文件备份的示例
 
 +
@@ -166,9 +164,7 @@ smo backup create -profile nosep -data -files "J:\\mnt\\user\\user.dbf" -online
  a| 
 * 指定是否要对特定表空间执行部分备份 *
  a| 
-....
-Specify the -data-tablespaces option and then list the tablespaces, separated by commas. For example, use ts1, ts2, and ts3 after the option.
-....
+ Specify the -data-tablespaces option and then list the tablespaces, separated by commas. For example, use ts1, ts2, and ts3 after the option.
 + SnapManager 支持备份只读表空间。创建备份时， SnapManager 会将只读表空间更改为读写。创建备份后，表空间将更改为只读。
 
 + 创建部分表空间备份的示例
@@ -185,9 +181,7 @@ Specify the -data-tablespaces option and then list the tablespaces, separated by
  a| 
 * 指定是否要按以下格式为每个备份创建唯一标签： full_hot_mybackup_label *
  a| 
-....
-For Windows, you might enter this example:
-....
+ For Windows, you might enter this example:
 +
 
 [listing]
@@ -201,9 +195,7 @@ For Windows, you might enter this example:
  a| 
 * 指定是否要分别为归档日志文件和数据文件创建备份 *
  a| 
-....
-Specify the following options and variables:
-....
+ Specify the following options and variables:
 ** -archivelog 创建归档日志文件的备份。
 ** -backup-dest 指定要备份的归档日志文件目标。
 ** -exclude-dest 指定要排除的归档日志目标。
@@ -227,9 +219,7 @@ smo backup create -profile nosep -archivelogs -backup-dest "J:\\mnt\\archive_des
  a| 
 * 指定是否要同时创建数据文件和归档日志文件的备份 *
  a| 
-....
-Specify the following options and variables:
-....
+ Specify the following options and variables:
 ** -data 选项以指定数据文件。
 ** -archivelog 选项以指定归档日志文件。在 Windows 上同时备份数据文件和归档日志文件的示例
 +
@@ -246,9 +236,7 @@ smo backup create -profile nosep -data -online -archivelogs -backup-dest "J:\\mn
  a| 
 * 指定是否要在创建备份时对归档日志文件进行修剪 *
  a| 
-....
-Specify the following options and variables:
-....
+ Specify the following options and variables:
 ** -prunelog 指定从归档日志目标删除归档日志文件。
 +
 *** -all 指定从归档日志目标中删除所有归档日志文件。

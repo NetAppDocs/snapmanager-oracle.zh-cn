@@ -106,27 +106,15 @@ NOTE: 如果为 sys 特权用户提供的数据库凭据与为 sys 特权用户�
 
 
  a| 
-....
-LUN cloning
-.... a| 
-....
-A new clone LUN is created within the same volume.
-.... a| 
-....
-When the -reserve option for a LUN is set to yes, space is reserved for the full LUN size within the volume.
-....
+ LUN cloning a| 
+ A new clone LUN is created within the same volume. a| 
+ When the -reserve option for a LUN is set to yes, space is reserved for the full LUN size within the volume.
 
 
  a| 
-....
-Volume cloning
-.... a| 
-....
-A new FlexClone is created, and the clone LUN exists within the new clone volume. Uses the FlexClone technology.
-.... a| 
-....
-When the -reserve option for a volume is set to yes, space is reserved for the full volume size within the aggregate.
-....
+ Volume cloning a| 
+ A new FlexClone is created, and the clone LUN exists within the new clone volume. Uses the FlexClone technology. a| 
+ When the -reserve option for a volume is set to yes, space is reserved for the full volume size within the aggregate.
 +
 
 |===
