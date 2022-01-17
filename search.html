@@ -155,7 +155,12 @@
     gtag('config', 'UA-81697994-3');
   }
   </script>
+  <script src='/zh-cn/snapmanager-oracle/js/version-dropdown.js'></script>
   <script src='/zh-cn/snapmanager-oracle/js/product-family.js'></script>
+  <script src='/zh-cn/snapmanager-oracle/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/snapmanager-oracle/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/snapmanager-oracle/js/jszip.min.js'></script>
+  <script src='/zh-cn/snapmanager-oracle/js/pdf-ux.js'></script>
 </head>
 
 
@@ -251,9 +256,6 @@
       </div>
       <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
         <div class="n-language-selector-menu">
-          <div class="n-language-selector-menu__header">
-            <span class="n-language-selector-menu__title">选择您的语言</span>
-          </div>
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
@@ -265,10 +267,6 @@
                 </li></ul>
             </li>
           </ul>
-          <div class="menu__footer">
-            <p>当前语言: 简体中文
-            </p>
-          </div>
         </div>
       </div>
     </div><!-- End Language Selector -->
@@ -305,31 +303,6 @@
   <!-- End property bar -->
 </header>
 
-        <div class="ie-utility">
-  <div class="ie-menu">
-    <div class="n-breadcrumb">
-      <ul class="n-breadcrumb__list">
-        <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">主页</a>
-        </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">文档</a>
-        </li>
-        
-
-        <li class="n-breadcrumb__list-item">
-          <a href="/zh-cn/snapmanager-oracle/">SnapManager&nbsp;Oracle</a>
-        </li>
-        <li class="n-breadcrumb__list-item">
-          Search results
-        </li>
-      </ul>
-    </div>
-
-    <div style="clear: both"></div><!-- Main needs to have height -->
-  </div>
-</div>
-
 
         <main id="n-main-content" class="n-main-content">
           <!-- Start Documentation Content -->
@@ -338,68 +311,51 @@
   
   <div class="col-md-3" >
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDF<span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
     </span>
   </a>
 </div>
-<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><div class="n-pdf-section">
-      <span class="n-pdf-section-title">站点</span>
-    </div>
-    <li>
-      <a target="_blank" href="/zh-cn/snapmanager-oracle/pdfs/fullsite-sidebar/适用于_Oracle_的_SnapManager_3_4_2.pdf" >
-        <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
-        适用于 Oracle 的 SnapManager 3.4.2
-      </a>
-    </li>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/zh-cn/snapmanager-oracle/pdfs/fullsite-sidebar/适用于_Oracle_的_SnapManager_3_4_2.pdf" >
+          <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
 
 
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-          <div class="n-pdf-section">
-            <span class="n-pdf-section-title">
-              小节
-            </span>
-          </div>
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/适用于集群模式_Data_ONTAP_的_UNIX_安装和设置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             适用于集群模式 Data ONTAP 的 UNIX 安装和设置
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             产品概述
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -409,33 +365,29 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备部署.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             准备部署
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -443,35 +395,31 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             配置数据库
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -481,31 +429,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/设置_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             设置 SnapManager
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -513,31 +457,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备用于_SnapMirror_和_SnapVault_复制的存储系统.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             准备用于 SnapMirror 和 SnapVault 复制的存储系统
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -545,37 +485,33 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份和验证数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             备份和验证数据库
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -584,10 +520,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -595,49 +530,36 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-          <div class="n-pdf-section">
-            <span class="n-pdf-section-title">
-              小节
-            </span>
-          </div>
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/在_7__模式下运行的适用于_Data_ONTAP_的_UNIX_安装和设置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             在 7- 模式下运行的适用于 Data ONTAP 的 UNIX 安装和设置
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             产品概述
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -647,33 +569,29 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备部署.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             准备部署
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -681,35 +599,31 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             配置数据库
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -719,31 +633,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/设置_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             设置 SnapManager
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -751,37 +661,33 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份和验证数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             备份和验证数据库
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -790,10 +696,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -801,41 +706,29 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-          <div class="n-pdf-section">
-            <span class="n-pdf-section-title">
-              小节
-            </span>
-          </div>
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/UNIX_管理.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             UNIX 管理
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             产品概述
           </a>
-        </li>
-        <span>
           
 
 
@@ -863,19 +756,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/建议的常规数据库布局和存储配置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             建议的常规数据库布局和存储配置
           </a>
-        </li>
-        <span>
           
 
 
@@ -889,19 +779,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/支持不使用_ASMLib_的_ASM_数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             支持不使用 ASMLib 的 ASM 数据库
           </a>
-        </li>
-        <span>
           
 
 
@@ -909,29 +796,25 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/部署和运行脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             部署和运行脚本
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -940,10 +823,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -954,10 +836,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -965,45 +846,38 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_时的限制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             使用 SnapManager 时的限制
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/与_Oracle_数据库相关的限制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             与 Oracle 数据库相关的限制
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1012,20 +886,18 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1057,19 +929,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/建议的常规数据库布局和存储配置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             建议的常规数据库布局和存储配置
           </a>
-        </li>
-        <span>
           
 
 
@@ -1083,19 +952,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/支持不使用_ASMLib_的_ASM_数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             支持不使用 ASMLib 的 ASM 数据库
           </a>
-        </li>
-        <span>
           
 
 
@@ -1103,29 +969,25 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/部署和运行脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             部署和运行脚本
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1134,10 +996,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1148,10 +1009,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1159,45 +1019,38 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_时的限制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             使用 SnapManager 时的限制
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/与_Oracle_数据库相关的限制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             与 Oracle 数据库相关的限制
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1206,10 +1059,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1217,19 +1069,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             升级 SnapManager
           </a>
-        </li>
-        <span>
           
 
 
@@ -1237,31 +1086,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级后任务.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             升级后任务
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1269,19 +1114,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用滚动升级升级升级_SnapManager_主机.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             使用滚动升级升级升级 SnapManager 主机
           </a>
-        </li>
-        <span>
           
 
 
@@ -1289,53 +1131,47 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是回滚.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是回滚
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1343,43 +1179,36 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在配置_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             正在配置 SnapManager
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_配置参数.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             SnapManager 配置参数
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1392,10 +1221,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1403,47 +1231,40 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安全性和凭据管理.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             安全性和凭据管理
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/关于基于角色的访问控制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             关于基于角色的访问控制
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1459,27 +1280,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/清除所有主机_存储库和配置文件的用户凭据.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             清除所有主机，存储库和配置文件的用户凭据
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1487,41 +1304,36 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/删除单个资源的凭据.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             删除单个资源的凭据
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1529,43 +1341,39 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/管理配置文件以实现高效备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             管理配置文件以实现高效备份
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1573,51 +1381,44 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             备份数据库
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是完整备份和部分备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是完整备份和部分备份
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1629,33 +1430,29 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             创建数据库备份
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1663,31 +1460,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_AutoSupport.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是 AutoSupport
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1697,33 +1490,29 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更改备份保留策略.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             更改备份保留策略
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1742,10 +1531,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1753,37 +1541,33 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/计划数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             计划数据库备份
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1791,59 +1575,66 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/还原数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             还原数据库备份
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是数据库还原.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是数据库还原
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/有关何时可以使用快速还原的准则.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             有关何时可以使用快速还原的准则
           </a>
+          
+
+
+
+          
         </li>
-        <span>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
           
-
-
-
-
-          
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1859,67 +1650,42 @@
 
 
 
-          
-        </span>
-      </span>
-    
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             从备用位置还原文件
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原备份概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             从备用位置还原备份概述
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -1930,20 +1696,18 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -1951,19 +1715,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/克隆数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             克隆数据库备份
           </a>
-        </li>
-        <span>
           
 
 
@@ -1971,27 +1732,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建克隆规范.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             正在创建克隆规范
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2005,27 +1762,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/将数据库克隆到备用主机的注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             将数据库克隆到备用主机的注意事项
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2039,51 +1792,46 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/拆分克隆.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             拆分克隆
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -2091,19 +1839,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_中的数据保护简介.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             SnapManager 中的数据保护简介
           </a>
-        </li>
-        <span>
           
 
 
@@ -2115,31 +1860,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置和启用策略驱动型数据保护.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             配置和启用策略驱动型数据保护
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2149,27 +1890,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行数据保护的注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             执行数据保护的注意事项
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2179,29 +1916,25 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从二级存储还原受保护的备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             从二级存储还原受保护的备份
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2210,10 +1943,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -2221,19 +1953,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_使用_Protection_Manager_保护数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             SnapManager for Oracle 使用 Protection Manager 保护数据库备份
           </a>
-        </li>
-        <span>
           
 
 
@@ -2245,41 +1974,37 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/受保护的备份配置和执行.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             受保护的备份配置和执行
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2287,39 +2012,34 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备份还原数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             从备份还原数据库
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -2327,39 +2047,35 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行管理操作.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             执行管理操作
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2367,45 +2083,38 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             配置电子邮件通知
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为新配置文件配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             为新配置文件配置电子邮件通知
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2413,27 +2122,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为现有配置文件配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             为现有配置文件配置电子邮件通知
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2448,10 +2153,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -2459,51 +2163,44 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为_SnapManager_操作创建任务规范文件和脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             为 SnapManager 操作创建任务规范文件和脚本
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建任务前_任务后和策略脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             创建任务前，任务后和策略脚本
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2522,10 +2219,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -2533,31 +2229,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更新与配置文件关联的存储系统名称和目标数据库主机名.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             更新与配置文件关联的存储系统名称和目标数据库主机名
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2565,37 +2257,33 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/维护_SnapManager_操作历史记录.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             维护 SnapManager 操作历史记录
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2603,173 +2291,169 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_命令参考.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             SnapManager for Oracle 命令参考
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2777,53 +2461,46 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/对_SnapManager_进行故障排除.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             对 SnapManager 进行故障排除
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/转储文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             转储文件
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2848,10 +2525,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -2862,10 +2538,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -2873,41 +2548,29 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-          <div class="n-pdf-section">
-            <span class="n-pdf-section-title">
-              小节
-            </span>
-          </div>
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/适用于_Windows_的安装和设置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             适用于 Windows 的安装和设置
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_SnapManagerfor_Oracle.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是 SnapManagerfor Oracle
           </a>
-        </li>
-        <span>
           
 
 
@@ -2915,39 +2578,35 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_的优势.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             使用 SnapManager 的优势
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2955,33 +2614,29 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是适用于_Oracle_的_SnapManager_架构.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是适用于 Oracle 的 SnapManager 架构
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -2998,10 +2653,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3009,47 +2663,40 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_部署注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             SnapManager for Oracle 部署注意事项
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/运行_SnapManager_的要求.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             运行 SnapManager 的要求
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3057,29 +2704,25 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/数据库版本支持和配置概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             数据库版本支持和配置概述
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3096,10 +2739,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3107,45 +2749,38 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安装适用于_Oracle_的_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             安装适用于 Oracle 的 SnapManager
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备安装适用于_Oracle_的_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             准备安装适用于 Oracle 的 SnapManager
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3154,10 +2789,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3165,19 +2799,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             升级 SnapManager
           </a>
-        </li>
-        <span>
           
 
 
@@ -3185,29 +2816,25 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级后任务.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             升级后任务
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3215,19 +2842,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用滚动升级升级升级_SnapManager_主机.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             使用滚动升级升级升级 SnapManager 主机
           </a>
-        </li>
-        <span>
           
 
 
@@ -3235,53 +2859,47 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是回滚.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是回滚
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3289,53 +2907,45 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在配置_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             正在配置 SnapManager
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_配置参数.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             SnapManager 配置参数
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3343,19 +2953,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/启动_SnapManagerfor_Oracle.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             启动 SnapManagerfor Oracle
           </a>
-        </li>
-        <span>
           
 
 
@@ -3367,43 +2974,36 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/访问_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             访问 SnapManager
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/启动_SnapManager_主机服务器.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             启动 SnapManager 主机服务器
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3416,10 +3016,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3427,27 +3026,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/验证环境.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             验证环境
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3455,27 +3050,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建存储库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             正在创建存储库
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3484,10 +3075,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3495,19 +3085,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安全性和凭据管理.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             安全性和凭据管理
           </a>
-        </li>
-        <span>
           
 
 
@@ -3521,27 +3108,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/清除所有主机_存储库和配置文件的用户凭据.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             清除所有主机，存储库和配置文件的用户凭据
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3549,41 +3132,36 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/删除单个资源的凭据.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             删除单个资源的凭据
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3591,43 +3169,39 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/管理配置文件以实现高效备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             管理配置文件以实现高效备份
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3635,51 +3209,44 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             备份数据库
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是完整备份和部分备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是完整备份和部分备份
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3691,31 +3258,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             创建数据库备份
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3723,31 +3286,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_AutoSupport.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是 AutoSupport
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3757,33 +3316,29 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更改备份保留策略.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             更改备份保留策略
           </a>
+          
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3802,10 +3357,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3813,37 +3367,33 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/计划数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             计划数据库备份
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3851,47 +3401,40 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/还原数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             还原数据库备份
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是数据库还原.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             什么是数据库还原
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3905,45 +3448,38 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             从备用位置还原文件
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原备份概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             从备用位置还原备份概述
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -3954,20 +3490,18 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -3975,19 +3509,16 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/克隆数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             克隆数据库备份
           </a>
-        </li>
-        <span>
           
 
 
@@ -3995,27 +3526,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建克隆规范.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             正在创建克隆规范
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4029,27 +3556,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/将数据库克隆到备用主机的注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             将数据库克隆到备用主机的注意事项
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4062,10 +3585,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -4073,45 +3595,38 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_中的数据保护简介.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             SnapManager 中的数据保护简介
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行数据保护的注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             执行数据保护的注意事项
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4119,93 +3634,80 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用后脚本保护数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             使用后脚本保护数据库备份
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建或更新_POST_脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             创建或更新 POST 脚本
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建后处理_任务规范文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             创建后处理，任务规范文件
           </a>
+          
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -4213,39 +3715,35 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行管理操作.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             执行管理操作
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4253,45 +3751,38 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             配置电子邮件通知
           </a>
-        </li>
-        <span>
           
 
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为新配置文件配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             为新配置文件配置电子邮件通知
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4299,27 +3790,23 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为现有配置文件配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             为现有配置文件配置电子邮件通知
           </a>
+          
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4334,10 +3821,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -4345,51 +3831,44 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为_SnapManager_操作创建任务规范文件和脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             为 SnapManager 操作创建任务规范文件和脚本
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建任务前_任务后和策略脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             创建任务前，任务后和策略脚本
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4408,10 +3887,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -4419,31 +3897,27 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更新与配置文件关联的存储系统名称和目标数据库主机名.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             更新与配置文件关联的存储系统名称和目标数据库主机名
           </a>
+          
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4451,37 +3925,33 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/维护_SnapManager_操作历史记录.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             维护 SnapManager 操作历史记录
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4489,155 +3959,151 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_命令参考.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             SnapManager for Oracle 命令参考
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4645,53 +4111,46 @@
 
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/对_SnapManager_进行故障排除.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             对 SnapManager 进行故障排除
           </a>
-        </li>
-        <span>
           
 
     
-      <span class="subfolders" style="display:none;">
-        
-        <li>
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/转储文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="20" height="20"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
             转储文件
           </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </li>
-        <span>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </span>
-      </span>
+      </ul>
     
 
   
@@ -4710,10 +4169,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -4724,10 +4182,9 @@
 
 
 
-
           
-        </span>
-      </span>
+        </li>
+      </ul>
     
 
   
@@ -4735,15 +4192,44 @@
 
 
 
-</ul>
-
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-cn/snapmanager-oracle/images/pdf-zip.png" width="16" height="16"/>
+      <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
 <script>
-  $("#toggleContainerPdf li.active").parents('li').toggle('display');
-  $("#toggleContainerPdf li.active").parents('span.subfolders').toggle('display');
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
   $("#toggleButtonPdf").click(function () {
     $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/snapmanager-oracle/index.html">
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/snapmanager-oracle/index.html">
         主页
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/snapmanager-oracle/releasenotes.html">
         发行说明
@@ -6298,7 +5784,7 @@
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/snapmanager-oracle/reference_legal_notices.html">
         法律声明
       </a></li></ul>
-
+</div>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -6308,6 +5794,30 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">主页</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">文档</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-cn/snapmanager-oracle/">SnapManager&nbsp;Oracle</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Search results
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
       <div class="ie-nmt-disclaimer">
   <span>
     <div class="ie-nmt-disclaimer-container">
@@ -6365,7 +5875,7 @@
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2021 NetApp, Inc.</a>
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
 
 </ul>
