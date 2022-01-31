@@ -2,7 +2,7 @@
 permalink: unix-installation-cmode/delete_concept_how_to_send_comments_about_documentation_and_receiv.html 
 sidebar: sidebar 
 keywords: doccomments, quality, documentation, high-quality, improve, feedback, receive, automatic, notification, production-level, ga, fcs, initial 
-summary: You can help us to improve the quality of our documentation by sending us your feedback.You can receive automatic notification when production-level (GA/FCS) documentation is initially released or important changes are made to existing production-level documents. 
+summary: 'You can help us to improve the quality of our documentation by sending us your feedback.You can receive automatic notification when production-level (GA/FCS) documentation is initially released or important changes are made to existing production-level documents.' 
 ---
 = How to send comments about documentation and receive update notifications
 :icons: font
