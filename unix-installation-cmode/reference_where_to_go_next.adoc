@@ -5,6 +5,7 @@ keywords: install, snapmanager, succesful, creating, backup, restore, recovery, 
 summary: 安装 SnapManager 并成功创建备份后，您可以使用 SnapManager 执行还原，恢复和克隆操作。此外，您可能还需要查找有关其他 SnapManager 功能的信息，例如计划，管理 SnapManager 操作以及维护操作历史记录。 
 ---
 = 下一步行动
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

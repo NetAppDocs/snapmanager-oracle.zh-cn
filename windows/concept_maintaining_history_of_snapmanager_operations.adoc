@@ -5,6 +5,7 @@ keywords: oracle, enable, history, single, multiple, profile, maintain, operatio
 summary: 通过 SnapManager for Oracle ，您可以维护与单个或多个配置文件关联的 SnapManager 操作历史记录。您可以从 SnapManager 命令行界面（ CLI ）或图形用户界面（ GUI ）维护历史记录。您可以将操作历史记录作为报告查看，并使用此报告进行审核合规性检查。 
 ---
 = 维护 SnapManager 操作历史记录
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

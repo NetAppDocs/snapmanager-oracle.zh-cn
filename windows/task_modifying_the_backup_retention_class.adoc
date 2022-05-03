@@ -5,6 +5,7 @@ keywords: upgrade, snapmanager, assign, default, retention, class, exist, backup
 summary: 升级后的 SnapManager 会为现有备份分配默认备份保留类。您可以根据备份要求修改默认保留类值。 
 ---
 = 修改备份保留类
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

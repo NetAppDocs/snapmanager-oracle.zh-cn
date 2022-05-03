@@ -5,6 +5,7 @@ keywords: organize, information, profile, associate, repository, repositories, d
 summary: SnapManager 会将信息组织到配置文件中，然后配置文件会与存储库关联。配置文件包含有关所管理数据库的信息，而存储库包含有关对配置文件执行的操作的数据。 
 ---
 = 什么是存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: refer, sample, database, volume, layout, configuring, database
 summary: 有关配置数据库的帮助，请参见示例数据库卷布局。 
 ---
 = 示例数据库卷布局
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

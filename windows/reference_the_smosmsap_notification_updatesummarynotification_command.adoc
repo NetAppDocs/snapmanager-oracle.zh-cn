@@ -5,6 +5,7 @@ keywords: run, notification, update-summary-notification, command, enable, summa
 summary: 您可以运行 notification update-summary-notification 命令为存储库数据库启用摘要通知。 
 ---
 = smo notification update-summary-notification 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

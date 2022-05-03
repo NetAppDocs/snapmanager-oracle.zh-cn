@@ -5,6 +5,7 @@ keywords: install, snapmanager, host, database, backup, running
 summary: 您必须在运行要备份的数据库的每个主机上安装 SnapManager 。 
 ---
 = 安装 SnapManager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

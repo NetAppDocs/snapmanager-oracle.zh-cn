@@ -5,6 +5,7 @@ keywords: control, file, archive, handling, log, backup
 summary: SnapManager 包括控制文件，并可选择在每次备份时包含归档日志文件。归档日志文件用于恢复操作。 
 ---
 = 关于控制文件和归档日志文件处理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

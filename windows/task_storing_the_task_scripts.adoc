@@ -5,6 +5,7 @@ keywords: pretask, post-task, policy, task, script, directory, target, server, b
 summary: 您必须将任务前，任务后和策略任务脚本存储在要创建备份或克隆的目标服务器上的指定目录中。对于还原操作，必须将脚本放置在要还原备份的目标服务器上的指定目录中。 
 ---
 = 存储任务脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

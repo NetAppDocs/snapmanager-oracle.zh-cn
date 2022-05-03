@@ -5,6 +5,7 @@ keywords: techco, payroll, database, snapmanager, primary, secondary, storage, c
 summary: 在此示例中， TechCo 公司在同时也是适用于 Oracle 主机的 SnapManager 的数据库服务器上运行其薪资数据库，并将其薪资数据库数据和配置文件存储在公司总部的主存储系统上。企业要求通过每天和每周备份到本地存储以及备份到 50 英里以外二级存储站点的存储系统来保护该数据库。 
 ---
 = 主存储和二级存储配置和拓扑
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

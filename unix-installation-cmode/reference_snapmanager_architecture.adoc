@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, component, work, together, provide, comprehensive
 summary: SnapManager for Oracle 包含一些组件，这些组件可以协同工作，为 Oracle 数据库提供全面而强大的备份，还原，恢复和克隆解决方案。 
 ---
 = SnapManager 架构
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

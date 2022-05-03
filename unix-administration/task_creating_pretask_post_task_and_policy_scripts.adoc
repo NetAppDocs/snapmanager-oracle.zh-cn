@@ -5,6 +5,7 @@ keywords: snapmanager, enable, create, script, preprocess, activity, post-proces
 summary: 使用 SnapManager 可以为预处理活动，后处理活动以及备份，还原和克隆操作的策略任务创建脚本。您必须将脚本放置在正确的安装目录中，才能执行 SnapManager 操作的预处理活动，后处理活动和策略任务。 
 ---
 = 创建任务前，任务后和策略脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

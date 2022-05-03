@@ -5,6 +5,7 @@ keywords: run, backup, restore, command, backup, smo
 summary: 您可以运行 backup restore 命令来还原数据库或数据库的一部分的备份，然后可以选择恢复数据库信息。 
 ---
 = smo backup restore 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

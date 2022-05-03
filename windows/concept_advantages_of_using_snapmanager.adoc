@@ -5,6 +5,7 @@ keywords: oracle, task, database, manage, data, advantage
 summary: 您可以使用 SnapManager for Oracle 对数据库执行不同的任务并高效管理数据。 
 ---
 = 使用 SnapManager 的优势
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

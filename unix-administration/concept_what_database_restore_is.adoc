@@ -5,6 +5,7 @@ keywords: snapmanager, enable, perform, volume-based, file-based, restore, opert
 summary: 通过 SnapManager ，您可以执行基于卷或基于文件的备份和还原操作。 
 ---
 = 什么是数据库还原
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

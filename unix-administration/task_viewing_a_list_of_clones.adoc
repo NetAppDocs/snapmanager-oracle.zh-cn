@@ -5,6 +5,7 @@ keywords: view, list, clone, associate, particular, profile
 summary: 您可以查看与特定配置文件关联的克隆列表。 
 ---
 = 查看克隆列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

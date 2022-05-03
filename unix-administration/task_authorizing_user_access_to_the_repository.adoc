@@ -5,6 +5,7 @@ keywords: addition, role-based, access, control, rbac, snapmanager, enable, cred
 summary: 除了基于角色的访问控制 \ （ RBAC ）之外，您还可以通过 SnapManager 为数据库用户设置访问存储库的凭据。您可以使用凭据限制或阻止对 SnapManager 主机，存储库，配置文件和数据库的访问。 
 ---
 = 授权访问存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

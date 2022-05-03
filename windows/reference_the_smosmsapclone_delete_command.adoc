@@ -5,6 +5,7 @@ keywords: run, clone, delete, command, operation, smo
 summary: 您可以运行 clone delete 命令删除克隆。如果克隆正在由任何操作使用，则不能删除该克隆。 
 ---
 = smo clone delete 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: configure, snapmanager, catalog, backup, recovery, manager, rman, orac
 summary: 您可以将 SnapManager 配置为在 Oracle 工具 Recovery Manager （ RMAN ）中对其备份进行目录，以便使用 RMAN 执行块级恢复。RMAN 可以使用数据库的控制文件或单独的恢复目录数据库作为其存储库。 
 ---
 = 使用 Oracle Recovery Manager （ RMAN ）执行块级恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

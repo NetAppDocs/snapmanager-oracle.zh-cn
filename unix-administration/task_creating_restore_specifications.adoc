@@ -5,6 +5,7 @@ keywords: restore, specification, file, xml, original, alternate, location, rest
 summary: 还原规范文件是一个 XML 文件，其中包含可从中还原文件的原始位置和备用位置。SnapManager 使用此规范文件从指定位置还原文件。 
 ---
 = 正在创建还原规范
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

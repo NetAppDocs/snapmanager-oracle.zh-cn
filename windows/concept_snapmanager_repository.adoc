@@ -5,6 +5,7 @@ keywords: repository, store, information, relate, operation, backup, tablespace,
 summary: 存储库可存储与不同 SnapManager 操作相关的信息，例如备份时间，备份的表空间和数据文件，使用的存储系统，创建的克隆以及创建的 Snapshot 副本。 
 ---
 = SnapManager 存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

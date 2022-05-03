@@ -5,6 +5,7 @@ keywords: script, initiating, initiate, backup, restore, clone, operation, snapm
 summary: 您可以在启动备份，还原或克隆操作时使用自己的脚本。SnapManager 会在备份创建向导，还原或恢复向导或克隆创建向导中显示一个任务启用页面，您可以在其中选择脚本并为脚本所需的任何参数提供值。 
 ---
 = 使用预处理脚本和后处理脚本执行备份，还原和克隆操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

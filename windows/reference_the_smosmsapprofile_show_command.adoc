@@ -5,6 +5,7 @@ keywords: run, profile, show, command, display, smo
 summary: 您可以运行 profile show 命令来显示有关配置文件的信息。 
 ---
 = smo profile show 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

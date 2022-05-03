@@ -5,6 +5,7 @@ keywords: command, enable, roll, back, revert, higher, version, original, versio
 summary: 使用此命令可以将更高版本的 SnapManager 回滚或还原到升级后的原始版本。 
 ---
 = smo reback reback 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

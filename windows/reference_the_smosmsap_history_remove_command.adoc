@@ -5,6 +5,7 @@ keywords: command, enable, remove, history, operation, single, multiple, profile
 summary: 使用此命令可以删除与一个配置文件，多个配置文件或存储库下的所有配置文件关联的 SnapManager 操作历史记录。 
 ---
 = smo history remove 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

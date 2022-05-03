@@ -5,6 +5,7 @@ keywords: delete, clone, split, operation, cycle, entry, repository, database
 summary: 您可以从存储库数据库中删除克隆拆分操作周期条目。 
 ---
 = 从存储库数据库中删除克隆拆分操作周期
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

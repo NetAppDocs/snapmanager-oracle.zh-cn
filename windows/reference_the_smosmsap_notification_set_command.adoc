@@ -5,6 +5,7 @@ keywords: notification, set, command, configure, mail, server, smo
 summary: 您可以使用 notification set 命令配置邮件服务器。 
 ---
 = smo notification set 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: backup, restore, command, database, backup, primary, storage, restorin
 summary: 您可以使用 backup restore 命令还原主存储上的数据库备份。 
 ---
 = 在主存储上还原备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

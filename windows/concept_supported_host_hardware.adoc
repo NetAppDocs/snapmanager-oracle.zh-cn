@@ -5,6 +5,7 @@ keywords: memory, disk, space, cpu, requirement, host, hardware
 summary: 请考虑内存，磁盘空间和 CPU 要求。 
 ---
 = 支持的主机硬件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

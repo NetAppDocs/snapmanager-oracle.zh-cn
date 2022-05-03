@@ -5,6 +5,7 @@ keywords: view, list, schedule, operation, update, scheduling, backup, updating
 summary: 您可以查看计划的操作列表，并在必要时对其进行更新。您可以更新计划频率，计划开始时间， cronstring 表达式以及计划备份的用户。 
 ---
 = 更新备份计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: perform, rollback, environment, certain, requirement, prerequisite, sn
 summary: 在执行回滚之前，您必须确保环境满足特定要求。 
 ---
 = 执行回滚的前提条件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: known, issues, snapmanager, troubleshooting
 summary: 您应了解使用 SnapManager 时可能发生的一些已知问题，以及如何解决这些问题。 
 ---
 = 对已知问题进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

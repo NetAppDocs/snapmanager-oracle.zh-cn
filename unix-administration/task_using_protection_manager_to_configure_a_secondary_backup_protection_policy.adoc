@@ -5,6 +5,7 @@ keywords: configuring, backup, schedule, storage, administrator, configure, prot
 summary: 配置备份计划后，存储管理员会配置一个受保护的备份存储策略，其中将包含该计划。 
 ---
 = 使用 Protection Manager 配置二级备份保护策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

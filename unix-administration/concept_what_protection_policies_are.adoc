@@ -5,6 +5,7 @@ keywords: protection, policies, rule, database, backup, portect, schedule
 summary: 保护策略是用于控制如何保护数据库备份的规则。您可以在创建配置文件时选择保护策略。 
 ---
 = 什么是保护策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

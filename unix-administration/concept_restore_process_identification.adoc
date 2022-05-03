@@ -5,6 +5,7 @@ keywords: restore, process, support, snapmanager, oracle, file-based, backup
 summary: 并非所有 SnapManager for Oracle 版本都支持所有还原过程。升级 SnapManager 后，您需要了解可用于还原备份的还原过程。 
 ---
 = 还原进程类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

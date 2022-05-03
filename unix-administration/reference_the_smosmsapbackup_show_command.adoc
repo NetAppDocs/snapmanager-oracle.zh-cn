@@ -5,6 +5,7 @@ keywords: backup, show, command, display, detail, information, backup, protectio
 summary: 您可以使用 backup show 命令显示有关备份的详细信息，包括备份的保护状态，备份保留类以及主存储和二级存储上的备份。 
 ---
 = smo backup show 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

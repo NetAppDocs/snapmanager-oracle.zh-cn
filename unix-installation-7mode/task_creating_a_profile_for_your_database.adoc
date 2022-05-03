@@ -5,6 +5,7 @@ keywords: create, profile, database, perform, operation, contain, information
 summary: 您必须为数据库创建配置文件，才能对该数据库执行任何操作。配置文件包含有关数据库的信息，并且只能引用一个数据库；但是，一个数据库可以由多个配置文件引用。使用一个配置文件创建的备份无法从其他配置文件访问，即使这两个配置文件都与同一数据库相关联也是如此。 
 ---
 = 为数据库创建配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

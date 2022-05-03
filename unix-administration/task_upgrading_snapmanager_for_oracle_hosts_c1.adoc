@@ -5,6 +5,7 @@ keywords: upgrade, all, exist, host, latest, version, snapmanager, simultaneousl
 summary: 您可以升级所有现有主机以使用最新版本的 SnapManager 。所有主机都会同时升级。但是，这可能会导致所有 SnapManager 主机停机，并在此期间执行计划的操作。 
 ---
 = 升级 SnapManager 主机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

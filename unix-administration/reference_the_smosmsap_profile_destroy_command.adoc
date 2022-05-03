@@ -5,6 +5,7 @@ keywords: command, delete, split, clone, database, profile, generate, snapmanage
 summary: 此命令将删除拆分的克隆 \ （数据库 \ ）以及克隆拆分过程中 SnapManager 生成的配置文件。 
 ---
 = smo profile destroy 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

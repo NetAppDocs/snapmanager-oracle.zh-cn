@@ -5,6 +5,7 @@ keywords: run, backup, unmount, command, smo
 summary: 您可以运行 backup unmount 命令卸载备份。 
 ---
 = smo backup unmount 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

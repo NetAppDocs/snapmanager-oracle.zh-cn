@@ -5,6 +5,7 @@ keywords: storage, system, host, name, address, target, database, profile, updat
 summary: 使用 SnapManager 3.3 或更高版本，您可以更新存储系统主机名或存储系统地址以及与 SnapManager 配置文件关联的目标数据库主机名。 
 ---
 = 更新与配置文件关联的存储系统名称和目标数据库主机名
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

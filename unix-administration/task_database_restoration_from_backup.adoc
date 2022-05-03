@@ -5,6 +5,7 @@ keywords: active, content, payroll, database, accidental, lost, destroy, snapman
 summary: 如果薪资数据库的活动内容意外丢失或销毁， SnapManager 和 NetApp 管理控制台数据保护功能支持从本地备份或二级存储还原该数据。 
 ---
 = 从备份还原数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

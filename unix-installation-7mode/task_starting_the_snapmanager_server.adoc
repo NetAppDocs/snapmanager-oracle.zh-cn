@@ -5,6 +5,7 @@ keywords: snapmanager, target, database, host
 summary: 您必须从目标数据库主机启动 SnapManager 服务器。 
 ---
 = 启动 SnapManager 服务器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

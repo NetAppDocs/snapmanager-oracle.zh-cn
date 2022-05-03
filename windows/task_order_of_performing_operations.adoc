@@ -5,6 +5,7 @@ keywords: snapmanager, enable, perform, operation, backup, cloning, clone, opera
 summary: 使用 SnapManager 可以执行各种操作，例如创建配置文件，执行备份和克隆备份。这些操作必须按特定顺序执行。 
 ---
 = 执行操作的顺序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

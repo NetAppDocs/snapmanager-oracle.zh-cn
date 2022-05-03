@@ -5,6 +5,7 @@ keywords: scenario, limitation, environment
 summary: 您必须了解可能影响环境的情形和限制。 
 ---
 = 使用 SnapManager 时的限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: command, clone, specification, template, smo
 summary: 此命令可用于创建克隆规范模板。 
 ---
 = smo clone template 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

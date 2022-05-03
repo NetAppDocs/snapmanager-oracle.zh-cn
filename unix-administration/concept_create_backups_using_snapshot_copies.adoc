@@ -5,6 +5,7 @@ keywords: snapmanager, create, backup, primary, storage, secondary, protection, 
 summary: 通过 SnapManager ，您可以使用保护策略或后处理脚本在主（本地）存储以及二级（远程）存储上创建备份。 
 ---
 = 使用 Snapshot 副本创建备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

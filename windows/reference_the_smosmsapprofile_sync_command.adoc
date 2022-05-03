@@ -5,6 +5,7 @@ keywords: command, load, profile-to-repository, mapping, repository, file, direc
 summary: 此命令会将该存储库的配置文件到存储库映射加载到本地主机上主目录中的文件。 
 ---
 = smo profile sync 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

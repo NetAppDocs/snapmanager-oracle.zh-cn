@@ -5,6 +5,7 @@ keywords: configure, snapdrive, datafabric, manager, server, profile
 summary: 您必须配置 SnapDrive 和 DataFabric Manager 服务器，以便在配置文件上启用数据保护，从而保护二级存储系统上的备份。您可以在 Protection Manager 的控制台中选择保护策略，以指定如何保护数据库备份。 
 ---
 = 配置和启用策略驱动型数据保护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

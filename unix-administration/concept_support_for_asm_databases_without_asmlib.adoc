@@ -5,6 +5,7 @@ keywords: snapmanager, asm, asmlib, requirement, asm, disk, group, primary, stor
 summary: 默认情况下， SnapManager 支持不使用 ASMLib 的 ASM 。基本要求是，必须对用于 ASM 磁盘组的设备进行分区。 
 ---
 = 支持不使用 ASMLib 的 ASM 数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

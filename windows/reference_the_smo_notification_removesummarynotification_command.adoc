@@ -5,6 +5,7 @@ keywords: command, disable, summary, notification, multiple, profile, repository
 summary: 此命令会对存储库数据库上的多个配置文件禁用摘要通知。 
 ---
 = smo notification remove-summary-notification 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapmanager, flexclone, technology, writable, space-efficient, clone, 
 summary: SnapManager 使用 FlexClone 技术为数据库备份创建可写的节省空间克隆。您可以在不更改备份源的情况下修改克隆。 
 ---
 = 数据库备份克隆
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

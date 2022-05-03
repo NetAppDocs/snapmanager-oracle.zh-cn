@@ -5,6 +5,7 @@ keywords: stop, run, clone, split, process, smo
 summary: 您可以停止正在运行的克隆拆分过程。 
 ---
 = 停止克隆拆分过程
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

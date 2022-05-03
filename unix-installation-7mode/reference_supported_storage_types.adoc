@@ -5,6 +5,7 @@ keywords: snapmanager, support, storage, physical, virtual, machine, install, up
 summary: SnapManager 在物理机和虚拟机上均支持多种存储类型。在安装或升级 SnapManager 之前，您必须验证是否支持您的存储类型。 
 ---
 = 支持的存储类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

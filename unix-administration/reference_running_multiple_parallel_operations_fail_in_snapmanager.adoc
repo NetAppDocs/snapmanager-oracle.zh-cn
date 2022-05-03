@@ -5,6 +5,7 @@ keywords: multiple, parallel, operation, seperate, database, storage, system, lu
 summary: 如果在同一存储系统上的不同数据库上运行多个并行操作，则与这两个数据库关联的 LUN 的 igroup 可能会因其中一个操作而被删除。稍后，如果另一个操作尝试使用已删除的 igroup ，则 SnapManager 将显示一条错误消息。 
 ---
 = 在 SnapManager 中运行多个并行操作失败
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

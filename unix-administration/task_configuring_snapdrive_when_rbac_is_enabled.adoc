@@ -5,6 +5,7 @@ keywords: role-based, access, control, rbac, enable, configure, datafabric, mana
 summary: 启用基于角色的访问控制 \ （ RBAC ）后，您必须配置 DataFabric Manager 服务器以包括 RBAC 功能。此外，还必须注册在 DataFabric Manager 服务器中创建的 SnapDrive 用户以及 SnapDrive 中存储系统的 root 用户。 
 ---
 = 在启用 RBAC 时配置 DataFabric Manager 服务器和 SnapDrive
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

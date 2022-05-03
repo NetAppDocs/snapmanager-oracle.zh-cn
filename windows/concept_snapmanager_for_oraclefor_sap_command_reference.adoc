@@ -5,6 +5,7 @@ keywords: command, reference, valid, syntax, option, parameter, argument, oracle
 summary: SnapManager 命令参考包括有效的使用语法，选项，参数和参数，您应在命令中提供这些参数以及示例。 
 ---
 = SnapManager for Oracle 命令参考
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

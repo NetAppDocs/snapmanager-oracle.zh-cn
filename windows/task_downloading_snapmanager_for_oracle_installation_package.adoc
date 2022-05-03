@@ -5,6 +5,7 @@ keywords: download, snapmanager, oracle, installation, package, netapp, support,
 summary: 您可以从 NetApp 支持站点下载适用于 Oracle 的 SnapManager 安装包。 
 ---
 = 下载适用于 Oracle 的 SnapManager 安装包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

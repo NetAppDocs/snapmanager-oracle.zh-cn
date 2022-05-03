@@ -5,6 +5,7 @@ keywords: view, list, storage, system, associate, particular, profile, smo
 summary: 您可以查看与特定配置文件关联的存储系统列表。 
 ---
 = 查看与配置文件关联的存储系统的列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

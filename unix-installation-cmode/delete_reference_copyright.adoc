@@ -5,6 +5,7 @@ keywords: copyright, information
 summary: Copyright information 
 ---
 = Copyright information
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

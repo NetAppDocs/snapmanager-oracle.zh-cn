@@ -5,6 +5,7 @@ keywords: snapmanager, integrity, backup, standard, oracle, verification, operat
 summary: SnapManager 可以使用标准 Oracle 备份验证操作来确认备份的完整性。 
 ---
 = 验证备份状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

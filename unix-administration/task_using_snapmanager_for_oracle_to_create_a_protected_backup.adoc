@@ -5,6 +5,7 @@ keywords: creating, backup, example, dba, option, secondary, protect, oracle, re
 summary: 在此示例中创建备份时， DBA 会选择创建完整备份，设置备份选项并选择对二级存储的保护。虽然备份最初是在本地存储上进行的，但由于此备份基于启用了保护的配置文件，因此备份会根据 Protection Manager 中定义的保护策略计划传输到二级存储。 
 ---
 = 使用 SnapManager for Oracle 创建受保护的备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: enable, autosupport, storage, system, receive, message, snapmanager, s
 summary: 您必须启用 AutoSupport ，以便存储系统在每次成功执行备份操作时都能从 SnapManager 服务器接收消息。 
 ---
 = 在 SnapManager 中启用 AutoSupport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

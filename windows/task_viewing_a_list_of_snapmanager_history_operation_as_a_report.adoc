@@ -5,6 +5,7 @@ keywords: view, history, specific, snapmanager, operation, report, base, retenti
 summary: 您可以根据保留设置以报告形式查看特定或所有 SnapManager 操作的历史记录。 
 ---
 = 查看 SnapManager 操作历史记录列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

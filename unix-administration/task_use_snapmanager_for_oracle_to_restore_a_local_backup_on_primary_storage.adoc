@@ -5,6 +5,7 @@ keywords: restore, local, backup, exist, primary, storage, entire, process, perf
 summary: 您可以还原主存储上的本地备份。整个过程使用适用于 Oracle 的 SnapManager 来执行。 
 ---
 = 使用 SnapManager for Oracle 在主存储上还原本地备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

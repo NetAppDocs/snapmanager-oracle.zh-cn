@@ -5,6 +5,7 @@ keywords: feature, platform, oracle, technologies, technology, windows
 summary: SnapManager 在 Windows 上不支持某些 SnapManager 功能，平台和 Oracle 技术。 
 ---
 = Windows 不支持 SnapManager 功能和 Oracle 技术
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

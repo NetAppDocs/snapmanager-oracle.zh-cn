@@ -5,6 +5,7 @@ keywords: choose, backup, database, portion, full, partial, snapshot, snapmanage
 summary: 您可以选择备份整个数据库或只备份一部分数据库。如果选择备份数据库的一部分，则可以选择备份一组表空间或数据文件。您可以选择对表空间和数据文件进行单独备份。 
 ---
 = 什么是完整备份和部分备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: error, message, information, operation
 summary: 您可以找到有关与不同 SnapManager 操作关联的错误消息的信息。 
 ---
 = 错误消息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

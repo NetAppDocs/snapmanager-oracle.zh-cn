@@ -5,6 +5,7 @@ keywords: schedule, backup, operation, initiate, automatic, regular, interval, s
 summary: 您可以计划备份操作，以便定期自动启动备份。使用 SnapManager ，您可以按每小时，每天，每周，每月或一次性计划备份。 
 ---
 = 计划重复备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

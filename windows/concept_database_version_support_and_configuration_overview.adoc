@@ -5,6 +5,7 @@ keywords: database, configuration, overview
 summary: 您必须了解 SnapManager 支持的不同数据库版本和配置。您必须执行基本数据库布局和配置设置，以确保操作成功。 
 ---
 = 数据库版本支持和配置概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

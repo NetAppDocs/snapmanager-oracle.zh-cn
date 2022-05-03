@@ -5,6 +5,7 @@ keywords: dump, file, log, compressed
 summary: 转储文件是一个压缩日志文件，其中包含有关 SnapManager 及其环境的信息。创建的不同类型的日志文件包括操作，配置文件和系统转储文件。 
 ---
 = 转储文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, specification, extensible, markup, language, xml
 summary: SnapManager for Oracle 使用任务规范可扩展标记语言（ Extensible Markup Language ， XML ）文件，该文件指示备份，还原和克隆操作的任务前和任务后。您可以在 XML 文件中为备份，还原和克隆操作前后要执行的任务添加任务前脚本和任务后脚本名称。 
 ---
 = 为 SnapManager 操作创建任务规范文件和脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

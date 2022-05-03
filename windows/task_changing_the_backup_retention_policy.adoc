@@ -5,6 +5,7 @@ keywords: change, properties, backup, eligible, ineligible, deletion, retention,
 summary: 您可以更改备份的属性，使其符合保留策略中的删除条件或不符合删除条件。 
 ---
 = 更改备份保留策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

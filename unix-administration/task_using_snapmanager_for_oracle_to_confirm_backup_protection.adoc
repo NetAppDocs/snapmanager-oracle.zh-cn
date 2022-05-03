@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, backup, associate, profile, determine, protection
 summary: 使用适用于 Oracle 的 SnapManager ，您可以查看与配置文件关联的备份列表，确定备份是否已启用保护，并查看保留类 \ （在此示例中为每日或每周 \ ）。 
 ---
 = 使用适用于 Oracle 的 SnapManager 确认备份保护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

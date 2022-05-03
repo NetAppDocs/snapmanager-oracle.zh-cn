@@ -5,6 +5,7 @@ keywords: snapmanager, email, notification, completion, status, profile-executed
 summary: 通过 SnapManager ，您可以接收有关配置文件执行的数据库操作的完成状态的电子邮件通知。SnapManager 会生成电子邮件，并帮助您根据数据库操作完成状态采取适当的操作。配置电子邮件通知是一个可选参数。 
 ---
 = 配置电子邮件通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

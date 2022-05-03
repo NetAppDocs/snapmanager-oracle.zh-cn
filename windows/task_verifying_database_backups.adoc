@@ -5,6 +5,7 @@ keywords: backup, verify, command, block, database, backup, corrupt, operation, 
 summary: 您可以使用 backup verify 命令验证数据库备份中的块是否未损坏。验证操作将为备份中的每个数据文件调用 Oracle Database Verify 实用程序。 
 ---
 = 验证数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

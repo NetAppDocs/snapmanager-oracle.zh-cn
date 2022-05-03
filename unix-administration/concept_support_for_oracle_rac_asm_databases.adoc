@@ -5,6 +5,7 @@ keywords: oracle, rac, database, node, initasmdisk, file
 summary: 如果使用的是 Oracle RAC 数据库，则每当在主 RAC 节点中执行操作时，都必须使用 initasmdisks 文件更新 RAC 节点。 
 ---
 = 支持不使用 ASMLib 的 Oracle RAC ASM 数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

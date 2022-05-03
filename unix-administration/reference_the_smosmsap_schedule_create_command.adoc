@@ -5,6 +5,7 @@ keywords: schedule, create, command, specific, time
 summary: 您可以使用 schedule create 命令计划在特定时间创建备份。 
 ---
 = smo schedule create 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

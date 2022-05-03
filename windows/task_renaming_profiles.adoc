@@ -5,6 +5,7 @@ keywords: snapmanager, enable, rename, profile, update, capabilities, capability
 summary: 通过 SnapManager ，您可以在更新配置文件时重命名此配置文件。在配置文件上设置的 SnapManager 功能以及重命名前可以执行的操作会保留给重命名的配置文件。 
 ---
 = 正在重命名配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

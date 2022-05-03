@@ -5,6 +5,7 @@ keywords: restore, alternate, location, data, file, intermediate, system, active
 summary: 您可以从备用位置进行还原，以便将数据文件从中间文件系统还原到活动文件系统。 
 ---
 = 从备用位置还原备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

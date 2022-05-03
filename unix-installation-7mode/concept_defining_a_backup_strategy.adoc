@@ -5,6 +5,7 @@ keywords: defining, backup, strategy, creating, successful, database, snapmanage
 summary: 在创建备份之前定义备份策略可确保您已备份成功还原数据库。SnapManager 提供灵活的粒度备份计划，以满足您的服务级别协议（ SLA ）要求。 
 ---
 = 定义备份策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

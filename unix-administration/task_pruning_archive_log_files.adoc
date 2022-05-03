@@ -5,6 +5,7 @@ keywords: prune, archive, log, file, location, creating, backup
 summary: 您可以在创建备份时从归档日志位置对归档日志文件进行修剪。 
 ---
 = 删除归档日志文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

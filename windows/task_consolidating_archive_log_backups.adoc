@@ -5,6 +5,7 @@ keywords: snapmanager, consolidate, archivelog-only, backup, freeing, duplicate,
 summary: SnapManager 可以释放重复的仅归档日志备份，从而在每次进行备份时整合仅归档日志备份。默认情况下，整合处于启用状态。 
 ---
 = 整合归档日志备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

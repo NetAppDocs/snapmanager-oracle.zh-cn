@@ -5,6 +5,7 @@ keywords: include, host-cluster-sw-restore-warn, parameter, snapdrive.conf, assi
 summary: 如果您已在 SnapDrive.conf 中包含 host-cluster-sw-restore-warn 参数并为分配了值，则必须更改此值以支持在主动 / 主动 Veritas Storage Foundation for Oracle RAC \ （ SFRAC\ ）环境中执行还原操作。 
 ---
 = 为主动 / 主动 Veritas SFRAC 环境配置适用于 UNIX 的 SnapDrive
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

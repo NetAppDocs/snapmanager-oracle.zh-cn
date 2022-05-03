@@ -5,6 +5,7 @@ keywords: run, operation, dump, command, create, jar, file, diagnostic, informat
 summary: 您可以运行 operation dump 命令来创建包含有关操作的诊断信息的 JAR 文件。 
 ---
 = smo operation dump 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

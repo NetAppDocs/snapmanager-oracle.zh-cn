@@ -5,6 +5,7 @@ keywords: identify, system, identifier, sid, snapmanager, database, creating, pr
 summary: 您可以确定用于创建配置文件的 SnapManager 数据库的系统标识符（ SID ）。 
 ---
 = 确定要备份的现有数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

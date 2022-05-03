@@ -5,6 +5,7 @@ keywords: determine, cause, error, message, classification
 summary: 如果您知道消息分类，则可以确定错误的发生原因。 
 ---
 = 错误消息分类
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

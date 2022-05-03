@@ -5,6 +5,7 @@ keywords: tools, require, perform, policy-driven, data, management, schedule, cr
 summary: SnapManager 提供了执行策略驱动型数据管理，计划和创建定期数据库备份，在数据丢失或发生灾难时从这些备份还原数据以及创建数据库克隆所需的工具。您可以使用后处理脚本在主存储上创建备份，并在二级存储上创建受保护的备份。 
 ---
 = 什么是 SnapManagerfor Oracle
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

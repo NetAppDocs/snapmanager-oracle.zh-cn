@@ -5,6 +5,7 @@ keywords: determine, version, product, running, local, host, comand, snapmanager
 summary: 您可以通过运行 version 命令来确定本地主机上运行的产品版本。 
 ---
 = 正在检查 SnapManager 软件版本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: oracle, user, require, log, in, access, repository, database, instance
 summary: 需要 Oracle 用户登录和访问存储库数据库实例。您必须创建具有连接和资源权限的用户。 
 ---
 = 为存储库数据库实例创建 Oracle 用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

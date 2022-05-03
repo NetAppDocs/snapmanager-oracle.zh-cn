@@ -5,6 +5,7 @@ keywords: snapmanager, integrated, snapvault, technology, archive, snapshot, cop
 summary: 在使用 SnapManager 的集成 SnapVault 技术将 Snapshot 副本归档到磁盘之前，您需要在源卷和目标卷之间配置数据保护关系，然后初始化此关系。初始化时， SnapVault 会创建源卷的 Snapshot 副本，然后将该副本及其引用的所有数据块传输到目标卷。 
 ---
 = 准备存储系统以进行 SnapVault 复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: enable, role-based, access, control, rbac, snapmanager, snapdrive, cap
 summary: 在使用 SnapDrive 为 SnapManager 启用基于角色的访问控制（ RBAC ）后，您可以将 RBAC 功能和用户添加到角色以执行 SnapManager 操作。 
 ---
 = 设置基于角色的访问控制功能和角色
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

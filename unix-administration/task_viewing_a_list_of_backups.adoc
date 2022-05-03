@@ -5,6 +5,7 @@ keywords: check, backup, create, profile, state, smo, list, command
 summary: 您可以使用 smo backup list 命令检查为配置文件创建的备份以及备份状态。对于每个配置文件，命令首先显示有关最新备份的信息，然后继续显示所有备份的信息。 
 ---
 = 查看备份列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

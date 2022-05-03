@@ -5,6 +5,7 @@ keywords: host, install, snapmanager, software, browser, database, system, requi
 summary: 要安装 SnapManager 的主机必须满足指定的软件，浏览器，数据库和操作系统要求。在安装或升级 SnapManager 之前，您必须验证对配置的支持。 
 ---
 = 支持的配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

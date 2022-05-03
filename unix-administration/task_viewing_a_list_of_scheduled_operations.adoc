@@ -5,6 +5,7 @@ keywords: view, list, schedule, operation, profile, smo
 summary: 您可以查看配置文件的计划操作列表。 
 ---
 = 查看已计划操作的列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

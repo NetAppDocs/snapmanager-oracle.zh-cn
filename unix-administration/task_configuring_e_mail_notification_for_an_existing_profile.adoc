@@ -5,6 +5,7 @@ keywords: updating, profile, configure, receive, email, notification, completion
 summary: 在更新配置文件时，您可以将配置为在数据库操作完成时接收电子邮件通知。 
 ---
 = 为现有配置文件配置电子邮件通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

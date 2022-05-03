@@ -5,6 +5,7 @@ keywords: recommend, general, database, layout, storage, configuration, avoid, i
 summary: 了解建议的常规数据库布局和存储配置有助于避免与磁盘组，文件类型和表空间相关的问题。 
 ---
 = 建议的常规数据库布局和存储配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

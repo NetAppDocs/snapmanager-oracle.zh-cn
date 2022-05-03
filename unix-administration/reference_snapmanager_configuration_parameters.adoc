@@ -5,6 +5,7 @@ keywords: snapmanager, configuration, parameters, requirement, retain, hourly, m
 summary: SnapManager 提供了一个配置参数列表，您可以根据需要编辑这些参数。配置参数存储在 SMO.config 文件中。但是， SMO.config 文件可能不包含所有受支持的配置参数。您可以根据需要添加配置参数。 
 ---
 = SnapManager 配置参数
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapmanager, volume, management, restriction, environment, asm, disk, 
 summary: SnapManager 具有某些卷管理限制，这些限制可能会影响您的环境。 
 ---
 = 卷管理限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

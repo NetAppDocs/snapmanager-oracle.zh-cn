@@ -5,6 +5,7 @@ keywords: profile, database, operation, efficient, backup
 summary: 您必须在 SnapManager 中为要执行操作的数据库创建配置文件。您必须选择配置文件，然后选择要执行的操作。 
 ---
 = 管理配置文件以实现高效备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: face, issue, renaming, storage, system, succesful, rename, storage, sy
 summary: 重命名存储系统或成功重命名存储系统后，您可能会遇到问题。 
 ---
 = 对存储系统重命名问题描述进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: target, database, oracle, configure, standalone, real, application, cl
 summary: 目标数据库是 Oracle 数据库，可以配置为独立， Real Application Clusters （ RAC ）， Automatic Storage Management （ ASM ）或任何其他受支持的组合。 
 ---
 = 配置目标数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: oracle, enable, restore, database, snapshot, restoring, backup, mean-t
 summary: 通过 SnapManager for Oracle ，您可以将数据库还原到创建 Snapshot 副本时的状态。由于备份的创建频率更高，因此需要应用的日志数量会减少，从而减少数据库的平均恢复时间（ MTTR ）。 
 ---
 = 还原数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

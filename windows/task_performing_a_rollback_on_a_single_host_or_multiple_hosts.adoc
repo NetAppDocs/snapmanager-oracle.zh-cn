@@ -5,6 +5,7 @@ keywords: perform, rollback, single, multiple, snapmanager, server, host, comman
 summary: 您可以使用命令行界面（ CLI ）在一个或多个 SnapManager 服务器主机上执行回滚。 
 ---
 = 在一台或多台主机上执行回滚
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

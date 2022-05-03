@@ -5,6 +5,7 @@ keywords: oracle, database, user, require, log, in, snapmanager, operation, sysd
 summary: Oracle 数据库用户需要登录到数据库并执行 SnapManager 操作。如果目标数据库不存在具有 sysdba 权限的用户，则必须使用 sysdba 权限创建此用户。 
 ---
 = 为目标数据库创建 Oracle 数据库用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

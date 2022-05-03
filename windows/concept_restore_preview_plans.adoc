@@ -5,6 +5,7 @@ keywords: restore, plan, operation, preview, review, analyze, method
 summary: SnapManager 可在还原操作完成前后提供还原计划。还原计划用于预览，查看和分析不同的还原方法。 
 ---
 = 什么是还原预览计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

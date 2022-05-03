@@ -5,6 +5,7 @@ keywords: clone, split, command, complete, metadata, repository, primary, second
 summary: 您可以使用 clone split 命令拆分克隆。克隆拆分完成后，克隆元数据将从存储库数据库中删除，并且可以删除或释放与克隆关联的备份。 
 ---
 = 拆分主存储或二级存储上的克隆
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: backup, retention, policies, local, storage
 summary: 通过 SnapManager ，您可以创建符合保留策略的备份，这些策略指定应在本地存储上保留多少成功的备份。您可以指定在配置文件中为给定数据库保留的成功备份数。 
 ---
 = SnapManager 如何在本地存储上保留备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

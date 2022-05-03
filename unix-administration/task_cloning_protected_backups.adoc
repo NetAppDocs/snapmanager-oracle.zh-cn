@@ -5,6 +5,7 @@ keywords: snapmanager, clone, copy, backup, protect, cloning, san, nas, ontap, 7
 summary: 您可以使用 SnapManager 克隆已受保护的备份的副本。 
 ---
 = 克隆受保护的备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

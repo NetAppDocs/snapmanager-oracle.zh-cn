@@ -5,6 +5,7 @@ keywords: snapmanager, license, storage, system, license, require, operation, da
 summary: 要启用 SnapManager 操作，需要一个 SnapManager 许可证和多个存储系统许可证。SnapManager 许可证有两种许可模式，即每服务器许可模式，其中 SnapManager 许可证驻留在每个数据库主机上，而每存储系统许可 SnapManager 模式则驻留在存储系统上。 
 ---
 = SnapManager 许可
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

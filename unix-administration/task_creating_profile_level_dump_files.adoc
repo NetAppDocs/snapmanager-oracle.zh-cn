@@ -5,6 +5,7 @@ keywords: find, log, information, particular, profile, smo, dump, command, name,
 summary: 您可以使用带有特定配置文件名称的 smo profile dump 命令来查找有关该配置文件的日志信息。 
 ---
 = 创建配置文件级别的转储文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

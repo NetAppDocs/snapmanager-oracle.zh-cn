@@ -5,6 +5,7 @@ keywords: upgrade, upgrading, version, repository, backup, post-upgrade, task
 summary: 升级到更高版本的 SnapManager 后，您必须更新现有存储库。您可能还需要修改分配给现有备份的备份保留类。 
 ---
 = 升级后任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

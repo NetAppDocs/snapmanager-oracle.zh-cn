@@ -5,6 +5,7 @@ keywords: support, backup, database, secondary, storage, administrator, protecti
 summary: 为了支持将数据库备份到二级存储，存储管理员使用 Protection Manager 配置备份计划。 
 ---
 = 使用 Protection Manager 配置二级备份计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

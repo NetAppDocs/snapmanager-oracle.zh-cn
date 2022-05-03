@@ -5,6 +5,7 @@ keywords: dba, assign, specific, retention, class, hourly, daily, weekly, monthl
 summary: DBA 可以为备份分配特定的保留类，包括每小时，每天，每周或每月。分配特定保留类后，在此更改下执行的备份便可被删除。 
 ---
 = 使用特定保留类分配备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

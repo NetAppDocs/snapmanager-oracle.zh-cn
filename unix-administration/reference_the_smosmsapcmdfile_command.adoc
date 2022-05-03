@@ -5,6 +5,7 @@ keywords: cmdfile, command, run, shell, host, limit, number, character, appear, 
 summary: 如果主机上的 shell 限制了命令行上可显示的字符数，则可以使用 cmdfile 命令运行任何命令。 
 ---
 = smo cmdfile 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

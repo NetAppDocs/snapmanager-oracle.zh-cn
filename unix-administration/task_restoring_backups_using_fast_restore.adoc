@@ -5,6 +5,7 @@ keywords: force, snapmanager, oracle, volume-based, snaprestore, restore, proces
 summary: 如果满足所有强制快速还原资格条件，您可以强制 SnapManager for Oracle 使用基于卷的 SnapRestore 过程，而不是其他还原过程。 
 ---
 = 使用快速还原还原备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

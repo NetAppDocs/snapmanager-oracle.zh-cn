@@ -5,6 +5,7 @@ keywords: view, detail, history, specific, snapmanager, operation, associate, pr
 summary: 您可以查看与配置文件关联的特定 SnapManager 操作的详细历史记录。 
 ---
 = 查看与配置文件关联的特定操作的详细历史记录
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

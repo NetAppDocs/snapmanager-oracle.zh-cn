@@ -5,6 +5,7 @@ keywords: full, online, backup, snapmanager, entire, database, snapshot, volume,
 summary: 在完全联机备份期间， SnapManager 会备份整个数据库，并在卷级别（而不是表空间级别）创建 Snapshot 副本。 
 ---
 = 完全联机备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

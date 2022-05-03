@@ -5,6 +5,7 @@ keywords: create, oracle, sysdba, role, connect, database, perform, operation, t
 summary: 您需要创建一个具有 sysdba 角色的 Oracle 用户，该用户可连接到数据库并执行数据库操作。 
 ---
 = 为目标数据库创建 Oracle 用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: clone, rac, database, non-rac, srvctl
 summary: 您可以将 RAC 数据库克隆到非 RAC 数据库，也可以将其克隆到非 RAC 数据库，然后将其更改为 RAC 数据库。 
 ---
 = 使用 RAC 数据库克隆
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

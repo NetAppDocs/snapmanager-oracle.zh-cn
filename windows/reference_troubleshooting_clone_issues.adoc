@@ -5,6 +5,7 @@ keywords: information, occur, during, operation, resolve, troubleshooting, clone
 summary: 您可以找到有关克隆操作期间可能发生的情况以及如何解决这些问题的信息。 
 ---
 = 对克隆问题进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

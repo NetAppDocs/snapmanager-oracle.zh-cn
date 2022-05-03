@@ -5,6 +5,7 @@ keywords: specify, backup, ineligible, deletion, retention, policy, indefinitely
 summary: 您可以指定备份不符合保留策略删除的条件，以使备份无限期保留。 
 ---
 = 永久保留备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

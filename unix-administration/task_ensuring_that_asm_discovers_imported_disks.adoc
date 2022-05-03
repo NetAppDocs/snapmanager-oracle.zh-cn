@@ -5,6 +5,7 @@ keywords: automatic, storage, management, asm, nfs, environment, install, snapma
 summary: 如果在 NFS 环境中使用自动存储管理 \ （ ASM\ ），则在安装 SnapManager 后，必须确保 ASM 能够发现 SnapManager 导入的磁盘。为此，您可以将 ASM 目录的路径添加到 asm_DISKSTRING 参数中。 
 ---
 = 确保 ASM 发现导入的磁盘
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

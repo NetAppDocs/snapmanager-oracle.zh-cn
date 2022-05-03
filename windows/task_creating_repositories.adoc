@@ -5,6 +5,7 @@ keywords: snapmanager, require, repository, host, hold, data, operation, perform
 summary: SnapManager 要求主机上有一个存储库来存放有关您执行的操作的数据。 
 ---
 = 正在创建存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

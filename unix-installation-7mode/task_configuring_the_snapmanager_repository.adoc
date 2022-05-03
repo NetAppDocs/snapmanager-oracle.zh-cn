@@ -5,6 +5,7 @@ keywords: configure, snapmanager, repository, database, instance, manage, user, 
 summary: 您必须在存储库数据库实例中配置 SnapManager 存储库。存储库数据库用于存储由 SnapManager 管理的数据库的元数据。 
 ---
 = 配置 SnapManager 存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

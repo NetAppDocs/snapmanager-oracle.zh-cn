@@ -5,6 +5,7 @@ keywords: clone, split, command, independent, original, snapmanager
 summary: 您可以运行 clone split 命令来拆分克隆。拆分的克隆将独立于原始克隆。SnapManager 会在克隆拆分操作后生成一个新的配置文件，您可以使用此配置文件管理拆分的克隆。 
 ---
 = smo clone split 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: run, profile, verify, command, database, smo
 summary: 您可以运行 profile verify 命令来验证配置文件设置。在运行此命令之前，必须挂载数据库。 
 ---
 = smo profile verify 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

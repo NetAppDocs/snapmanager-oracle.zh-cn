@@ -5,6 +5,7 @@ keywords: dba, advantage, disadvantage, volume-based, fast, restore, backup
 summary: DBA 应了解使用基于卷的快速恢复的优缺点。 
 ---
 = 使用快速还原的优势和劣势
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

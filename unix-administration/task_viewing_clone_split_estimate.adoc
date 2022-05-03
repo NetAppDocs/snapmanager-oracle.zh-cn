@@ -5,6 +5,7 @@ keywords: clone, split, estimate, help, total, free, space, available, aggregate
 summary: 克隆拆分估计值可帮助您了解聚合上的可用总空间，克隆与原始数据库之间共享的空间量以及克隆专用的空间。此外，您还可以查看创建底层克隆的日期和时间以及克隆的期限。根据此估计值，您可以决定是否拆分克隆。 
 ---
 = 查看克隆拆分估计值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

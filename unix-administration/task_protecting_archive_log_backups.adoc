@@ -5,6 +5,7 @@ keywords: creating, profile, enable, protection, archive, log, backup, base, pol
 summary: 创建配置文件时，您可以根据归档日志保护策略为归档日志备份启用保护。 
 ---
 = 保护归档日志备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

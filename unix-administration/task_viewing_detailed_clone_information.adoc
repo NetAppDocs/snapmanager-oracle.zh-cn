@@ -5,6 +5,7 @@ keywords: view, detail, information, specific, clone, show, command, smo
 summary: 您可以使用 clone show 命令查看有关特定克隆的详细信息。 
 ---
 = 查看详细克隆信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

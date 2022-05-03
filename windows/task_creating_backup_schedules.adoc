@@ -5,6 +5,7 @@ keywords: schedule, backup, occur, time, frequency, suited, data, environment, c
 summary: 您可以计划在适合您的数据和环境的时间和频率进行备份。 
 ---
 = 创建备份计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

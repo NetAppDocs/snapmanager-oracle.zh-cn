@@ -5,6 +5,7 @@ keywords: information, backup, restore, recover, scenario, accomplish, data, pro
 summary: 您可以找到有关一些可用于实现数据保护目标的备份，还原和恢复方案的信息。 
 ---
 = 备份，还原和恢复操作示例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: clone, database, backup, using, clone, create, command, sid, snapmanag
 summary: 您可以使用 clone create 命令从备份克隆数据库。 
 ---
 = 从备份克隆数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

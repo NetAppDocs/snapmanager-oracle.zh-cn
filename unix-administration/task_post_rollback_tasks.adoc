@@ -5,6 +5,7 @@ keywords: perform, additional, step, rollback, repository, database, downgrade, 
 summary: 回滚存储库数据库并将 SnapManager 主机从 SnapManager 3.2 降级到 SnapManager 3.0 后，您必须执行一些其他步骤，才能查看在早期版本的存储库数据库中创建的计划。 
 ---
 = 回滚后任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: command, display, information, repository, smo
 summary: 此命令可显示有关存储库的信息。 
 ---
 = smo repository show 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

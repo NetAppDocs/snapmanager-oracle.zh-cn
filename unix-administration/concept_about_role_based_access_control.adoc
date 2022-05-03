@@ -5,6 +5,7 @@ keywords: role-based, access, control, rbac, snapmanager, operation
 summary: 通过基于角色的访问控制（ Role-Based Access Control ， RBAC ），您可以控制谁有权访问 SnapManager 操作。通过 RBAC ，管理员可以通过定义角色并将用户分配给这些角色来管理用户组。您可能希望在已安装 SnapManager RBAC 的环境中使用 RBAC 。 
 ---
 = 关于基于角色的访问控制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

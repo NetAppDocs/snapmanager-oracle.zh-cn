@@ -5,6 +5,7 @@ keywords: clone, host, database, reside, requirement, consideration, alternate, 
 summary: 在克隆到数据库所在主机以外的主机之前，必须满足某些要求。 
 ---
 = 将数据库克隆到备用主机的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

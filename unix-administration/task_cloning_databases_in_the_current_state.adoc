@@ -5,6 +5,7 @@ keywords: create, backup, clone, database, current, state, single, command, smo
 summary: 您可以使用一个命令根据数据库的当前状态创建数据库的备份和克隆。 
 ---
 = 在当前状态下克隆数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

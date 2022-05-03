@@ -5,6 +5,7 @@ keywords: deploy, environment, application, technologies, technology, operation
 summary: 在您的环境中部署 SnapManager 之前，您应了解不同操作所需的其他应用程序和技术。 
 ---
 = SnapManager for Oracle 部署注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

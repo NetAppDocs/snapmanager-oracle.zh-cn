@@ -5,6 +5,7 @@ keywords: run, backup, verify, command, format, oracle, valid, smo
 summary: 您可以运行 backup verify 命令来查看备份格式对于 Oracle 是否有效。 
 ---
 = smo backup verify 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

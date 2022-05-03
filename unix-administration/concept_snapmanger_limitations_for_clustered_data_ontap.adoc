@@ -5,6 +5,7 @@ keywords: limitations, functionalities, snapmanager, operations, ontap, cluster,
 summary: 如果您使用的是集群模式 Data ONTAP ，则必须了解某些功能和 SnapManager 操作的限制。 
 ---
 = 集群模式 Data ONTAP 的 SnapManager 限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

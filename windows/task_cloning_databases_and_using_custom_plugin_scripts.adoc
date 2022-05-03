@@ -5,6 +5,7 @@ keywords: snapmanager, provide, method, custom, script, clone, operation, clonin
 summary: SnapManager 提供了一种在执行克隆操作前后使用自定义脚本的方法。例如，您可能已经创建了一个自定义脚本，用于验证克隆数据库 SID 并确保命名策略允许此 SID 。使用 SnapManager 克隆插件，您可以包括自定义脚本，并在 SnapManager 克隆操作之前或之后自动运行这些脚本。 
 ---
 = 克隆数据库并使用自定义插件脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

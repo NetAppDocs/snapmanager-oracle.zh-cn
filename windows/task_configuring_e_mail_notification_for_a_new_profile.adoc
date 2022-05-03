@@ -5,6 +5,7 @@ keywords: creating, new, profile, configure, email, notification, completion, da
 summary: 在创建新配置文件时，您可以将配置为在数据库操作完成时接收电子邮件通知。 
 ---
 = 为新配置文件配置电子邮件通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

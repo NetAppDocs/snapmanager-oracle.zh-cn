@@ -5,6 +5,7 @@ keywords: view, history, setting, single, profile, snapmanager, configuration, d
 summary: 您可以查看单个配置文件的历史记录设置。 
 ---
 = 查看 SnapManager 历史记录配置详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

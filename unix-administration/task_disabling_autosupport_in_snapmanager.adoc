@@ -5,6 +5,7 @@ keywords: disable, autosupport, storage, system, receiver, message, snapmanager,
 summary: 如果您不希望存储系统在每次成功执行备份操作时都从 SnapManager 服务器接收消息，则必须禁用 AutoSupport 。 
 ---
 = 在 SnapManager 中禁用 AutoSupport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

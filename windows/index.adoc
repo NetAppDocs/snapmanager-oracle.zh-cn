@@ -5,6 +5,7 @@ keywords: install, installation, administer, administration, guide, document
 summary: 《 SnapManager for Oracle 3.4.2 安装和管理指南》 
 ---
 = 《安装和管理指南》
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

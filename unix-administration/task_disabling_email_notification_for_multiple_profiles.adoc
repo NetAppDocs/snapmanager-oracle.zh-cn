@@ -5,6 +5,7 @@ keywords: enable, summary, email, notification, multiple, profile, disable, rece
 summary: 为多个配置文件启用摘要电子邮件通知后，您可以禁用这些配置文件，使其不再接收电子邮件警报。 
 ---
 = 为多个配置文件禁用电子邮件通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

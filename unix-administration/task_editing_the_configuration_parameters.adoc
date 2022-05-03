@@ -5,6 +5,7 @@ keywords: depend, environment, default, value, assign, configuration, parameter,
 summary: 根据您的环境，您可以更改分配给配置参数的默认值。 
 ---
 = 编辑配置参数
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

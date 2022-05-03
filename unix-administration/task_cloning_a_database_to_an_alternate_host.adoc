@@ -5,6 +5,7 @@ keywords: clone, create, command, database, backup, alternate, host, cloning, ex
 summary: 您可以使用 clone create 命令在备用主机上克隆数据库备份。 
 ---
 = 将数据库克隆到备用主机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: run, version, command, determine, snapmanager, local, host, smo
 summary: 您可以运行 version 命令来确定本地主机上运行的 SnapManager 版本。 
 ---
 = smo version 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapmanager, backup, state, administrator, monitor
 summary: SnapManager 将显示每个备份的状态。管理员必须了解不同的状态并监控其备份的状态。 
 ---
 = 什么是保护状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

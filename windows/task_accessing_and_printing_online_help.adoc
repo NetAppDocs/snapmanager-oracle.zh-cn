@@ -5,6 +5,7 @@ keywords: online, help, provide, instruction, snapmanager, graphical, user, inte
 summary: 联机帮助提供了有关可使用 SnapManager 图形用户界面执行的任务的说明。联机帮助还提供了窗口和向导上的字段说明。 
 ---
 = 访问和打印联机帮助
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

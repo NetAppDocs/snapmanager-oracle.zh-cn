@@ -5,6 +5,7 @@ keywords: clone, database, method, create, operation, lun
 summary: 您可以使用以下两种方法之一克隆数据库。您选择的方法会影响克隆创建操作。 
 ---
 = 克隆方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

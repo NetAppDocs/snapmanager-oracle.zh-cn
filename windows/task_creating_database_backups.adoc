@@ -5,6 +5,7 @@ keywords: create, backup, entire, database, portion, tablespace, data, file, con
 summary: 您可以为整个数据库或数据库的某些部分创建备份，包括表空间，数据文件或控制文件。 
 ---
 = 创建数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

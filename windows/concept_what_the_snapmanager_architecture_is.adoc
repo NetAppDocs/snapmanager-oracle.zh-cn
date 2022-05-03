@@ -5,6 +5,7 @@ keywords: oracle, architecture, component, host, client, repository, netapp, arc
 summary: 适用于 Oracle 的 SnapManager 架构包含许多组件，例如适用于 Oracle 主机，客户端和存储库的 SnapManager 。其他组件包括主存储系统和二级存储系统以及其他 NetApp 产品。 
 ---
 = 什么是适用于 Oracle 的 SnapManager 架构
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

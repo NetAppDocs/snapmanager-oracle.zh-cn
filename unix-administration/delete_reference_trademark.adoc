@@ -5,6 +5,7 @@ keywords: trademark
 summary: 商标 
 ---
 = 商标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

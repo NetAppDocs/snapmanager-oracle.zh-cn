@@ -5,6 +5,7 @@ keywords: snapmanager, appropriate, credentials, security, rbac, snapdrive
 summary: 只有在具有相应凭据的情况下，才能执行 SnapManager 操作。SnapManager 中的安全性受用户身份验证和基于角色的访问控制（ Role-Based Access Control ， RBAC ）的制约。通过 RBAC ，数据库管理员可以限制 SnapManager 对数据库中存放数据文件的卷和 LUN 执行的操作。 
 ---
 = SnapManager 如何保持安全性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

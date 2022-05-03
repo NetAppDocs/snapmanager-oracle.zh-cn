@@ -5,6 +5,7 @@ keywords: creating, profile, database, schedule, initial, backup, verification, 
 summary: 创建配置文件后，您必须备份数据库。您可以在初始备份和验证后计划重复备份。 
 ---
 = 备份数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

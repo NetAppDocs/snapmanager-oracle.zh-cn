@@ -5,6 +5,7 @@ keywords: command, enable, history, specific, snapmanager, operation, associated
 summary: 使用此命令可以查看与配置文件关联的特定 SnapManager 操作的历史记录。 
 ---
 = smo history operation-show 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

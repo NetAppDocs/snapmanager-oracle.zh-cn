@@ -5,6 +5,7 @@ keywords: smo_paydb, dataset, create, storage, administrator, protection, manage
 summary: 创建 SMO_paydb 数据集后，存储管理员使用 Protection Manager 分配存储系统资源以配置数据集的备份节点。 
 ---
 = 使用 Protection Manager 配置新数据集
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: customize, email, subject, new, profile, create
 summary: 您可以在创建新配置文件时为其自定义电子邮件主题。 
 ---
 = 自定义新配置文件的电子邮件主题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

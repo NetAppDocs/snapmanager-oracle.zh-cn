@@ -5,6 +5,7 @@ keywords: enable, protect, database, backup, postscript, snapmirror, snapvault, 
 summary: 在主存储系统和二级存储系统之间建立 SnapMirror 或 SnapVault 关系时，您可以通过 SnapManager 使用后脚本保护数据库备份。您可以从 SnapManager 命令行界面和 GUI 对备份操作的后处理活动使用默认后处理脚本。 
 ---
 = 使用后脚本保护数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

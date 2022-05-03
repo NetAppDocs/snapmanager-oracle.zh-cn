@@ -5,6 +5,7 @@ keywords: restore, protect, backup, secondary, storage, copy, data, primary, sto
 summary: 您可以从二级存储还原受保护的备份，并选择将数据复制回主存储的方式。 
 ---
 = 从二级存储还原备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

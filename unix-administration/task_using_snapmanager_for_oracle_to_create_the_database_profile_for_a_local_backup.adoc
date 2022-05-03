@@ -5,6 +5,7 @@ keywords: database, administrator, snapmanager, create, profile, backup, local, 
 summary: 数据库管理员使用 SnapManager 创建数据库配置文件，该配置文件将用于启动到主存储系统上本地存储的备份。整个配置文件创建和备份创建过程都是在 SnapManager 中执行的，不涉及 Protection Manager 。 
 ---
 = 使用 SnapManager for Oracle 为本地备份创建数据库配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

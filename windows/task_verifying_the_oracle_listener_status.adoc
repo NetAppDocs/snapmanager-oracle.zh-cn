@@ -5,6 +5,7 @@ keywords: verify, oracle, listener, status, lsnrctl, command
 summary: 您可以使用 lsnrctl status 命令验证 Oracle 侦听器状态。 
 ---
 = 验证 Oracle 侦听器状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: oracle, rac, environment, node, cluster, restore, operation, database,
 summary: 在两个节点都属于同一集群的 Oracle RAC 环境中，如果您尝试从与创建备份的节点不同的节点执行还原操作，则还原操作将失败。 
 ---
 = 无法从未创建配置文件的一个 RAC 节点还原 RAC 数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

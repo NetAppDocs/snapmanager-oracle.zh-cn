@@ -5,6 +5,7 @@ keywords: authenticate, user, operating, system, os, login, host, server, smo, c
 summary: SnapManager 通过在运行 SnapManager 服务器的主机上使用操作系统（ OS ）登录来对用户进行身份验证。您可以通过操作时的密码提示或使用 SMO 凭据来启用用户身份验证，您可以通过操作时的密码提示或使用 SMO 凭据集命令来启用用户身份验证。 
 ---
 = 什么是用户身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

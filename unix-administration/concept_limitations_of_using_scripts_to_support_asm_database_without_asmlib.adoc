@@ -5,6 +5,7 @@ keywords: certain, limitation, script, asm, database, asmlib, root, grid, oracle
 summary: 您必须了解在不使用 ASMLib 的情况下使用脚本支持 ASM 数据库的某些限制。 
 ---
 = 使用脚本支持不使用 ASMLib 的 ASM 数据库的限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

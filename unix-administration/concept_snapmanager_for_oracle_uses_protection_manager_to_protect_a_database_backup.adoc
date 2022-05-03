@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, protection, manager, unix, dba
 summary: SnapManager for Oracle 和 Protection Manager 分别安装在 UNIX 主机和服务器上后，使 SnapManager 数据库管理员（ DBA ）能够配置并执行基于策略的 Oracle 数据库备份到二级存储， 并在必要时将备份的数据从二级存储还原到主存储。 
 ---
 = SnapManager for Oracle 使用 Protection Manager 保护数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

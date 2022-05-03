@@ -5,6 +5,7 @@ keywords: requirement, network, file, system, nfs, snapmanager, recommendation, 
 summary: 您必须了解将数据库与网络文件系统（ NFS ）和 SnapManager 结合使用的要求。建议包括以 root 用户身份运行，属性缓存和符号链接。 
 ---
 = 将数据库与 NFS 和 SnapManager 结合使用的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

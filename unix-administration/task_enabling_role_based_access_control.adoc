@@ -5,6 +5,7 @@ keywords: snapmanager, role-based, access, control, rbac, enable, snapdrive, ins
 summary: 已使用 SnapDrive 启用基于 SnapManager 角色的访问控制 \ （ RBAC ）。安装 SnapDrive 后， RBAC 默认处于禁用状态。在 SnapDrive 中启用 RBAC 后， SnapManager 会在启用 RBAC 的情况下执行操作。 
 ---
 = 启用基于角色的访问控制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

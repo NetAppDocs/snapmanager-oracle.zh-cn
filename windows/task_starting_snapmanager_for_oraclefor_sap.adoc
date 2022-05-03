@@ -5,6 +5,7 @@ keywords: snapmanager, startup, section, list, task, oracle, learn
 summary: SnapManager 启动部分列出了启动 SnapManager 时执行的任务。如果您只是了解 SnapManager ，也可以使用本节。 
 ---
 = 启动 SnapManagerfor Oracle
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

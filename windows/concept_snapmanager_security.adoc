@@ -5,6 +5,7 @@ keywords: perform, operation, appropriate, credential, security, authentication
 summary: 只有在具有相应凭据的情况下，才能执行 SnapManager 操作。SnapManager 中的安全性受用户身份验证的制约。 
 ---
 = SnapManager 如何保持安全性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

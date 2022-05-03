@@ -5,6 +5,7 @@ keywords: issue, cli, command, host, database, snapmanager, route, appropriate, 
 summary: 您可以从数据库主机以外的主机执行问题描述命令行界面命令， SnapManager 会将您输入的命令路由到相应的主机。 
 ---
 = 从备用主机发出命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

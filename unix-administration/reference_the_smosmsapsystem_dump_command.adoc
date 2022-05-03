@@ -5,6 +5,7 @@ keywords: run, system, dump, command, create, jar, file, contain, diagnostic, in
 summary: 您可以运行 system dump 命令来创建包含有关服务器环境的诊断信息的 JAR 文件。 
 ---
 = smo system dump 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

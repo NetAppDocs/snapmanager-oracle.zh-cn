@@ -5,6 +5,7 @@ keywords: refer, sample, script, create, customized, environment, mirror, vault,
 summary: 您可以参考示例脚本并根据环境创建自定义脚本，以执行镜像和存储。示例脚本位于 default_install_directory\plugins\backup\create\post 。 
 ---
 = 示例后脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

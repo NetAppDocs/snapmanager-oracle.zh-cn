@@ -5,6 +5,7 @@ keywords: integrated, database, protection, payroll, techco, dba, 3000-person, a
 summary: 此集成数据库保护示例介绍了对薪资数据库的保护。此示例使用以下数据。 
 ---
 = 目标数据库的详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

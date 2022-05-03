@@ -5,6 +5,7 @@ keywords: preview, information, backup, restore, process, occurs, eligibility, s
 summary: 您可以在备份还原过程发生之前预览有关该过程的信息，以查看在备份上找到的 SnapManager for Oracle 的还原资格信息。SnapManager 会分析备份上的数据，以确定还原过程是否可以成功完成。 
 ---
 = 预览备份还原信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

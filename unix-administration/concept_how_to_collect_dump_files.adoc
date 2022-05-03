@@ -5,6 +5,7 @@ keywords: -dump, snapmanager, command, collect, dump, file, successful, fail, cr
 summary: 您可以在 SnapManager 命令中包含 -dump ，以便在 SnapManager 操作成功或失败后收集转储文件。 
 ---
 = 如何收集转储文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

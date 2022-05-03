@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, consolidate, archive, log, backup
 summary: 适用于 Oracle 的 SnapManager （ 3.2 或更高版本）整合了归档日志备份，以使归档日志文件的备份数量保持在最低水平。SnapManager for Oracle 可识别并释放包含归档日志文件的备份，这些文件是其他备份的子集。 
 ---
 = 归档日志整合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: general, layout, configuration, information, storage, disk, group
 summary: 您可以找到有关建议的常规数据库布局和存储配置的信息，以避免与磁盘组，文件类型和表空间相关的问题。 
 ---
 = 常规布局和配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

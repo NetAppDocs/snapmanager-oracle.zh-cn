@@ -5,6 +5,7 @@ keywords: doccomments, quality, documentation, high-quality, documentation, feed
 summary: 'You can help us to improve the quality of our documentation by sending us your feedback.You can receive automatic notification when production-level (GA/FCS) documentation is initially released or important changes are made to existing production-level documents.' 
 ---
 = How to send comments about documentation and receive update notifications
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

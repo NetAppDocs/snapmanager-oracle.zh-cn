@@ -5,6 +5,7 @@ keywords: install, snapmanager, oracle, host, database, minimum, requirement, co
 summary: 您必须在托管要备份的 Oracle 数据库的每个主机上安装 SnapManager for Oracle 。您必须确保主机满足 SnapManager 配置的最低要求。 
 ---
 = UNIX 主机要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

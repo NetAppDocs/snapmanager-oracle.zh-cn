@@ -5,6 +5,7 @@ keywords: free, backup, delete, snapshot, copies, deleting, metadata, function
 summary: 您可以释放备份，这样无需删除备份元数据即可删除 Snapshot 副本。此功能可释放备份占用的空间。您可以使用 smo backup free 命令释放备份。 
 ---
 = 释放备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

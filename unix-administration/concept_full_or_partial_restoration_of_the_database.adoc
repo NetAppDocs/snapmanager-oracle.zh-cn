@@ -5,6 +5,7 @@ keywords: snapmanager, flexibility, restore, full, database, tablespace, file, d
 summary: SnapManager 可以灵活地还原完整数据库，特定表空间，文件，控制文件或这些实体的组合。通过 SnapManager ，您可以使用基于文件的还原过程或基于卷的更快还原过程来还原数据。数据库管理员可以选择要使用的过程，也可以让 SnapManager 决定哪个过程适合。 
 ---
 = 完全或部分还原数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

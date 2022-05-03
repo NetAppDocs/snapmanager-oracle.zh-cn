@@ -5,6 +5,7 @@ keywords: command-line, interface, cli, graphical, user, gui, accessing
 summary: 您可以使用命令行界面（ CLI ）或图形用户界面（ GUI ）访问 SnapManager 。 
 ---
 = 访问 SnapManager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

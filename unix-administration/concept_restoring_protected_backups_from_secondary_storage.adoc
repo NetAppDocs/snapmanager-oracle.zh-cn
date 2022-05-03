@@ -5,6 +5,7 @@ keywords: restore, protect, backup, secondary, storage
 summary: 您可以从二级存储还原受保护的备份。但是，如果备份也位于主存储上，则无法从二级存储还原备份。 
 ---
 = 从二级存储还原受保护的备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

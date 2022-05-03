@@ -5,6 +5,7 @@ keywords: add, storage, system, operating, clustered, data, ontap, snapmanager, 
 summary: 要启用 AutoSupport ，必须将在集群模式 Data ONTAP 中运行的存储系统添加到 SnapManager 服务器主机。在 SnapManager 3.3 及更早版本中，只有在 7- 模式存储系统上才支持 AutoSupport 。 
 ---
 = 将在集群模式 Data ONTAP 中运行的存储系统添加到 SnapManager 服务器主机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

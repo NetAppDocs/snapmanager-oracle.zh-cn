@@ -5,6 +5,7 @@ keywords: snapmanager, back, data, local, storage, post-process, backup, seconda
 summary: SnapManager 可通过使用后处理脚本或保护二级或三级存储资源上的备份来备份本地存储资源上的数据。选择备份到二级存储可提供一个额外的层，用于在发生灾难时保留数据。 
 ---
 = 备份数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

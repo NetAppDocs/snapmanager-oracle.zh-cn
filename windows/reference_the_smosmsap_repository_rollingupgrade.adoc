@@ -5,6 +5,7 @@ keywords: command, perform, roll, upgrade, single, multiple, host, associate, ta
 summary: 此命令会在单个主机或多个主机及其关联目标数据库上执行滚动升级，从较低版本的 SnapManager 升级到较高版本。升级后的主机只能使用更高版本的 SnapManager 进行管理。 
 ---
 = smo repository rollingupgrade 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: command, update, information, clone, comment, smo
 summary: 此命令可更新有关克隆的信息。您可以更新此注释。 
 ---
 = smo clone update 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

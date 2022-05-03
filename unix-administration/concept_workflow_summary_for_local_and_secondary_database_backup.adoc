@@ -5,6 +5,7 @@ keywords: dba, snapmanager, storage, administrator, netapp, management, console,
 summary: 在此示例中， DBA （使用 SnapManager ）和存储管理员（使用 NetApp 管理控制台数据保护功能）会协调相关操作，以配置目标数据库的本地备份和二级备份（也称为受保护备份）。 
 ---
 = 本地和二级数据库备份的工作流摘要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

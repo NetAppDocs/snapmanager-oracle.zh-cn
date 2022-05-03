@@ -5,6 +5,7 @@ keywords: snapmanager, split, manage, existing, clone, flexclone, technology, cl
 summary: 通过 SnapManager ，您可以拆分和管理使用 FlexClone 技术创建的现有克隆。在 FlexClone 技术中，克隆和原始数据库共享相同的物理数据块。 
 ---
 = 拆分克隆
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

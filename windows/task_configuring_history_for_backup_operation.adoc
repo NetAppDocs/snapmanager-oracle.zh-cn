@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, cli, gui, history, configuring, history, operatio
 summary: 通过适用于 Oracle 的 SnapManager ，您可以从 SnapManager 命令行界面或图形用户界面维护 SnapManager 操作历史记录。您可以报告形式查看 SnapManager 操作的历史记录。 
 ---
 = 配置 SnapManager 操作历史记录
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

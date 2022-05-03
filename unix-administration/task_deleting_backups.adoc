@@ -5,6 +5,7 @@ keywords: delete, backup, free, space, occupy, remove, reduce, deleting, clone
 summary: 您必须删除不再需要的备份，这样可以释放这些备份占用的空间。如果删除备份，则每个卷的 Snapshot 副本数将减少达到 255 个限制的可能性。 
 ---
 = 删除备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

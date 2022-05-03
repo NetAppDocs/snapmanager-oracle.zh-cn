@@ -5,6 +5,7 @@ keywords: enable, perform, file-based, backup, restore, operation
 summary: 使用 SnapManager 可以执行基于文件的备份和还原操作。 
 ---
 = 什么是数据库还原
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

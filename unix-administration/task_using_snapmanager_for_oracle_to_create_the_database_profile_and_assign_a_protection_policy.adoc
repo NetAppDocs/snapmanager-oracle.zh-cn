@@ -5,6 +5,7 @@ keywords: create, profile, snapmanager, oracle, enable, protect, client, payroll
 summary: 您必须在 SnapManager for Oracle 中创建配置文件，在配置文件中启用保护，并分配保护策略以创建受保护的备份。 
 ---
 = 使用 SnapManager for Oracle 创建数据库配置文件并分配保护策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

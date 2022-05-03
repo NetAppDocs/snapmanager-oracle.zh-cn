@@ -5,6 +5,7 @@ keywords: snapmanager, automatic, handle, mount, backup, available, host, scenar
 summary: SnapManager 会自动处理备份的挂载，以使其可供主机使用。如果您使用 Oracle Recovery Manager （ RMAN ）等外部工具访问备份中的文件，则也可以挂载备份。 
 ---
 = 挂载备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

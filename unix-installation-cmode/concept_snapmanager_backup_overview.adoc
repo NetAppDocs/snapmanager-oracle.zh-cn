@@ -5,6 +5,7 @@ keywords: snapmanager, netapp, snapshot, technology, create, backup, database, d
 summary: SnapManager 使用 NetApp Snapshot 技术创建数据库备份。您可以使用 DBVERIFY 实用程序，也可以使用 SnapManager 验证备份的完整性。 
 ---
 = SnapManager 备份概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

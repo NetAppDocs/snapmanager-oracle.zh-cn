@@ -5,6 +5,7 @@ keywords: repository, database, instance, oracle, snapmanager, stand-alone
 summary: 存储库数据库实例是一个 Oracle 数据库，您可以在其中创建 SnapManager 存储库。存储库数据库实例必须是独立数据库，不能是目标数据库。 
 ---
 = 创建存储库数据库实例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

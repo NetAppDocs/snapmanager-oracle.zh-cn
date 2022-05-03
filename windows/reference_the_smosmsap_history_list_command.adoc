@@ -5,6 +5,7 @@ keywords: command, enable, list, history, detail, operation, smo
 summary: 使用此命令可以查看 SnapManager 操作的历史记录详细信息列表。 
 ---
 = smo history list 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

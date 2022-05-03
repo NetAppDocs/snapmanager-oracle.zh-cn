@@ -5,6 +5,7 @@ keywords: state, database, restore
 summary: 要还原的数据库的状态取决于要执行的还原过程的类型以及要包含的文件类型。 
 ---
 = 还原过程需要数据库状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

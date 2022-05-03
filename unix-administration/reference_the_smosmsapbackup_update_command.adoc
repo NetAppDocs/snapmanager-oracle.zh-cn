@@ -5,6 +5,7 @@ keywords: run, backup, update, command, retention, policy, smo
 summary: 您可以运行 backup update 命令来更新备份保留策略。 
 ---
 = smo backup update 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: view, detail, information, particular, profile, verify, success, failu
 summary: 您可以查看有关特定配置文件的详细信息，以验证操作是否成功。它还可以帮助您确定用于特定操作的存储资源。 
 ---
 = 查看操作详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

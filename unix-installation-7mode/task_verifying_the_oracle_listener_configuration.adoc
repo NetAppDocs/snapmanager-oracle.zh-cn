@@ -5,6 +5,7 @@ keywords: listener, process, client, connection, request, receive, traffic, stat
 summary: 侦听器是一个侦听客户端连接请求的过程。它接收传入的客户端连接请求，并管理这些请求到数据库的流量。在连接到目标数据库或存储库数据库实例之前，您可以使用 status 命令验证侦听器配置。 
 ---
 = 验证 Oracle 侦听器配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

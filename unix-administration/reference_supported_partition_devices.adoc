@@ -5,6 +5,7 @@ keywords: partition, snapmanager, support, device, red, hat, enterprise, linux, 
 summary: 您必须了解 SnapManager 中支持的不同分区设备。 
 ---
 = 支持的分区设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

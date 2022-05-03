@@ -5,6 +5,7 @@ keywords: run, storage, list, command, display, storage, system, associate, part
 summary: 您可以运行 storage list 命令以显示与特定配置文件关联的存储系统列表。 
 ---
 = smo storage list 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

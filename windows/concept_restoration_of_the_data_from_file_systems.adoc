@@ -5,6 +5,7 @@ keywords: restore, data, alternate, location, necessary, file, system, local, re
 summary: 在从备用位置还原数据之前，您必须还原所需的文件系统并将其挂载到本地主机上。 
 ---
 = 从文件系统还原数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: download, oracle, install, operation, database, backup, restore, cloni
 summary: 您可以在环境中下载和安装 SnapManager for Oracle ，并执行数据库备份，还原，恢复和克隆等操作。 
 ---
 = 安装适用于 Oracle 的 SnapManager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

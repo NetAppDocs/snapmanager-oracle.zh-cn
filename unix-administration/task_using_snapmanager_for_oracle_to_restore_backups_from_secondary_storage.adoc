@@ -5,6 +5,7 @@ keywords: administrator, restore, protect, backup, secondary, storage, copy, dat
 summary: 管理员可以从二级存储还原受保护的备份，并可以选择将数据复制回主存储的方式。 
 ---
 = 使用 SnapManager for Oracle 从二级存储还原备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

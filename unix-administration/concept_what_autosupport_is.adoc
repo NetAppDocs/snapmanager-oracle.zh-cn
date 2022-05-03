@@ -5,6 +5,7 @@ keywords: autosupport, snapmanager, autosupport, storage, system, backup, operat
 summary: 通过 AutoSupport 功能， SnapManager 服务器可以在备份操作完成后向存储系统发送 AutoSupport 消息。 
 ---
 = 什么是 AutoSupport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

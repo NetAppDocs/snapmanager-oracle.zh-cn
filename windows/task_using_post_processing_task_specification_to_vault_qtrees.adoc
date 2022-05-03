@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, enable, script, vault, qtree, backup, operation, 
 summary: 通过 SnapManager for Oracle ，您可以在 Windows 环境中执行备份操作后使用脚本来存储 qtree 。 
 ---
 = 使用后处理任务规范来存储 qtree
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

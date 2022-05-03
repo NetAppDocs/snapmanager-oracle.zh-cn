@@ -5,6 +5,7 @@ keywords: snapmanager, integrated, technology, mirror, snapshot, copies, data-pr
 summary: 在使用 SnapManager 的集成 SnapMirror 技术镜像 Snapshot 副本之前，您需要在源卷和目标卷之间配置数据保护关系，然后初始化此关系。初始化后， SnapMirror 会为源卷创建一个 Snapshot 副本，然后将该副本及其引用的所有数据块传输到目标卷。此外，它还会将源卷上任何其他较晚的 Snapshot 副本传输到目标卷。 
 ---
 = 准备用于 SnapMirror 复制的存储系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

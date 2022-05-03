@@ -5,6 +5,7 @@ keywords: command, stop, snapmanager, host, server, enter, root, smo_server
 summary: 此命令将停止 SnapManager 主机服务器，并在根目录输入。 
 ---
 = smo_server stop 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

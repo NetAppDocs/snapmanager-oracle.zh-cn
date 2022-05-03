@@ -5,6 +5,7 @@ keywords: backup, snapshot, snapmanager, backup, copy, ontap, data
 summary: 备份类型（完整或部分）会影响 SnapManager 创建的 Snapshot 副本数量。对于完整备份， SnapManager 会为每个卷创建一个 Snapshot 副本，而对于部分备份， SnapManager 会为每个表空间文件创建一个 Snapshot 副本。 
 ---
 = 备份类型和 Snapshot 副本数量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

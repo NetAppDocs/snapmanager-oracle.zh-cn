@@ -5,6 +5,7 @@ keywords: schedule, update, monitor, backup, tab, graphical, user, interface
 summary: 您可以使用图形用户界面的计划选项卡计划，更新和监控数据库的备份。 
 ---
 = 什么是数据库备份计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

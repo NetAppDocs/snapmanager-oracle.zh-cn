@@ -5,6 +5,7 @@ keywords: update, exist, repository, upgrading, snapmanager, updating, upgrade
 summary: 如果要从 SnapManager 3.3.x 升级到 SnapManager 3.4 或更高版本，则无需更新现有存储库，但对于所有其他升级路径，您必须更新现有存储库，以便在升级后可以访问它。 
 ---
 = 正在更新现有存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

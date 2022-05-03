@@ -5,6 +5,7 @@ keywords: addition, role-based, access, control, rbac, snapmanager, authenticate
 summary: 除了使用基于角色的访问控制（ Role-Based Access Control ， RBAC ）之外， SnapManager 还会在运行 SnapManager 服务器的主机上使用操作系统（ OS ）登录来对用户进行身份验证。您可以通过操作时的密码提示或使用 smo credential set 命令来启用用户身份验证。 
 ---
 = 什么是用户身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

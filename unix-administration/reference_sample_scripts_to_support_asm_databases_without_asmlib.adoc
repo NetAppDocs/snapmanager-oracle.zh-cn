@@ -5,6 +5,7 @@ keywords: sample, script, plugin, example, noasmlib, snapmanager, oracle, instal
 summary: 示例脚本位于 SnapManager for Oracle 安装目录的 plugins/examples/noasmlib 目录中。 
 ---
 = 支持 ASM 数据库而不使用 ASMLib 的示例脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

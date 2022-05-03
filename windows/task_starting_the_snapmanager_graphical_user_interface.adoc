@@ -5,6 +5,7 @@ keywords: snapmanager, install, host, graphical, user, interface, gui, program, 
 summary: 如果主机上安装了 SnapManager ，请从程序列表中选择程序，以启动 SnapManager 的图形用户界面（图形用户界面）。 
 ---
 = 启动 SnapManager 图形用户界面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

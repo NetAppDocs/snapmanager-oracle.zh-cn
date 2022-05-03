@@ -5,6 +5,7 @@ keywords: release, notes, new, features, fixed, issues, known, limitations, snap
 summary: 介绍新增功能，升级说明，已修复的问题，已知限制和已知问题。 
 ---
 = 《 SnapManager 3.4.2 for Oracle 发行说明》
+:allow-uri-read: 
 
 
 。 link:https://library.netapp.com/ecm/ecm_get_file/ECMLP2849192["《 SnapManager 3.4.2 for Oracle 发行说明》"] 描述新功能，升级说明，已修复的问题，已知限制和已知问题。

@@ -5,6 +5,7 @@ keywords: perform, fast, restore, backup, snapmanager, elegibility, ascs, voting
 summary: 如果您选择快速还原备份， SnapManager 会首先执行资格检查，以确定是否可以使用快速还原过程。 
 ---
 = 快速恢复资格检查
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

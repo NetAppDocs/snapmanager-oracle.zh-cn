@@ -5,6 +5,7 @@ keywords: command, delete, clone, split, operation, cycle, entry, repository, da
 summary: 使用此命令可以从存储库数据库中删除克隆拆分操作周期条目。 
 ---
 = smo clone split — delete 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

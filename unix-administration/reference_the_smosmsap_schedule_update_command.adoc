@@ -5,6 +5,7 @@ keywords: command, update, schedule, backup, profile
 summary: 此命令用于更新备份计划。 
 ---
 = smo schedule update 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

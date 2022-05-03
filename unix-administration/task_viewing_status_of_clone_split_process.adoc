@@ -5,6 +5,7 @@ keywords: view, progress, split, process, start, smo
 summary: 您可以查看已启动拆分过程的进度。 
 ---
 = 查看克隆拆分过程的状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

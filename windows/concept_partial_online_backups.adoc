@@ -5,6 +5,7 @@ keywords: backup, full, partial, backup, tablespace, database, snapshot, online
 summary: 您可以选择对数据库中的表空间执行部分备份，而不是执行完整备份。虽然 SnapManager 为卷创建 Snapshot 副本以进行完整备份，但 SnapManager 为每个指定表空间创建一个 Snapshot 副本以进行部分备份。 
 ---
 = 部分联机备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

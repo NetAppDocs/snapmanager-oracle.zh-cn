@@ -5,6 +5,7 @@ keywords: view, detail, information, particular, backup, profile, smo, show, com
 summary: 您可以使用 smo backup show 命令查看配置文件中特定备份的详细信息。 
 ---
 = 查看备份详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

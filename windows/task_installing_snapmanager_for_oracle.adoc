@@ -5,6 +5,7 @@ keywords: install, snapmanager, host, database, manage, install
 summary: 您可以在要管理一个或多个数据库的主机上安装 SnapManager 。每个主机只能安装一个 SnapManager 实例。 
 ---
 = 安装适用于 Oracle 的 SnapManager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

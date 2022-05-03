@@ -5,6 +5,7 @@ keywords: snapmanager, data, ontap, snapmirror, technology, mirror, copies, crea
 summary: 您可以使用采用 Data ONTAP SnapMirror 技术的 SnapManager 在另一个卷上创建备份集的镜像副本，并使用 Data ONTAP SnapVault 技术将备份高效归档到磁盘。在 SnapManager 中执行这些任务之前，您必须在源卷和目标卷之间配置数据保护关系并初始化此关系。 
 ---
 = 准备用于 SnapMirror 和 SnapVault 复制的存储系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

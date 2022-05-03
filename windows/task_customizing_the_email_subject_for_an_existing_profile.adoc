@@ -5,6 +5,7 @@ keywords: snapmanager, enable, customize, email, subject, pattern, existing, pro
 summary: 通过 SnapManager ，您可以通过更新现有配置文件来自定义该配置文件的电子邮件主题模式。此自定义主题模式仅适用于更新后的配置文件。 
 ---
 = 自定义现有配置文件的电子邮件主题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

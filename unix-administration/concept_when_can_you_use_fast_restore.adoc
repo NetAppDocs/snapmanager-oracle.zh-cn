@@ -5,6 +5,7 @@ keywords: specific, rule, fast, restore, optimal, restore, performance, fast, re
 summary: 使用快速还原实现最佳还原性能时，需要遵循特定规则。在某些情况下，您无法使用快速还原。 
 ---
 = 有关何时可以使用快速还原的准则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

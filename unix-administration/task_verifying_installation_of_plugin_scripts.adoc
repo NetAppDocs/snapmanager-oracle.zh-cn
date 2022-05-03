@@ -5,6 +5,7 @@ keywords: snapmanager, enable, install, custom, script, peform, various, operati
 summary: 通过 SnapManager ，您可以安装和使用自定义脚本执行各种操作。SnapManager 提供了用于备份，还原和克隆操作的插件，您可以使用这些插件在备份，还原和克隆操作前后自动执行自定义脚本。 
 ---
 = 验证插件脚本的安装
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

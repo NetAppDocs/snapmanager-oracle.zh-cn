@@ -5,6 +5,7 @@ keywords: snapmanager, automatic, unmount, backup, unavailable, host, server, as
 summary: SnapManager 会自动卸载备份，使其不可供主机服务器使用。如果您使用外部工具（例如 Oracle 恢复管理器 \ （ RMAN\ ）访问备份中的文件，则还可以卸载 SnapManager ，并更改备份的状态以删除访问权限。 
 ---
 = 卸载备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

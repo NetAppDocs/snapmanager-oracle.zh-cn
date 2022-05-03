@@ -5,6 +5,7 @@ keywords: restore, alternate, location, connect, necessary, raw, device, local, 
 summary: 在从备用位置还原之前，您需要连接到本地主机上所需的原始设备。 
 ---
 = 从原始设备还原数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

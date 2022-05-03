@@ -5,6 +5,7 @@ keywords: creating, profile, assign, particular, oracle, database, user, account
 summary: 创建配置文件时，您可以为此配置文件分配特定的 Oracle 数据库用户帐户。您可以为配置文件设置保留策略，为使用此配置文件的所有备份启用对二级存储的备份保护，以及为每个保留类设置保留计数和持续时间。 
 ---
 = 正在创建配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

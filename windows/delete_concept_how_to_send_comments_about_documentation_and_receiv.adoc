@@ -5,6 +5,7 @@ keywords: improve, quality, documentation, feedback, automatic, notification, pr
 summary: You can help us to improve the quality of our documentation by sending us your feedback.首次发布生产级 \ （ GA/FCS\ ）文档或对现有生产级文档进行重要更改时，您可以收到自动通知。 
 ---
 = How to send comments about documentation and receive update notifications
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

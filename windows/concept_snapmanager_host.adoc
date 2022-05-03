@@ -5,6 +5,7 @@ keywords: windows, server, netapp, product
 summary: SnapManager 主机是一个 Windows 服务器，它也运行其他 NetApp 产品。 
 ---
 = SnapManager 主机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

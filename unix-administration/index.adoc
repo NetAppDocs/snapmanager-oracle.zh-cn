@@ -5,6 +5,7 @@ keywords: administration, guide, unix, 3.4.2
 summary: 《适用于 UNIX ® 的 SnapManager for Oracle 3.4.2 管理指南》 
 ---
 = 《 UNIX ® 管理指南》
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

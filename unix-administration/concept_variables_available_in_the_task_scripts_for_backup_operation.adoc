@@ -5,6 +5,7 @@ keywords: snapmanager, context, information, environment, variable, backup, oper
 summary: SnapManager 以与正在执行的备份操作相关的环境变量的形式提供上下文信息。例如，您的脚本可以检索原始主机的名称，保留策略的名称以及备份的标签。 
 ---
 = 备份操作的任务脚本中可用的变量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

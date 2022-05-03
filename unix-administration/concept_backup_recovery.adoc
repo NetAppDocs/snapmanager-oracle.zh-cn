@@ -5,6 +5,7 @@ keywords: snapmanager, perform, restore, recover, operation, rman, database, ora
 summary: 在 SnapManager 中，必须同时执行还原和恢复操作。您不能执行还原操作，稍后再执行 SnapManager 恢复操作。 
 ---
 = 备份恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: smo, server, status, command, host
 summary: 您可以运行 smo_server status 命令来查看 SnapManager 主机服务器的状态。 
 ---
 = smo_server status 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

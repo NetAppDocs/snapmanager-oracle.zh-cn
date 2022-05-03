@@ -5,6 +5,7 @@ keywords: snapmanager, include, script, example, basis, custom, view, plug-in, s
 summary: SnapManager 提供了一些脚本，您可以使用这些脚本作为示例来创建自己的脚本，也可以作为自定义脚本的基础。 
 ---
 = 查看插件脚本示例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapmanager, protect, backup, copies, secondary, tertiary, storage, sy
 summary: 您可以使用 SnapManager 保护二级或三级存储系统上的备份副本。 
 ---
 = 保护二级或三级存储上的数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

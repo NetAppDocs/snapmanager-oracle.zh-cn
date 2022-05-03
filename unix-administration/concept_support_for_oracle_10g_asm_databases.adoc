@@ -5,6 +5,7 @@ keywords: oracle, 10g, asmcmd, sql, query, disk, list, support
 summary: 如果使用的是 Oracle 10g ，则 asmcmd 命令不可用于列出磁盘。您可以使用 SQL 查询获取磁盘列表。 
 ---
 = 支持不使用 ASMLib 的 Oracle 10g ASM 数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

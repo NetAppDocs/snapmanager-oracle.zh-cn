@@ -5,6 +5,7 @@ keywords: access, snapmanager, user, interface, ui, remote, web, browser, system
 summary: 您可以从 SnapManager 支持的操作系统上运行的任何系统使用 Web 浏览器远程访问 SnapManager 用户界面（ UI ）。您也可以通过运行 smogui 命令从目标数据库主机访问 SnapManager UI 。 
 ---
 = 访问 SnapManager 用户界面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

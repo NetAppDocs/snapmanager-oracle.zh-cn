@@ -5,6 +5,7 @@ keywords: smo, operation, dump, command, name, id, fail, operation, log, informa
 summary: 您可以使用带有失败操作名称或 ID 的 SMO operation dump 命令来获取有关特定操作的日志信息。您可以指定不同的日志级别来收集有关特定操作，配置文件，主机或环境的信息。 
 ---
 = 创建操作级别的转储文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

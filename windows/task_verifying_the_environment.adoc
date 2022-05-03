@@ -5,6 +5,7 @@ keywords: verify, environment, snapdrive, snapmanager, set, up, correctly
 summary: 您可以验证环境以确保 SnapDrive 和 SnapManager 设置正确。 
 ---
 = 验证环境
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

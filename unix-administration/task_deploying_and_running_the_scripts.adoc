@@ -5,6 +5,7 @@ keywords: deploy, run, asmmain.sh, asmquerydisk.sh, script, support, asm, databa
 summary: 您可以部署和运行 asmmain.sh 和 asmquerydisk.sh 脚本，以支持 ASM 数据库，而无需 ASMLib 。 
 ---
 = 部署和运行脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

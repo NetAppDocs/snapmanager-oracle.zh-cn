@@ -5,6 +5,7 @@ keywords: resource, pool, collection, unused, physical, storage, protected, prof
 summary: 资源池是指一组未使用的物理存储（例如存储系统或聚合），可从中配置新卷或 LUN 以包含数据。如果将存储系统分配给资源池，则该存储系统上的所有聚合都可供配置。 
 ---
 = 什么是资源池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

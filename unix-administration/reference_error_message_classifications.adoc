@@ -5,6 +5,7 @@ keywords: determine, cause, error, classification, message, log, issue, snapmana
 summary: 如果您知道消息分类，则可以确定错误的发生原因。 
 ---
 = 错误消息分类
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

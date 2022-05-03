@@ -5,6 +5,7 @@ keywords: oracle, database, 9i, snapamanager, 10gr2
 summary: SnapManager 3.2 或更高版本不支持 Oracle 数据库 9i ， SnapManager 3.3.1 或更高版本不支持 Oracle 数据库 10gR2 （ 10.2.0.4 之前的版本）。 
 ---
 = 已弃用的 Oracle 数据库版本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

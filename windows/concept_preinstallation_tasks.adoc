@@ -5,6 +5,7 @@ keywords: install, snapmanager, oracle, environment, preinstallation, task
 summary: 在安装 SnapManager for Oracle 之前，您必须执行一些其他任务来设置您的环境。您必须执行的任务取决于操作系统， Oracle 组件以及要使用的数据库版本。 
 ---
 = 预安装任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

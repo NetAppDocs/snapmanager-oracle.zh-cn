@@ -5,6 +5,7 @@ keywords: backing, up, database, resource, post-process, script
 summary: SnapManager 支持使用后处理脚本备份本地存储资源上的数据。 
 ---
 = 备份数据库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

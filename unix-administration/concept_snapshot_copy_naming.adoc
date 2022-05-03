@@ -5,6 +5,7 @@ keywords: specify, convention, pattern, snapshot, profile, copy, naming
 summary: 您可以指定一种命名约定或模式来描述与您创建或更新的配置文件相关的 Snapshot 副本。您还可以在所有 Snapshot 副本名称中包含自定义文本。 
 ---
 = Snapshot 副本命名
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

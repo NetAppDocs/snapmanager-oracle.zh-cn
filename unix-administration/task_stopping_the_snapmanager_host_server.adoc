@@ -5,6 +5,7 @@ keywords: snapmanager, stop, server, host, smo
 summary: 使用完 SnapManager 后，您可能需要停止服务器。 
 ---
 = 正在停止 SnapManager 主机服务器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: run, clone, show, command, display, information, database, clone, spec
 summary: 您可以运行 clone show 命令来显示有关指定配置文件的数据库克隆的信息。 
 ---
 = smo clone show 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

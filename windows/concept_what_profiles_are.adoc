@@ -5,6 +5,7 @@ keywords: profile, store, information, necessary, operation, database
 summary: SnapManager 使用配置文件存储对给定数据库执行操作所需的信息。配置文件包含有关数据库的信息，包括其凭据，备份和克隆。通过创建配置文件，您不必在每次对该数据库执行操作时都指定数据库详细信息。 
 ---
 = 什么是配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

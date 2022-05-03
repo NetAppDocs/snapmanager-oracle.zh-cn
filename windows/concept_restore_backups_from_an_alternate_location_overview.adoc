@@ -5,6 +5,7 @@ keywords: restore, database, backup, alternate, location, overview
 summary: 要从备用位置还原数据库备份，请使用以下主要步骤，本节将对其中的每个步骤进行进一步说明。 
 ---
 = 从备用位置还原备份概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

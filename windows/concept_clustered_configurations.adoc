@@ -5,6 +5,7 @@ keywords: cluster, configuration
 summary: SnapManager 在集群配置中运行。 
 ---
 = 集群模式配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

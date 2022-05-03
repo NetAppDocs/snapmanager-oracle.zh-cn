@@ -5,6 +5,7 @@ keywords: enable, perform, backup, task, class, retention, assign, delete
 summary: 使用 SnapManager 可以执行不同的备份任务。您可以分配保留类以指定备份可保留的时间长度；达到此时间限制后，备份将被删除。 
 ---
 = 什么是 SnapManager 数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

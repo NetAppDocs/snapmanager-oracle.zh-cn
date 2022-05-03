@@ -5,6 +5,7 @@ keywords: command, resume, suspend, backup, schedule, smo
 summary: 此命令将恢复暂停的备份计划。 
 ---
 = smo schedule resume 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: additional, log, debug, fail, snapmanager, operation, external, enviro
 summary: 如果您需要其他日志来调试失败的 SnapManager 操作，则必须设置外部环境变量 server.log.level 。此变量将覆盖默认日志级别并转储日志文件中的所有日志消息。例如，您可以将日志级别更改为 DEBUG ，这样可以记录其他消息，并有助于调试问题。 
 ---
 = 收集其他日志信息以简化调试
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

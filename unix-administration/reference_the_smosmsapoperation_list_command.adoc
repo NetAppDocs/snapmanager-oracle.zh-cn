@@ -5,6 +5,7 @@ keywords: command, list, summary, information, operation, record, specified, pro
 summary: 此命令将列出针对指定配置文件记录的所有操作的摘要信息。 
 ---
 = smo operation list 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -3,6 +3,7 @@ permalink: index.html
 sidebar: sidebar 
 ---
 = 适用于 Oracle 的 SnapManager 3.4.2
+:allow-uri-read: 
 
 
 [role="lead"]

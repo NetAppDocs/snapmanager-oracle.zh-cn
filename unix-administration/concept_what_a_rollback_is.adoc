@@ -5,6 +5,7 @@ keywords: rollback, operation, enable, snapmanager, roll, upgrade, database, cre
 summary: 通过回滚操作，您可以在执行滚动升级后还原到早期版本的 SnapManager 。 
 ---
 = 什么是回滚
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

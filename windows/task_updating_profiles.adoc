@@ -5,6 +5,7 @@ keywords: update, profile, modify, password, backup, retain, access, database, o
 summary: 您可以更新配置文件以修改配置文件密码，要保留的备份数，对数据库的访问，对数据库进行身份验证的操作系统（ OS ）身份验证（反之亦然）以及有关主机的信息。如果 Oracle 数据库密码信息发生更改，您还必须在配置文件中更改此信息。 
 ---
 = 正在更新配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

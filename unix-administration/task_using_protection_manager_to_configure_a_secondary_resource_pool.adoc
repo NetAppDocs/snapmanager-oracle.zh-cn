@@ -5,6 +5,7 @@ keywords: support, backup, database, secondary, storage, administrator, protecti
 summary: 为了支持将数据库备份到二级存储，存储管理员使用 Protection Manager 将使用 SnapVault 二级许可证启用的二级存储系统组织到备份资源池中。 
 ---
 = 使用 Protection Manager 配置二级资源池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

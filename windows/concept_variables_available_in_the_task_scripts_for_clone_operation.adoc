@@ -5,6 +5,7 @@ keywords: provide, context, information, environment, variable, relate, clone, o
 summary: SnapManager 以与所执行的克隆操作相关的环境变量的形式提供上下文信息。例如，您的脚本可以检索原始主机的名称，克隆数据库的名称以及备份的标签。 
 ---
 = 克隆操作的任务脚本中可用的变量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

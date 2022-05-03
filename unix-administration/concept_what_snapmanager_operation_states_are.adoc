@@ -5,6 +5,7 @@ keywords: snapmanager, operation, backup, restore, clone, state, progress, opera
 summary: SnapManager 操作（备份，还原和克隆）可以处于不同状态，每个状态都指示操作的进度。 
 ---
 = 什么是 SnapManager 操作状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

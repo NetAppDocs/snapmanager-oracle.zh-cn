@@ -5,6 +5,7 @@ keywords: command, enable, view, detail, history, information, specific, profile
 summary: 使用此命令可以查看特定配置文件的详细历史记录信息。 
 ---
 = smo history show 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

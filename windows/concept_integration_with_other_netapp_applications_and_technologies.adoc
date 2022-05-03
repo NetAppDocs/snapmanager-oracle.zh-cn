@@ -5,6 +5,7 @@ keywords: oracle, stand-alone, product, netapp, application, technology, technol
 summary: SnapManager for Oracle 是一款独立产品，它集成了其他 NetApp 产品的功能，可实现只需少量空间的快速备份。 
 ---
 = 与其他 NetApp 应用程序和技术集成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: run, backup, create, command, database, storage, system, smo
 summary: 您可以运行 backup create 命令在一个或多个存储系统上创建数据库备份。 
 ---
 = smo backup create 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

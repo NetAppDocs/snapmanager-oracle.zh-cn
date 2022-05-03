@@ -5,6 +5,7 @@ keywords: restore, backup, single, file, snaprestore, sfsr, method, restoring, g
 summary: 您可以使用 Single File SnapRestore \ （ SFSR\ ）方法还原备份。 
 ---
 = 使用单个文件 SnapRestore 还原备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

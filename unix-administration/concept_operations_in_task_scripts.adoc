@@ -5,6 +5,7 @@ keywords: pretask, post-task, script, snapmanager, oracle, plug-in, structure, o
 summary: 您创建的任务前或任务后脚本必须遵循适用于 Oracle 插件的标准 SnapManager 结构。 
 ---
 = 任务脚本中的操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

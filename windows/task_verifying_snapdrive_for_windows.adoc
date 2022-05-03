@@ -5,6 +5,7 @@ keywords: install, snapdrive, windows, verify, snapshot, copy
 summary: 如果已安装 SnapDrive for Windows ，请在使用 SnapManager 之前验证是否可以创建 Snapshot 副本。 
 ---
 = 验证 SnapDrive for Windows
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

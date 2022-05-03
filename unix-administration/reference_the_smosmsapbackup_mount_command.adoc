@@ -5,6 +5,7 @@ keywords: run, backup, mount, command, perform, recover, operation, external, to
 summary: 您可以使用外部工具运行 backup mount 命令来挂载备份，以便执行恢复操作。 
 ---
 = smo backup mount 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

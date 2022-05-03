@@ -5,6 +5,7 @@ keywords: trademark
 summary: Trademark information 
 ---
 = Trademark information
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

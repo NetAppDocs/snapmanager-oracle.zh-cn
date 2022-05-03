@@ -5,6 +5,7 @@ keywords: consideration, peform, data, protection, netapp, snapdrive, post-scrip
 summary: 您必须了解执行数据保护时的某些注意事项。 
 ---
 = 执行数据保护的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: clone, cloning, database, backup
 summary: 如果克隆数据库，您可以执行一些任务，例如在不影响生产环境中的数据库的情况下测试数据库升级，将主安装复制到多个培训系统，或者将主安装作为基础安装复制到具有类似要求的其他服务器。 
 ---
 = 克隆数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

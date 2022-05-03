@@ -5,6 +5,7 @@ keywords: command, delete, repository, store, database, profile, associate, cred
 summary: 此命令将删除用于存储数据库配置文件和关联凭据的存储库。只有在存储库中没有配置文件时，才能删除存储库。 
 ---
 = smo repository delete 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

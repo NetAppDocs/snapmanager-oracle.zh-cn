@@ -5,6 +5,7 @@ keywords: administrator, resume, suspend, backup, schedule, resuming
 summary: 管理员可以选择恢复暂停的备份计划。 
 ---
 = 恢复备份计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

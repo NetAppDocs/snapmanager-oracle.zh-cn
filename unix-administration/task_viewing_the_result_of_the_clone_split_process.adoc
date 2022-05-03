@@ -5,6 +5,7 @@ keywords: view, result, clone, split, process, start, smo
 summary: 您可以查看已启动的克隆拆分过程的结果。 
 ---
 = 查看克隆拆分过程的结果
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

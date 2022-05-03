@@ -5,6 +5,7 @@ keywords: installation, setup, guide, unix
 summary: 《适用于 Oracle 3.4.2 的 SnapManager UNIX ® 安装和设置指南》 
 ---
 = 《 UNIX ® 安装和设置指南》
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

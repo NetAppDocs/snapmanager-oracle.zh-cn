@@ -5,6 +5,7 @@ keywords: ensure, license, data, protection, install, enable, primary, secondary
 summary: 您必须确保在主存储系统和二级存储系统上安装并启用数据保护所需的许可证。 
 ---
 = SnapManager 中的数据保护所需的许可证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

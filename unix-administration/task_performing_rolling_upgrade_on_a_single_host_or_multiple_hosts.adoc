@@ -5,6 +5,7 @@ keywords: perform, roll, upgrade, single, multiple, snapmanager, server, host, c
 summary: 您可以使用命令行界面 \ （ cli\ ）在一个或多个 SnapManager 服务器主机上执行滚动升级。然后，升级后的 SnapManager 服务器主机只能使用更高版本的 SnapManager 进行管理。 
 ---
 = 在一台或多台主机上执行滚动升级
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

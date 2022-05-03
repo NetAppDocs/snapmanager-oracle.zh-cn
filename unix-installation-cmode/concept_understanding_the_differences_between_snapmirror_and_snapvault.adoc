@@ -5,6 +5,7 @@ keywords: snapmirror, disaster, recovery, technology, design, failover, primary,
 summary: SnapMirror 是一种灾难恢复技术，用于从主存储故障转移到地理位置偏远的站点上的二级存储。SnapVault 是一种归档技术，专为实现磁盘到磁盘 Snapshot 副本复制而设计，可满足标准要求并用于其他监管相关目的。 
 ---
 = 了解 SnapMirror 与 SnapVault 之间的区别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

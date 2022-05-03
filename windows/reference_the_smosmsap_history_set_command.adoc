@@ -5,6 +5,7 @@ keywords: history, run, set, command, configure, operation, history, smo
 summary: 您可以运行 history set 命令来配置要查看其历史记录的操作。 
 ---
 = smo history set 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

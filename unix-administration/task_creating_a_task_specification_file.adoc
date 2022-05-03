@@ -5,6 +5,7 @@ keywords: create, task, specification, file, graphical, user, interface, gui, co
 summary: 您可以使用图形用户界面 \ （ gui ），命令行界面 \ （ cli\ ）或文本编辑器创建任务规范文件。这些文件用于对备份，还原或克隆操作执行预处理或后处理活动。 
 ---
 = 创建任务规范文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

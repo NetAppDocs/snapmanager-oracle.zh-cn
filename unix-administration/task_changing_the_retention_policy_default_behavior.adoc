@@ -5,6 +5,7 @@ keywords: backup, expire, based, retention, policy, snapmanager, determine, dele
 summary: 如果备份根据保留策略过期， SnapManager 将根据保留设置确定是否删除备份。删除备份是默认行为。您可以更改此默认行为并选择释放未受保护的备份。 
 ---
 = 更改保留策略的默认行为
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

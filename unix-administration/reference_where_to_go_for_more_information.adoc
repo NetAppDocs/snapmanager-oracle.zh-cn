@@ -5,6 +5,7 @@ keywords: information, basic, task, involve, install, snapmanager
 summary: 您可以找到有关安装和使用 SnapManager 所涉及的基本任务的信息。 
 ---
 = 从何处获取更多信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

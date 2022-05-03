@@ -5,6 +5,7 @@ keywords: snapmanager, enable, install, custom, script, various, operation, rest
 summary: 通过 SnapManager ，您可以为各种操作安装和使用自定义脚本。SnapManager 提供了备份，还原和克隆插件，可在备份，还原和克隆操作前后自动执行自定义脚本。在使用备份，还原和克隆插件之前，您可以运行 plugin check 命令来验证插件脚本的安装情况。自定义脚本存储在三个目录中： policy （适用于在执行备份，还原或克隆操作之前应始终运行的脚本）， PRE （适用于预处理脚本）和 POST （适用于后处理脚本）。 
 ---
 = smo plugin check 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

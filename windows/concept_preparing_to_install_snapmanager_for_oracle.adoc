@@ -5,6 +5,7 @@ keywords: environment, install, software, hardware, browser, database, operating
 summary: 安装 SnapManager for Oracle 的环境必须满足特定的软件，硬件，浏览器，数据库和操作系统要求。有关这些要求的最新信息，请参见互操作性表。 
 ---
 = 准备安装适用于 Oracle 的 SnapManager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

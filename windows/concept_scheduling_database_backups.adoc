@@ -5,6 +5,7 @@ keywords: oracle, enable, schedule, database, regular, basis, information
 summary: 通过适用于 Oracle 的 SnapManager （ 3.2 或更高版本），您可以计划在非高峰时段定期进行数据库备份，以保持高性能。要计划备份，您可以创建一个配置文件，其中包括数据库信息和保留策略，然后设置备份计划。 
 ---
 = 计划数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

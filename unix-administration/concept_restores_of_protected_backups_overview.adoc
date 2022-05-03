@@ -5,6 +5,7 @@ keywords: restore, backup, data, secondary, primary, storage, overview, protect,
 summary: 您可以选择要用于将备份数据从二级存储还原到主存储的还原方法。 
 ---
 = 还原受保护备份概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

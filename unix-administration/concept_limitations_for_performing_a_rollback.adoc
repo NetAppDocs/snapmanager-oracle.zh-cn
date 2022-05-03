@@ -5,6 +5,7 @@ keywords: aware, scenario, rollback, limitation
 summary: 您必须了解无法执行回滚的情形。但是，对于其中某些情形，您可以在执行回滚之前执行一些额外任务。 
 ---
 = 执行回滚的限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

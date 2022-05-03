@@ -5,6 +5,7 @@ keywords: dba, backup, loss, data, disaster, regulatory, schedule, retention, st
 summary: DBA 希望确保在数据丢失，发生灾难时以及出于法规原因备份可用。这就需要为各种数据库仔细考虑保留策略。 
 ---
 = 备份计划和保留策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

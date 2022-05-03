@@ -5,6 +5,7 @@ keywords: command, enable, clone, split, amount, storage, consume, estimate
 summary: 使用此命令可以查看克隆拆分的已用存储估计量。 
 ---
 = smo clone split — estimate 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

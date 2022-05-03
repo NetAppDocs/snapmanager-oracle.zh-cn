@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, ability, update, host, name, target, database, pr
 summary: 通过适用于 Oracle 的 SnapManager （ 3.2 或更高版本），可以更新 SnapManager 配置文件中目标数据库的主机名。 
 ---
 = 更新与配置文件关联的目标数据库主机名
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

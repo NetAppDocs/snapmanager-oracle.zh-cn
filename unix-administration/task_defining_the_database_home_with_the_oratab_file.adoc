@@ -5,6 +5,7 @@ keywords: snapmanager, oratab, file, operation, determine, oracle, database, hom
 summary: SnapManager 在操作期间使用 oratab 文件来确定 Oracle 数据库主目录。Oracle 数据库的条目必须位于 oratab 文件中， SnapManager 才能正常工作。oratab 文件是在 Oracle 软件安装期间创建的。 
 ---
 = 使用 oratab 文件定义数据库主目录
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

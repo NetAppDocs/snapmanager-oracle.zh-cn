@@ -5,6 +5,7 @@ keywords: restart, server, unix, host, cli, smo
 summary: 您可以使用命令行界面在 UNIX 主机上重新启动服务器。 
 ---
 = 重新启动 SnapManager UNIX 主机服务器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

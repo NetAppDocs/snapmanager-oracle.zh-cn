@@ -5,6 +5,7 @@ keywords: snapmanager, flexclone, volume, nfs, environment, clone, backup, flexv
 summary: 当 SnapManager 在 NFS 环境中为卷创建 FlexClone 时， /etc/exports 文件中会添加一个条目。克隆或备份无法挂载到 SnapManager 主机上，并显示错误消息。 
 ---
 = 在 NFS 环境中挂载 FlexClone 卷失败
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

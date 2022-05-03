@@ -5,6 +5,7 @@ keywords: run, protection-policy, command, list, protection, policies, applied, 
 summary: 您可以运行 protection-policy 命令列出可应用于配置文件的保护策略。创建新配置文件或更新现有配置文件时，可以应用保护策略。您也可以使用 Protection Manager 控制台为配置文件设置保护策略。 
 ---
 = smo protection-policy 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: create, oracle, user, repository, database, specific, privilege, perfo
 summary: 您可以为存储库数据库创建 Oracle 用户，并分配特定权限来对存储库数据库执行不同的操作。 
 ---
 = 为存储库数据库创建 Oracle 用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

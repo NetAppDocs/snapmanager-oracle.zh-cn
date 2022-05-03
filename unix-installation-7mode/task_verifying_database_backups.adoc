@@ -5,6 +5,7 @@ keywords: verifym backup, database, backed-up, file, corrupt, unix
 summary: 您可以验证数据库的备份，以确保备份的文件未损坏。 
 ---
 = 验证数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

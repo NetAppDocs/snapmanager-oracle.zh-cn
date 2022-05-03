@@ -5,6 +5,7 @@ keywords: view, summary, list, operation, perform, profile
 summary: 您可以查看对配置文件执行的所有操作的摘要列表。 
 ---
 = 查看操作列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

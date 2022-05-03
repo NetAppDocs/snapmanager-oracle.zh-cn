@@ -5,6 +5,7 @@ keywords: split, clone, volume, parent, data, ontap, detach, command, smo
 summary: 在 Data ONTAP 中将克隆的卷从其父卷拆分之后，您可以从 SnapManager 运行 clone detach 命令，让 SnapManager 知道该卷不再是克隆卷。 
 ---
 = smo clone detach 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

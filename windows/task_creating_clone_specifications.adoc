@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, clone, specification, xml, file, mappings, option
 summary: SnapManager for Oracle 使用克隆规范 XML 文件，其中包括要在克隆操作中使用的映射，选项和参数。SnapManager 使用此信息确定克隆的文件的放置位置以及如何处理诊断信息，控制文件，参数等。 
 ---
 = 正在创建克隆规范
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

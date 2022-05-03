@@ -5,6 +5,7 @@ keywords: command, list, schedule, operation, associate, profile
 summary: 此命令可列出与配置文件关联的计划操作。 
 ---
 = smo schedule list 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

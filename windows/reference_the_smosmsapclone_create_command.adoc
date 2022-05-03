@@ -5,6 +5,7 @@ keywords: clone, create, command, backed, up, database, primary, secondary, stor
 summary: 您可以运行 clone create 命令为备份的数据库创建克隆。您可以从主存储或二级存储克隆备份。 
 ---
 = smo clone create 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

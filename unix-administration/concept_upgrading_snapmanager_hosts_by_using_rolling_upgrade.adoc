@@ -5,6 +5,7 @@ keywords: roll, upgrade, approach, enable, host, stagger, host-by-host, manner, 
 summary: SnapManager 3.1 支持滚动升级方法，可用于按主机交错升级主机。 
 ---
 = 使用滚动升级升级升级 SnapManager 主机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

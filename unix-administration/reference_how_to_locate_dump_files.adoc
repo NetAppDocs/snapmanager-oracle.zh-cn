@@ -5,6 +5,7 @@ keywords: dump, file, locate, client, system, easy, access, file, helpful, troub
 summary: 转储文件位于客户端系统中，便于访问。如果您需要对与配置文件，系统或任何操作相关的问题进行故障排除，这些文件将非常有用。 
 ---
 = 如何查找转储文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

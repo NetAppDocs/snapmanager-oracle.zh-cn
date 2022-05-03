@@ -5,6 +5,7 @@ keywords: run, backup, list, command, display, information, profile, retention, 
 summary: 您可以运行 backup list 命令以显示有关配置文件中备份的信息，包括有关保留类和保护状态的信息。 
 ---
 = smo backup list 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

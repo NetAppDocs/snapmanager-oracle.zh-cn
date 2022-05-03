@@ -5,6 +5,7 @@ keywords: perform, roll, upgrade, prerequisite, environment, certain, requiremen
 summary: 在执行滚动升级之前，您必须确保您的环境满足特定要求。 
 ---
 = 执行滚动升级的前提条件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

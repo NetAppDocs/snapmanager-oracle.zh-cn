@@ -5,6 +5,7 @@ keywords: snapmanager, software, uninstall, host, server, unix, smo
 summary: 如果您不再需要 SnapManager 软件，则可以从主机服务器中将其卸载。 
 ---
 = 从 UNIX 主机卸载软件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

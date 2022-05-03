@@ -5,6 +5,7 @@ keywords: create, backup, schedule, pruning, prune, archive, log, file, scheduli
 summary: 创建备份时，您可以计划在指定时间对归档日志文件进行删减。 
 ---
 = 计划归档日志文件删减
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

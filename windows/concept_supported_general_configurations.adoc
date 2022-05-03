@@ -5,6 +5,7 @@ keywords: install, configuration, requirement
 summary: 安装 SnapManager 之前，您必须了解一般配置要求。 
 ---
 = 支持的常规配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: delete, clone, snapshot, copy, backup, guarantee, current, data, delet
 summary: '当 Snapshot 副本的大小达到备份的 10% 到 20% 之间时，您可以删除克隆。这样还可以确保克隆具有最新的数据。' 
 ---
 = 正在删除克隆
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapmanager, oracle, restore, database, snapshot, file-based, backup, 
 summary: 通过 SnapManager for Oracle ，您可以将数据库还原到创建 Snapshot 副本时的状态。除了基于文件的还原过程之外， SnapManager 还支持基于卷的快速还原技术，与其他恢复方法相比，该技术可显著缩短还原时间。由于备份的创建频率更高，因此需要应用的日志数量会减少，从而减少数据库的平均恢复时间（ MTTR ）。 
 ---
 = 还原数据库备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: database, replica, clone, backup, cloning
 summary: 您可以克隆数据库以创建原始数据库的精确副本。您可以从完整备份或数据库的当前状态创建克隆。 
 ---
 = 什么是克隆
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

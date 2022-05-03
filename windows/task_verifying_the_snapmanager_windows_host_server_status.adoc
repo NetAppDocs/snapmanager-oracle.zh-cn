@@ -5,6 +5,7 @@ keywords: server, run, execute, command, snapmanager, operation, verify, status
 summary: 要执行命令或启动 SnapManager 操作，服务器必须正在运行。在执行任何操作之前，您必须验证服务器的状态。 
 ---
 = 验证 SnapManager 主机服务器状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

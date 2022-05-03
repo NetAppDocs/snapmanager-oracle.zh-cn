@@ -5,6 +5,7 @@ keywords: find, information, common, known, graphical, user, interface, gui, tro
 summary: 您可以找到一些常见的已知图形用户界面（ GUI ）问题的相关信息，这些问题可能有助于您解决这些问题。 
 ---
 = 排除图形用户界面问题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

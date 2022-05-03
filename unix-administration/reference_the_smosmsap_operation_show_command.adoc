@@ -5,6 +5,7 @@ keywords: run, operation, show, command, list, summary, information, perform, sp
 summary: 您可以运行 operation show 命令列出针对指定配置文件执行的所有操作的摘要信息。输出将列出客户端用户（客户端 PC\ 的用户）和有效用户（ SnapManager 中对选定主机有效的用户）。 
 ---
 = smo operation show 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

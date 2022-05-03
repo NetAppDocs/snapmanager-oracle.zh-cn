@@ -5,6 +5,7 @@ keywords: run, profile, update, command, information, existing, smo
 summary: 您可以运行 profile update 命令来更新现有配置文件的信息。 
 ---
 = smo profile update 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

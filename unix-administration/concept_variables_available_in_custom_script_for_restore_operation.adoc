@@ -5,6 +5,7 @@ keywords: snapmanager, context, information, environment, variable, restore, ope
 summary: SnapManager 以与正在执行的还原操作相关的环境变量的形式提供上下文信息。例如，您的脚本可以检索原始主机的名称以及所还原备份的标签。 
 ---
 = 可用于还原操作的任务脚本中的变量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

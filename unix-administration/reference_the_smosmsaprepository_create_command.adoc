@@ -5,6 +5,7 @@ keywords: smo, repository, creat, command
 summary: 此命令将创建一个存储库，用于存储数据库配置文件和关联凭据。 
 ---
 = smo repository create 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

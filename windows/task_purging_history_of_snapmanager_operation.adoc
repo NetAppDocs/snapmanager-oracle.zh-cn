@@ -5,6 +5,7 @@ keywords: delete, history, snapmanager, operation, detail, deleting
 summary: 如果不再需要 SnapManager 操作的历史记录详细信息，则可以删除该历史记录。 
 ---
 = 正在删除 SnapManager 操作历史记录
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

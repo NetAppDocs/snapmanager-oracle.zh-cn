@@ -5,6 +5,7 @@ keywords: enable, disable, data, protection, creating, updating, database, profi
 summary: 您可以在创建或更新数据库配置文件时启用或禁用数据保护。 
 ---
 = 了解在配置文件中启用或禁用数据保护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

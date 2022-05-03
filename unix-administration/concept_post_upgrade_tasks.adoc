@@ -5,6 +5,7 @@ keywords: upgrading, version, snapmanager, exist, repository, modify, backup, re
 summary: 升级到更高版本的 SnapManager 后，您必须更新现有存储库。您可能还需要修改分配给现有备份的备份保留类，并确定可以使用的还原过程。 
 ---
 = 升级后任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

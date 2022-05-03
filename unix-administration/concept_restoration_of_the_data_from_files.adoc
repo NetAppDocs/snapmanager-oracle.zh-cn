@@ -5,6 +5,7 @@ keywords: restore, alternate, location, necessary, file, storage, media, file, s
 summary: 在从备用位置还原之前，您需要从任何存储介质还原必要的文件，并将文件从 SnapVault 或 SnapMirror 等应用程序还原到本地主机上挂载的文件系统。 
 ---
 = 从文件还原数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

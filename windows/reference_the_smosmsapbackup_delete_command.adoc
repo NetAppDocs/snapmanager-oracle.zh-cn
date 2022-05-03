@@ -5,6 +5,7 @@ keywords: run, backup, delete, command, remove, remove, create, clone, retention
 summary: 您可以运行 backup delete 命令删除未自动删除的备份，例如用于创建克隆的备份或失败的备份。您可以删除无限制保留的备份，而不更改保留类。 
 ---
 = smo backup delete 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: automatic, storage, management, asm, snapmanager, database, snapmanage
 summary: 您必须了解将自动存储管理（ Automatic Storage Management ， ASM ）数据库与 SnapManager 结合使用的要求。了解这些要求有助于避免 ASMLib ，分区和克隆规范等方面的问题。 
 ---
 = 将 ASM 数据库与 SnapManager 结合使用的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

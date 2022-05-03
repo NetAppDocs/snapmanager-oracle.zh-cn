@@ -5,6 +5,7 @@ keywords: run, backup, free, command, snapshot, copies, copy, removing, remove, 
 summary: 您可以运行 backup free 命令来释放备份的 Snapshot 副本，而无需从存储库中删除备份元数据。 
 ---
 = smo backup free 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
