@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="您必须了解无法执行回滚的情形。但是，对于其中某些情形，您可以在执行回滚之前执行一些额外任务。">
-  <meta name="keywords" content=" limitation, perform, rollback, scenario, rollback">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="您必须了解无法执行回滚的情形。但是，对于其中某些情形，您可以在执行回滚之前执行一些额外任务。">
+  <meta name="keywords" content=" limitation, perform, rollback, scenario, rollback"><!-- Icons -->
   <link rel="icon" href="/zh-cn/snapmanager-oracle/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -54,52 +45,65 @@
   <link rel="stylesheet" href='/zh-cn/snapmanager-oracle/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/zh-cn/snapmanager-oracle/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/snapmanager-oracle/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/snapmanager-oracle/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/snapmanager-oracle/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/zh-cn/snapmanager-oracle/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/zh-cn/snapmanager-oracle/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/zh-cn/snapmanager-oracle/css/product-family.css' type="text/css">
-  
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-cn/snapmanager-oracle/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
 
-  
-  <link rel='stylesheet' href='/zh-cn/snapmanager-oracle/css/na-feature.css' type='text/css'>
-  
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
 
+    function OptanonWrapper() { }
 
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/zh-cn/snapmanager-oracle/js/na-search.js'></script>
-  
 
-  
-  <script src='/zh-cn/snapmanager-oracle/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/zh-cn/snapmanager-oracle/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/snapmanager-oracle/js/na-search.js'></script><script src='/zh-cn/snapmanager-oracle/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/snapmanager-oracle/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/snapmanager-oracle/css/prism-netapp.css' type='text/css'>
 
 
   <script src='/zh-cn/snapmanager-oracle/js/na-utility.js'></script>
   <script src='/zh-cn/snapmanager-oracle/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/zh-cn/snapmanager-oracle/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/zh-cn/snapmanager-oracle/js/toc.js'></script>
-  <script src='/zh-cn/snapmanager-oracle/js/customscripts.js'></script>
-
-  <script>
+  <script src='/zh-cn/snapmanager-oracle/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -148,17 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/zh-cn/snapmanager-oracle/js/version-dropdown.js'></script>
-  <script src='/zh-cn/snapmanager-oracle/js/product-family.js'></script>
+  <script src='/zh-cn/snapmanager-oracle/js/custom-dropdown.js'></script>
   <script src='/zh-cn/snapmanager-oracle/js/FileSaver.min.js'></script>
   <script src='/zh-cn/snapmanager-oracle/js/jszip-utils.min.js'></script>
   <script src='/zh-cn/snapmanager-oracle/js/jszip.min.js'></script>
@@ -166,11 +161,26 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/snapmanager-oracle/issues/new?body=Page%3A%20[执行回滚的限制](https://docs.netapp.com/zh-cn/snapmanager-oracle/windows/concept_limitations_for_performing_a_rollback.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/snapmanager-oracle/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/snapmanager-oracle/blob/main/windows/concept_limitations_for_performing_a_rollback.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/snapmanager-oracle/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/snapmanager-oracle/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -253,7 +263,8 @@
           data-did-you-mean="搜索 {suggestion}。" 
           data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
           data-results-found="找到 {hitCount} 个结果"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -281,13 +292,15 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/snapmanager-oracle/windows/concept_limitations_for_performing_a_rollback.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/us-en/snapmanager-oracle/windows/concept_limitations_for_performing_a_rollback.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/ja-jp/snapmanager-oracle/windows/concept_limitations_for_performing_a_rollback.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/ko-kr/snapmanager-oracle/windows/concept_limitations_for_performing_a_rollback.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/snapmanager-oracle/windows/concept_limitations_for_performing_a_rollback.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/snapmanager-oracle/windows/concept_limitations_for_performing_a_rollback.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -342,6 +355,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/zh-cn/snapmanager-oracle/pdfs/fullsite-sidebar/适用于_Oracle_的_SnapManager_3_4_2.pdf" >
           <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
 
@@ -352,6 +368,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/适用于集群模式_Data_ONTAP_的_UNIX_安装和设置.pdf" 
@@ -365,6 +384,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
@@ -391,6 +413,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备部署.pdf" 
@@ -421,6 +446,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置数据库.pdf" 
@@ -455,6 +483,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/设置_SnapManager.pdf" 
@@ -483,6 +514,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备用于_SnapMirror_和_SnapVault_复制的存储系统.pdf" 
@@ -511,6 +545,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份和验证数据库.pdf" 
@@ -556,6 +593,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/在_7__模式下运行的适用于_Data_ONTAP_的_UNIX_安装和设置.pdf" 
@@ -569,6 +609,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
@@ -595,6 +638,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备部署.pdf" 
@@ -625,6 +671,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置数据库.pdf" 
@@ -659,6 +708,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/设置_SnapManager.pdf" 
@@ -687,6 +739,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份和验证数据库.pdf" 
@@ -732,6 +787,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/UNIX_管理.pdf" 
@@ -745,6 +803,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
@@ -782,6 +843,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/建议的常规数据库布局和存储配置.pdf" 
@@ -805,6 +869,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/支持不使用_ASMLib_的_ASM_数据库.pdf" 
@@ -822,6 +889,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/部署和运行脚本.pdf" 
@@ -872,6 +942,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_时的限制.pdf" 
@@ -887,6 +960,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/与_Oracle_数据库相关的限制.pdf" 
@@ -955,6 +1031,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/建议的常规数据库布局和存储配置.pdf" 
@@ -978,6 +1057,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/支持不使用_ASMLib_的_ASM_数据库.pdf" 
@@ -995,6 +1077,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/部署和运行脚本.pdf" 
@@ -1045,6 +1130,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_时的限制.pdf" 
@@ -1060,6 +1148,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/与_Oracle_数据库相关的限制.pdf" 
@@ -1095,6 +1186,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级_SnapManager.pdf" 
@@ -1112,6 +1206,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级后任务.pdf" 
@@ -1140,6 +1237,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用滚动升级升级升级_SnapManager_主机.pdf" 
@@ -1157,6 +1257,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是回滚.pdf" 
@@ -1205,6 +1308,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在配置_SnapManager.pdf" 
@@ -1218,6 +1324,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_配置参数.pdf" 
@@ -1257,6 +1366,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安全性和凭据管理.pdf" 
@@ -1272,6 +1384,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/关于基于角色的访问控制.pdf" 
@@ -1306,6 +1421,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/清除所有主机_存储库和配置文件的用户凭据.pdf" 
@@ -1330,6 +1448,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/删除单个资源的凭据.pdf" 
@@ -1367,6 +1488,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/管理配置文件以实现高效备份.pdf" 
@@ -1407,6 +1531,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份数据库.pdf" 
@@ -1422,6 +1549,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是完整备份和部分备份.pdf" 
@@ -1456,6 +1586,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建数据库备份.pdf" 
@@ -1486,6 +1619,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_AutoSupport.pdf" 
@@ -1516,6 +1652,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更改备份保留策略.pdf" 
@@ -1567,6 +1706,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/计划数据库备份.pdf" 
@@ -1601,6 +1743,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/还原数据库备份.pdf" 
@@ -1614,6 +1759,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是数据库还原.pdf" 
@@ -1627,6 +1775,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/有关何时可以使用快速还原的准则.pdf" 
@@ -1678,6 +1829,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原文件.pdf" 
@@ -1691,6 +1845,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原备份概述.pdf" 
@@ -1741,6 +1898,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/克隆数据库备份.pdf" 
@@ -1758,6 +1918,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建克隆规范.pdf" 
@@ -1788,6 +1951,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/将数据库克隆到备用主机的注意事项.pdf" 
@@ -1818,6 +1984,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/拆分克隆.pdf" 
@@ -1865,6 +2034,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_中的数据保护简介.pdf" 
@@ -1886,6 +2058,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置和启用策略驱动型数据保护.pdf" 
@@ -1916,6 +2091,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行数据保护的注意事项.pdf" 
@@ -1942,6 +2120,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从二级存储还原受保护的备份.pdf" 
@@ -1979,6 +2160,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_使用_Protection_Manager_保护数据库备份.pdf" 
@@ -2000,6 +2184,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/受保护的备份配置和执行.pdf" 
@@ -2038,6 +2225,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备份还原数据库.pdf" 
@@ -2073,6 +2263,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行管理操作.pdf" 
@@ -2109,6 +2302,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置电子邮件通知.pdf" 
@@ -2124,6 +2320,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为新配置文件配置电子邮件通知.pdf" 
@@ -2148,6 +2347,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为现有配置文件配置电子邮件通知.pdf" 
@@ -2189,6 +2391,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为_SnapManager_操作创建任务规范文件和脚本.pdf" 
@@ -2202,6 +2407,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建任务前_任务后和策略脚本.pdf" 
@@ -2255,6 +2463,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更新与配置文件关联的存储系统名称和目标数据库主机名.pdf" 
@@ -2283,6 +2494,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/维护_SnapManager_操作历史记录.pdf" 
@@ -2317,6 +2531,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_命令参考.pdf" 
@@ -2487,6 +2704,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/对_SnapManager_进行故障排除.pdf" 
@@ -2500,6 +2720,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/转储文件.pdf" 
@@ -2574,6 +2797,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/适用于_Windows_的安装和设置.pdf" 
@@ -2587,6 +2813,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_SnapManagerfor_Oracle.pdf" 
@@ -2604,6 +2833,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_的优势.pdf" 
@@ -2640,6 +2872,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是适用于_Oracle_的_SnapManager_架构.pdf" 
@@ -2689,6 +2924,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_部署注意事项.pdf" 
@@ -2702,6 +2940,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/运行_SnapManager_的要求.pdf" 
@@ -2730,6 +2971,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/数据库版本支持和配置概述.pdf" 
@@ -2775,6 +3019,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安装适用于_Oracle_的_SnapManager.pdf" 
@@ -2788,6 +3035,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备安装适用于_Oracle_的_SnapManager.pdf" 
@@ -2825,6 +3075,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级_SnapManager.pdf" 
@@ -2842,6 +3095,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级后任务.pdf" 
@@ -2868,6 +3124,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用滚动升级升级升级_SnapManager_主机.pdf" 
@@ -2885,6 +3144,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是回滚.pdf" 
@@ -2942,6 +3204,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在配置_SnapManager.pdf" 
@@ -2955,6 +3220,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_配置参数.pdf" 
@@ -2988,6 +3256,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/启动_SnapManagerfor_Oracle.pdf" 
@@ -3009,6 +3280,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/访问_SnapManager.pdf" 
@@ -3022,6 +3296,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/启动_SnapManager_主机服务器.pdf" 
@@ -3061,6 +3338,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/验证环境.pdf" 
@@ -3085,6 +3365,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建存储库.pdf" 
@@ -3120,6 +3403,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安全性和凭据管理.pdf" 
@@ -3143,6 +3429,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/清除所有主机_存储库和配置文件的用户凭据.pdf" 
@@ -3167,6 +3456,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/删除单个资源的凭据.pdf" 
@@ -3204,6 +3496,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/管理配置文件以实现高效备份.pdf" 
@@ -3244,6 +3539,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份数据库.pdf" 
@@ -3259,6 +3557,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是完整备份和部分备份.pdf" 
@@ -3293,6 +3594,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建数据库备份.pdf" 
@@ -3321,6 +3625,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_AutoSupport.pdf" 
@@ -3351,6 +3658,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更改备份保留策略.pdf" 
@@ -3402,6 +3712,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/计划数据库备份.pdf" 
@@ -3436,6 +3749,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/还原数据库备份.pdf" 
@@ -3449,6 +3765,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是数据库还原.pdf" 
@@ -3483,6 +3802,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原文件.pdf" 
@@ -3496,6 +3818,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原备份概述.pdf" 
@@ -3544,6 +3869,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/克隆数据库备份.pdf" 
@@ -3561,6 +3889,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建克隆规范.pdf" 
@@ -3591,6 +3922,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/将数据库克隆到备用主机的注意事项.pdf" 
@@ -3630,6 +3964,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_中的数据保护简介.pdf" 
@@ -3645,6 +3982,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行数据保护的注意事项.pdf" 
@@ -3669,6 +4009,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用后脚本保护数据库备份.pdf" 
@@ -3684,6 +4027,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建或更新_POST_脚本.pdf" 
@@ -3697,6 +4043,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建后处理_任务规范文件.pdf" 
@@ -3750,6 +4099,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行管理操作.pdf" 
@@ -3786,6 +4138,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置电子邮件通知.pdf" 
@@ -3801,6 +4156,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为新配置文件配置电子邮件通知.pdf" 
@@ -3825,6 +4183,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为现有配置文件配置电子邮件通知.pdf" 
@@ -3866,6 +4227,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为_SnapManager_操作创建任务规范文件和脚本.pdf" 
@@ -3879,6 +4243,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建任务前_任务后和策略脚本.pdf" 
@@ -3932,6 +4299,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更新与配置文件关联的存储系统名称和目标数据库主机名.pdf" 
@@ -3960,6 +4330,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/维护_SnapManager_操作历史记录.pdf" 
@@ -3994,6 +4367,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_命令参考.pdf" 
@@ -4146,6 +4522,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/对_SnapManager_进行故障排除.pdf" 
@@ -4159,6 +4538,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/转储文件.pdf" 
@@ -5828,30 +6210,27 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">主页</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">文档</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/zh-cn/snapmanager-oracle/">SnapManager&nbsp;Oracle</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          执行回滚的限制
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -5880,24 +6259,12 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 13:22:53 +0000">01/31/2022</time>
+    <time datetime="2022-05-03 10:48:17 +0000">05/03/2022</time>
     
   
 
-<span>提供者
-  <a target="_blank" href="https://github.com/NetAppZacharyWambold">
-    <img  class="avatar avatar-small"
-          alt="NetAppZacharyWambold"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/73244192?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-</span>
-
 
 </p>
-
 
 <div class="paragraph lead">
 <p>您必须了解无法执行回滚的情形。但是，对于其中某些情形，您可以在执行回滚之前执行一些额外任务。</p>
@@ -5948,27 +6315,7 @@
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/snapmanager-oracle/issues/new?body=Page%3A%20[执行回滚的限制](https://docs.netapp.com/zh-cn/snapmanager-oracle/windows/concept_limitations_for_performing_a_rollback.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/snapmanager-oracle/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/snapmanager-oracle/blob/main/windows/concept_limitations_for_performing_a_rollback.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/snapmanager-oracle/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/snapmanager-oracle/images/article-sm.svg" class="github-icon" />提供者指南</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">在此页面上</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -5976,103 +6323,125 @@
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
-  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">条款和条件</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">想就我们的网站提供反馈?</span>
+              <a target="_self" href="javascript:netapp_mailto()">请告诉我们</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-cn/announcements/">通知</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/zh-cn/snapmanager-oracle/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -6087,7 +6456,4 @@
     </script>
     <script src='/zh-cn/snapmanager-oracle/js/www-ntap.js'></script>
     <script src='/zh-cn/snapmanager-oracle/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>
