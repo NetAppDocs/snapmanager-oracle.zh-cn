@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/snapmanager-oracle/issues/new?body=Page%3A%20[将数据库与 NFS 和 SnapManager 结合使用的要求](https://docs.netapp.com/zh-cn/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/snapmanager-oracle/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/snapmanager-oracle/blob/main/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/snapmanager-oracle/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/snapmanager-oracle/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/snapmanager-oracle/issues/new?body=Page%3A%20[将数据库与 NFS 和 SnapManager 结合使用的要求](https://docs.netapp.com/zh-cn/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/snapmanager-oracle/images/discuss-sm.svg" alt="" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/snapmanager-oracle/blob/main/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/snapmanager-oracle/images/edit-sm.svg" alt="" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/snapmanager-oracle/images/article-sm.svg" alt="" class="github-icon" />提供者指南</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此页面上</div>
@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/zh-cn/snapmanager-oracle/search.html"
           data-type="widget" 
-          data-placeholder="搜索文档" 
-          data-no-results-found="未找到与 {query} 匹配的结果。" 
-          data-did-you-mean="搜索 {suggestion}。" 
-          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
-          data-results-found="找到 {hitCount} 个结果"  
+          data-placeholder="搜索文档"
+          data-no-results-found="未找到与 {query} 匹配的结果。"
+          data-did-you-mean="搜索 {suggestion}。"
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?"
+          data-results-found="找到 {hitCount} 个结果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -277,35 +279,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/snapmanager-oracle/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/snapmanager-oracle/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -349,7 +343,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>可用的 PDF<span>
     </span>
   </a>
 </div>
@@ -359,7 +353,7 @@
         
         
         <a target="_blank" href="/zh-cn/snapmanager-oracle/pdfs/fullsite-sidebar/适用于_Oracle_的_SnapManager_3_4_2.pdf" >
-          <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
+          <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>此文档站点的 PDF</a>
 
 
 
@@ -376,7 +370,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/适用于集群模式_Data_ONTAP_的_UNIX_安装和设置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             适用于集群模式 Data ONTAP 的 UNIX 安装和设置
           </a>
           
@@ -392,14 +386,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             产品概述
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -421,7 +413,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备部署.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             准备部署
           </a>
           
@@ -433,8 +425,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -454,7 +444,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             配置数据库
           </a>
           
@@ -468,8 +458,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -491,7 +479,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/设置_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             设置 SnapManager
           </a>
           
@@ -501,8 +489,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -522,7 +508,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备用于_SnapMirror_和_SnapVault_复制的存储系统.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             准备用于 SnapMirror 和 SnapVault 复制的存储系统
           </a>
           
@@ -532,8 +518,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -553,7 +537,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份和验证数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             备份和验证数据库
           </a>
           
@@ -569,8 +553,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -580,8 +562,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -601,7 +581,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/在_7__模式下运行的适用于_Data_ONTAP_的_UNIX_安装和设置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             在 7- 模式下运行的适用于 Data ONTAP 的 UNIX 安装和设置
           </a>
           
@@ -617,14 +597,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             产品概述
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -646,7 +624,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备部署.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             准备部署
           </a>
           
@@ -658,8 +636,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -679,7 +655,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             配置数据库
           </a>
           
@@ -693,8 +669,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -716,7 +690,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/设置_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             设置 SnapManager
           </a>
           
@@ -726,8 +700,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -747,7 +719,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份和验证数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             备份和验证数据库
           </a>
           
@@ -763,8 +735,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -774,8 +744,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -795,7 +763,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/UNIX_管理.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             UNIX 管理
           </a>
           
@@ -811,7 +779,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/产品概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             产品概述
           </a>
           
@@ -851,7 +819,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/建议的常规数据库布局和存储配置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             建议的常规数据库布局和存储配置
           </a>
           
@@ -877,7 +845,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/支持不使用_ASMLib_的_ASM_数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             支持不使用 ASMLib 的 ASM 数据库
           </a>
           
@@ -897,7 +865,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/部署和运行脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             部署和运行脚本
           </a>
           
@@ -905,8 +873,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -916,8 +882,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -925,21 +889,12 @@
   
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/snapmanager-oracle/pdfs/pages/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.pdf" >
-    <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
 
 
-
-          
         </li>
       </ul>
     
@@ -959,7 +914,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_时的限制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             使用 SnapManager 时的限制
           </a>
           
@@ -977,14 +932,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/与_Oracle_数据库相关的限制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             与 Oracle 数据库相关的限制
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -994,8 +947,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1003,8 +954,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1048,7 +997,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/建议的常规数据库布局和存储配置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             建议的常规数据库布局和存储配置
           </a>
           
@@ -1074,7 +1023,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/支持不使用_ASMLib_的_ASM_数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             支持不使用 ASMLib 的 ASM 数据库
           </a>
           
@@ -1094,7 +1043,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/部署和运行脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             部署和运行脚本
           </a>
           
@@ -1102,8 +1051,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1113,8 +1060,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1122,21 +1067,12 @@
   
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/snapmanager-oracle/pdfs/pages/unix-administration/concept_requirements_for_using_databases_with_nfs_and_snapmanager.pdf" >
-    <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1156,7 +1092,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_时的限制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             使用 SnapManager 时的限制
           </a>
           
@@ -1174,14 +1110,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/与_Oracle_数据库相关的限制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             与 Oracle 数据库相关的限制
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1191,8 +1125,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1212,7 +1144,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             升级 SnapManager
           </a>
           
@@ -1232,7 +1164,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级后任务.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             升级后任务
           </a>
           
@@ -1242,8 +1174,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1263,7 +1193,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用滚动升级升级升级_SnapManager_主机.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             使用滚动升级升级升级 SnapManager 主机
           </a>
           
@@ -1283,7 +1213,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是回滚.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是回滚
           </a>
           
@@ -1295,8 +1225,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1304,8 +1232,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1313,8 +1239,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1334,7 +1258,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在配置_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             正在配置 SnapManager
           </a>
           
@@ -1350,14 +1274,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_配置参数.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             SnapManager 配置参数
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1371,8 +1293,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1392,7 +1312,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安全性和凭据管理.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             安全性和凭据管理
           </a>
           
@@ -1410,7 +1330,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/关于基于角色的访问控制.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             关于基于角色的访问控制
           </a>
           
@@ -1418,8 +1338,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1447,14 +1365,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/清除所有主机_存储库和配置文件的用户凭据.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             清除所有主机，存储库和配置文件的用户凭据
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1474,7 +1390,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/删除单个资源的凭据.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             删除单个资源的凭据
           </a>
           
@@ -1484,8 +1400,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1493,8 +1407,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1514,7 +1426,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/管理配置文件以实现高效备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             管理配置文件以实现高效备份
           </a>
           
@@ -1536,8 +1448,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1557,7 +1467,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             备份数据库
           </a>
           
@@ -1575,7 +1485,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是完整备份和部分备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是完整备份和部分备份
           </a>
           
@@ -1587,8 +1497,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1612,7 +1520,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             创建数据库备份
           </a>
           
@@ -1624,8 +1532,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1645,7 +1551,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_AutoSupport.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是 AutoSupport
           </a>
           
@@ -1655,8 +1561,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1678,7 +1582,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更改备份保留策略.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             更改备份保留策略
           </a>
           
@@ -1690,8 +1594,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1711,8 +1613,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1732,7 +1632,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/计划数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             计划数据库备份
           </a>
           
@@ -1748,8 +1648,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1769,7 +1667,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/还原数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             还原数据库备份
           </a>
           
@@ -1785,7 +1683,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是数据库还原.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是数据库还原
           </a>
           
@@ -1801,14 +1699,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/有关何时可以使用快速还原的准则.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             有关何时可以使用快速还原的准则
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1824,8 +1720,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1855,7 +1749,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             从备用位置还原文件
           </a>
           
@@ -1871,7 +1765,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原备份概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             从备用位置还原备份概述
           </a>
           
@@ -1881,8 +1775,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1894,8 +1786,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1903,8 +1793,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1924,7 +1812,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/克隆数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             克隆数据库备份
           </a>
           
@@ -1944,14 +1832,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建克隆规范.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             正在创建克隆规范
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1977,14 +1863,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/将数据库克隆到备用主机的注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             将数据库克隆到备用主机的注意事项
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -2010,7 +1894,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/拆分克隆.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             拆分克隆
           </a>
           
@@ -2030,8 +1914,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2039,8 +1921,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2060,7 +1940,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_中的数据保护简介.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             SnapManager 中的数据保护简介
           </a>
           
@@ -2084,7 +1964,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置和启用策略驱动型数据保护.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             配置和启用策略驱动型数据保护
           </a>
           
@@ -2094,8 +1974,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2117,14 +1995,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行数据保护的注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             执行数据保护的注意事项
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -2146,7 +2022,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从二级存储还原受保护的备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             从二级存储还原受保护的备份
           </a>
           
@@ -2154,8 +2030,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2165,8 +2039,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2186,7 +2058,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_使用_Protection_Manager_保护数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             SnapManager for Oracle 使用 Protection Manager 保护数据库备份
           </a>
           
@@ -2210,7 +2082,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/受保护的备份配置和执行.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             受保护的备份配置和执行
           </a>
           
@@ -2230,8 +2102,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2251,7 +2121,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备份还原数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             从备份还原数据库
           </a>
           
@@ -2259,8 +2129,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2268,8 +2136,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2289,7 +2155,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行管理操作.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             执行管理操作
           </a>
           
@@ -2307,8 +2173,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2328,7 +2192,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             配置电子邮件通知
           </a>
           
@@ -2346,14 +2210,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为新配置文件配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             为新配置文件配置电子邮件通知
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -2373,14 +2235,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为现有配置文件配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             为现有配置文件配置电子邮件通知
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -2396,8 +2256,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2417,7 +2275,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为_SnapManager_操作创建任务规范文件和脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             为 SnapManager 操作创建任务规范文件和脚本
           </a>
           
@@ -2433,7 +2291,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建任务前_任务后和策略脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             创建任务前，任务后和策略脚本
           </a>
           
@@ -2447,8 +2305,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2468,8 +2324,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2489,7 +2343,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更新与配置文件关联的存储系统名称和目标数据库主机名.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             更新与配置文件关联的存储系统名称和目标数据库主机名
           </a>
           
@@ -2499,8 +2353,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2520,7 +2372,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/维护_SnapManager_操作历史记录.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             维护 SnapManager 操作历史记录
           </a>
           
@@ -2536,8 +2388,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2557,7 +2407,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_命令参考.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             SnapManager for Oracle 命令参考
           </a>
           
@@ -2709,8 +2559,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2730,7 +2578,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/对_SnapManager_进行故障排除.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             对 SnapManager 进行故障排除
           </a>
           
@@ -2746,7 +2594,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/转储文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             转储文件
           </a>
           
@@ -2762,8 +2610,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2789,8 +2635,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2802,8 +2646,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2823,7 +2665,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/适用于_Windows_的安装和设置.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             适用于 Windows 的安装和设置
           </a>
           
@@ -2839,7 +2681,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_SnapManagerfor_Oracle.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是 SnapManagerfor Oracle
           </a>
           
@@ -2859,7 +2701,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用_SnapManager_的优势.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             使用 SnapManager 的优势
           </a>
           
@@ -2877,8 +2719,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2898,7 +2738,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是适用于_Oracle_的_SnapManager_架构.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是适用于 Oracle 的 SnapManager 架构
           </a>
           
@@ -2910,8 +2750,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2929,8 +2767,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2950,7 +2786,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_部署注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             SnapManager for Oracle 部署注意事项
           </a>
           
@@ -2966,7 +2802,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/运行_SnapManager_的要求.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             运行 SnapManager 的要求
           </a>
           
@@ -2976,8 +2812,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2997,7 +2831,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/数据库版本支持和配置概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             数据库版本支持和配置概述
           </a>
           
@@ -3005,8 +2839,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3024,8 +2856,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3045,7 +2875,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安装适用于_Oracle_的_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             安装适用于 Oracle 的 SnapManager
           </a>
           
@@ -3061,7 +2891,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/准备安装适用于_Oracle_的_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             准备安装适用于 Oracle 的 SnapManager
           </a>
           
@@ -3069,8 +2899,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3080,8 +2908,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3101,7 +2927,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             升级 SnapManager
           </a>
           
@@ -3121,7 +2947,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/升级后任务.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             升级后任务
           </a>
           
@@ -3129,8 +2955,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3150,7 +2974,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用滚动升级升级升级_SnapManager_主机.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             使用滚动升级升级升级 SnapManager 主机
           </a>
           
@@ -3170,7 +2994,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是回滚.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是回滚
           </a>
           
@@ -3182,8 +3006,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3191,8 +3013,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3200,8 +3020,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3221,7 +3039,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在配置_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             正在配置 SnapManager
           </a>
           
@@ -3237,14 +3055,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_配置参数.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             SnapManager 配置参数
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3252,8 +3068,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3273,7 +3087,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/启动_SnapManagerfor_Oracle.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             启动 SnapManagerfor Oracle
           </a>
           
@@ -3297,7 +3111,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/访问_SnapManager.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             访问 SnapManager
           </a>
           
@@ -3313,14 +3127,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/启动_SnapManager_主机服务器.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             启动 SnapManager 主机服务器
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3334,8 +3146,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3355,14 +3165,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/验证环境.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             验证环境
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3382,14 +3190,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建存储库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             正在创建存储库
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3399,8 +3205,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3420,7 +3224,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/安全性和凭据管理.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             安全性和凭据管理
           </a>
           
@@ -3446,14 +3250,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/清除所有主机_存储库和配置文件的用户凭据.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             清除所有主机，存储库和配置文件的用户凭据
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3473,7 +3275,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/删除单个资源的凭据.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             删除单个资源的凭据
           </a>
           
@@ -3483,8 +3285,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3492,8 +3292,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3513,7 +3311,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/管理配置文件以实现高效备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             管理配置文件以实现高效备份
           </a>
           
@@ -3535,8 +3333,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3556,7 +3352,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/备份数据库.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             备份数据库
           </a>
           
@@ -3574,7 +3370,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是完整备份和部分备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是完整备份和部分备份
           </a>
           
@@ -3586,8 +3382,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3611,7 +3405,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             创建数据库备份
           </a>
           
@@ -3621,8 +3415,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3642,7 +3434,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是_AutoSupport.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是 AutoSupport
           </a>
           
@@ -3652,8 +3444,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3675,7 +3465,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更改备份保留策略.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             更改备份保留策略
           </a>
           
@@ -3687,8 +3477,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3708,8 +3496,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3729,7 +3515,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/计划数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             计划数据库备份
           </a>
           
@@ -3745,8 +3531,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3766,7 +3550,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/还原数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             还原数据库备份
           </a>
           
@@ -3782,7 +3566,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/什么是数据库还原.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             什么是数据库还原
           </a>
           
@@ -3792,8 +3576,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3819,7 +3601,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             从备用位置还原文件
           </a>
           
@@ -3835,7 +3617,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/从备用位置还原备份概述.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             从备用位置还原备份概述
           </a>
           
@@ -3843,8 +3625,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3856,8 +3636,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3865,8 +3643,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3886,7 +3662,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/克隆数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             克隆数据库备份
           </a>
           
@@ -3906,14 +3682,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/正在创建克隆规范.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             正在创建克隆规范
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3939,14 +3713,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/将数据库克隆到备用主机的注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             将数据库克隆到备用主机的注意事项
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3960,8 +3732,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3981,7 +3751,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_中的数据保护简介.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             SnapManager 中的数据保护简介
           </a>
           
@@ -3999,14 +3769,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行数据保护的注意事项.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             执行数据保护的注意事项
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -4026,7 +3794,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/使用后脚本保护数据库备份.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             使用后脚本保护数据库备份
           </a>
           
@@ -4044,7 +3812,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建或更新_POST_脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             创建或更新 POST 脚本
           </a>
           
@@ -4060,7 +3828,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建后处理_任务规范文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             创建后处理，任务规范文件
           </a>
           
@@ -4068,8 +3836,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4077,8 +3843,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -4086,8 +3850,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -4095,8 +3857,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -4116,7 +3876,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/执行管理操作.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             执行管理操作
           </a>
           
@@ -4134,8 +3894,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4155,7 +3913,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             配置电子邮件通知
           </a>
           
@@ -4173,14 +3931,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为新配置文件配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             为新配置文件配置电子邮件通知
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -4200,14 +3956,12 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为现有配置文件配置电子邮件通知.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             为现有配置文件配置电子邮件通知
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -4223,8 +3977,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4244,7 +3996,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/为_SnapManager_操作创建任务规范文件和脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             为 SnapManager 操作创建任务规范文件和脚本
           </a>
           
@@ -4260,7 +4012,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/创建任务前_任务后和策略脚本.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             创建任务前，任务后和策略脚本
           </a>
           
@@ -4274,8 +4026,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4295,8 +4045,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4316,7 +4064,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/更新与配置文件关联的存储系统名称和目标数据库主机名.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             更新与配置文件关联的存储系统名称和目标数据库主机名
           </a>
           
@@ -4326,8 +4074,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4347,7 +4093,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/维护_SnapManager_操作历史记录.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             维护 SnapManager 操作历史记录
           </a>
           
@@ -4363,8 +4109,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4384,7 +4128,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/SnapManager_for_Oracle_命令参考.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             SnapManager for Oracle 命令参考
           </a>
           
@@ -4518,8 +4262,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4539,7 +4281,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/对_SnapManager_进行故障排除.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             对 SnapManager 进行故障排除
           </a>
           
@@ -4555,7 +4297,7 @@
               href="/zh-cn/snapmanager-oracle/pdfs/sidebar/转储文件.pdf" 
             
           >
-            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/snapmanager-oracle/images/pdf.png" alt="" width="16" height="16"/>
             转储文件
           </a>
           
@@ -4571,8 +4313,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4592,8 +4332,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4605,21 +4343,18 @@
 
 
 
-
-          
         </li>
       </ul>
     
 
   
-
 
 
 
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/zh-cn/snapmanager-oracle/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/zh-cn/snapmanager-oracle/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -4652,7 +4387,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/snapmanager-oracle/index.html">
         主页
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/snapmanager-oracle/releasenotes.html">
@@ -6272,6 +6007,9 @@
     
   
 
+<span>提供者
+</span>
+
 
 </p>
 
@@ -6453,4 +6191,5 @@
     </script>
     <script src='/zh-cn/snapmanager-oracle/js/www-ntap.js'></script>
     <script src='/zh-cn/snapmanager-oracle/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/snapmanager-oracle/js/sidebar.js'></script>
   </body></html>
