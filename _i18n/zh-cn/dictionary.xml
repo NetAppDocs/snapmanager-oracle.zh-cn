@@ -86,7 +86,6 @@
   <block id="af6a1bc54bfa25692fb404beeccbf81f" category="section-title">适用于 Oracle 的 SnapManager</block>
   <block id="7d5643ff2a416305c8e7f1f9edb27b00" category="paragraph">您必须在每个目标数据库主机上安装 SnapManager for Oracle 。</block>
   <block id="39428a8d90e5b121522d6129b78aa8f9" category="paragraph">您可以从安装了 SnapManager for Oracle 的数据库主机使用命令行界面（ CLI ）或 UI 。您也可以从 SnapManager 支持的操作系统上运行的任何系统使用 Web 浏览器远程使用 SnapManager UI 。</block>
-  <block id="7ef022a578be28da1215ccf070dd30ff" category="admonition">支持的 JRE 版本为 1.5 ， 1.6 和 1.7 。</block>
   <block id="651517944489d080458feaf4b18b48e1" category="section-title">目标数据库</block>
   <block id="fc07b3bc28ff78b02c42678ae411ac43" category="paragraph">目标数据库是要通过执行备份，还原，恢复和克隆操作使用 SnapManager 管理的 Oracle 数据库。</block>
   <block id="01481686276dcdeb8154575ae3331d69" category="paragraph">目标数据库可以是独立的 Real Application Clusters （ RAC ），也可以驻留在 Oracle Automatic Storage Management （ ASM ）卷上。有关受支持的 Oracle 数据库版本，配置，操作系统和协议的详细信息，请参见 NetApp 互操作性表工具。</block>
@@ -1933,7 +1932,6 @@
   <block id="52deca875cee1216e367ada2ed4a375a" category="paragraph"><block ref="52deca875cee1216e367ada2ed4a375a" category="inline-xref-macro-rx"></block></block>
   <block id="15cd5946cd3adcd7d4962cc72fe15a76" category="inline-xref-macro">smo profile create 命令</block>
   <block id="fb1c76cfafc68e885702f60ff6120232" category="paragraph"><block ref="fb1c76cfafc68e885702f60ff6120232" category="inline-xref-macro-rx"></block></block>
-  <block id="fdf138e8e32b475cac4e95dfa4a6845c" category="summary">如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的 JRE 版本为 1.5 ， 1.6 和 1.7 。</block>
   <block id="a3ce501ae6a1c70515cb2af72f8a5263" category="doc">使用 Java Web Start 下载并启动图形用户界面</block>
   <block id="65ac70b2787abfaf135067ac5ef6b778" category="paragraph">您必须确保满足以下条件：</block>
   <block id="e1549d03ea953026442a3230a7859b92" category="list-text">SnapManager 服务器正在运行。</block>
@@ -6854,4 +6852,7 @@
   <block id="d23d52eb082db2b040f7a1483c79d790" category="sidebar">UNIX 管理</block>
   <block id="30027cf267532429435367703cf3d996" category="sidebar">适用于 Windows 的安装和设置</block>
   <block id="d648f2a68a54fd1b3329efc3cf24d29c" category="sidebar">法律声明</block>
+  <block id="48f5a9c122057627462e4b416c5fbdf9" category="admonition">支持的JRE版本为1.5、1.6、1.7和1.8。</block>
+  <block id="1e19ac469670780a4c754ec0afa92293" category="summary">如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的JRE版本为1.5、1.6、1.7和1.8</block>
+  <block id="3c981c21038a256bded47f47d4658951" category="paragraph">如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的JRE版本为1.5、1.6、1.7和1.8。</block>
 </blocks>

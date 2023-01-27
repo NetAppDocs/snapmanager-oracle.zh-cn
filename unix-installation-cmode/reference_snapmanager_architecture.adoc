@@ -30,7 +30,7 @@ SnapManager 要求 SnapDrive 与存储系统建立连接。在安装 SnapManager
 您可以从安装了 SnapManager for Oracle 的数据库主机使用命令行界面（ CLI ）或 UI 。您也可以从 SnapManager 支持的操作系统上运行的任何系统使用 Web 浏览器远程使用 SnapManager UI 。
 
 
-NOTE: 支持的 JRE 版本为 1.5 ， 1.6 和 1.7 。
+NOTE: 支持的JRE版本为1.5、1.6、1.7和1.8。
 
 
 

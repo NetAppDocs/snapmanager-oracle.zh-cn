@@ -2,7 +2,7 @@
 permalink: windows/task_downloading_and_starting_the_graphical_user_interface_using_java_web_start_windows.html 
 sidebar: sidebar 
 keywords: java, web, start, snapmanager, install, host, download, component, graphical, user, interface, gui, jre 
-summary: 如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的 JRE 版本为 1.5 ， 1.6 和 1.7 。 
+summary: 如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的JRE版本为1.5、1.6、1.7和1.8 
 ---
 = 使用 Java Web Start 下载并启动图形用户界面
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 如果主机上未安装 SnapManager ，则可以使用 Java Web Start 
 
 
 [role="lead"]
-如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的 JRE 版本为 1.5 ， 1.6 和 1.7 。
+如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的JRE版本为1.5、1.6、1.7和1.8。
 
 您必须确保满足以下条件：
 
