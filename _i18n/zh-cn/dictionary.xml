@@ -421,16 +421,12 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
-  <block id="de6edae22bc37b97b38a15c7f8af62e2" category="paragraph"><block ref="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
   <block id="a93bc0a57623c2facaa010825c808507" category="paragraph"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
-  <block id="547ea2e305891e64d8e744949b0aca2c" category="paragraph"><block ref="547ea2e305891e64d8e744949b0aca2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="50921fca0d376fca62102a5e608994e2" category="paragraph"><block ref="50921fca0d376fca62102a5e608994e2" category="inline-link-rx"></block></block>
-  <block id="24efa7ee4511563b16144f39706d594f" category="section-title">通知</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="8a54f568a62c5e9066720e17e405d5b4" category="inline-link-macro">SnapManager for Oracle 注意事项</block>
   <block id="1200db7a9269a501f22d120dd0e4cc2f" category="paragraph"><block ref="1200db7a9269a501f22d120dd0e4cc2f" category="inline-link-macro-rx"></block></block>
@@ -6851,8 +6847,16 @@
   <block id="800fd61bdd366a97ae161db8f523ad30" category="sidebar">在 7- 模式下运行的适用于 Data ONTAP 的 UNIX 安装和设置</block>
   <block id="d23d52eb082db2b040f7a1483c79d790" category="sidebar">UNIX 管理</block>
   <block id="30027cf267532429435367703cf3d996" category="sidebar">适用于 Windows 的安装和设置</block>
-  <block id="d648f2a68a54fd1b3329efc3cf24d29c" category="sidebar">法律声明</block>
   <block id="48f5a9c122057627462e4b416c5fbdf9" category="admonition">支持的JRE版本为1.5、1.6、1.7和1.8。</block>
   <block id="1e19ac469670780a4c754ec0afa92293" category="summary">如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的JRE版本为1.5、1.6、1.7和1.8</block>
   <block id="3c981c21038a256bded47f47d4658951" category="paragraph">如果主机上未安装 SnapManager ，则可以使用 Java Web Start 。Java Web Start 将下载 SnapManager 组件并启动图形用户界面（ GUI ）。支持的JRE版本为1.5、1.6、1.7和1.8。</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
 </blocks>
